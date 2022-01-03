@@ -27,10 +27,15 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
     - [Java](#java)
     - [.NET](#net)
     - [Swift](#swift)
+    - [vim](#vim)
+- [IDEs & Tools](#tools)
 - [NFT Marketplaces](#nft-marketplaces)
 - [DeFi Platforms](#defi-platforms)
+- [Oracles](#oracles)
+- [Bridges](#bridges)
 - [Community](#community)
     - [Projects](#projects)
+- [ARCs](#arc)
 - [Contribute](#contribute)
 - [License](#license)
     - [Credits](#credits)
@@ -54,6 +59,10 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [AlgoExplorer](https://www.algoexplorer.io/) - Algorand blockchain explorer build by [RandLabs](https://randlabs.io/).
 - [Goalseeker](https://goalseeker.purestake.io/algorand/mainnet) - Algorand blockchain explorer build by [PureStake](https://www.purestake.com/).
 - [NFTExplorer](https://www.nftexplorer.app/) - Algorand Standard Asset (ASA) explorer build by [@TomassoAE](https://twitter.com/TommasoAE) and [JoshLmao](https://twitter.com/JoshLmao).
+- [How Big is Algorand?](https://howbigisalgorand.com/) - Algorand's networks size monitor.
+- [Algorand Ballet](https://akaalias.github.io/algorand-ballet/) - Algorand accounts' 2D graphs.
+- [Algorand Multiverse](https://algo3d.live/) - Algorand accounts' 3D graphs.
+- [Algorand Mempool](https://www.iamnotabot.com/pool) - Algorand mempool explorer.
 
 ## Development
 
@@ -64,11 +73,19 @@ The following structure is to be finalized. The general convention for now is to
 - [go-algorand](https://github.com/algorand/go-algorand) - Algorand's official implementation in Go.
 - [go-algorand-sdk](https://github.com/algorand/go-algorand-sdk) - The Algorand Golang SDK.
 
+### PHP
+
+- [php-algorand-sdk](https://github.com/ffsolutions/php-algorand-sdk) - Algorand PHP SDK created by [@ffsolutions](https://github.com/ffsolutions).
+- [php-algorand-sdk](https://github.com/ffsolutions/php-algorand-sdk) - Algorand PHP SDK created by [@RootSoft](https://github.com/RootSoft).
+
 ### Python
 
 - [py-algorand-sdk](https://github.com/algorand/py-algorand-sdk) - The Algorand Python SDK.
 - [pyteal](https://github.com/algorand/pyteal) - Algorand Smart Contracts in Python.
+- [pyteal-utils](https://github.com/algorand/pyteal-utils) - PyTEAL utilites library.
 - [algoworld-swapper](https://github.com/algoworldNFT/algoworld-swapper) - Collection of ASC1 contracts in pyteal for creating ASA swappers.
+- [algonim](https://github.com/cusma/algonim) - First Algorand mini-puzzle-game by [@cusma](https://github.com/cusma).
+- [algorealm](https://github.com/cusma/algorealm) - Claim the Crown and the Sceptre of Algorand Realm! By [@cusma](https://github.com/cusma).
 
 ### JavaScript
 
@@ -86,6 +103,20 @@ The following structure is to be finalized. The general convention for now is to
 
 - [algorand-wallet](https://github.com/algorand/algorand-wallet) - Algorand wallet official implementation in Swift.
 
+## IDEs & Tools
+
+### Docker
+
+- [Algorand Sandbox](https://github.com/algorand/sandbox) - Fast way to create and configure an Algorand development environment.
+
+### vim
+
+- [vim-algorand-teal](https://github.com/aldur/vim-algorand-teal): Minimalistic syntax highlight for Algorand's TEAL Smart Contract language to vim.
+
+### IntelliJ
+
+- [algoDEA](https://algodea-docs.bloxbean.com/) - Algorand IntelliJ Plugin.
+
 ## NFT Marketplaces
 
 - [AB2](https://ab2.gallery/) - decentralized marketplace for crypto art assets secured on the Algorand blockchain created by [@ab2_gallery](https://twitter.com/AB2_Gallery).
@@ -99,6 +130,17 @@ The following structure is to be finalized. The general convention for now is to
 - [Tinyman](https://www.randgallery.com/) - A decentralized trading protocol, AMM and platform.
 - [Algofi](https://www.algofi.org/) - Decentralized lending market and stablecoin on the Algorand blockchain.
 - [Lofty.ai](https://algoworldexplorer.io/) - NFT marketplace, explorer and gallery for AlgoWorld NFTs developed by [@millionalgosfather](https://twitter.com/millionalgos).
+- [Folks.finance](https://folks.finance/) - Decentralized capital markets protocol.
+- [C3](https://c3.io/) - Cross-margin cross-collateralization clearing engine protocol.
+
+## Bridges
+
+- [Algomint](https://algomint.io/) - Centralized BTC and ETH bridge to Algorand.
+- [QUIGON](https://bridge.quigon.com/) - Centralized cross-chain NFT bridge.
+
+## Oracles
+
+- [Algoracle](https://www.algoracle.ai/) - Decentralized oracle networks that connect the Algorand blockchain with the real world.
 
 ## Community
 
@@ -112,6 +154,13 @@ The following contains a set of sections related to open source projects, utilit
 - [Algorand Session Wallet](https://github.com/barnjamin/algorand-session-wallet) - Session wallet to allow persisted wallet connections across multiple wallets.
 - [WalletConnect Example DApp](https://github.com/algorand/walletconnect-example-dapp) - Algorand WalletConnect demo.
 - [paytx](https://github.com/algorand-devrel/paytx) - Examples of common pay transaction scenarios using the Algorand Python SDK.
+- [Algodesk](https://www.algodesk.io/) - Create, configure and manage your Assets on Algorand Blockchain.
+
+## Algorand Requests for Comments
+
+Standards and specs defined in *finalized* ARCs.
+
+- [ARC3](https://github.com/algorandfoundation/ARCs/blob/main/ARCs/arc-0003.md) - Algorand Standard Asset Parameters Conventions for Fungible and Non-Fungible Tokens
 
 ## Contribute
 
