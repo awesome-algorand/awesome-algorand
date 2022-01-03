@@ -122,6 +122,7 @@ The following contains a set of sections related to open source projects, utilit
 
 ### Projects
 
+
 - [arc3.xyz](https://github.com/barnjamin/arc3.xyz) - Dapp that can be used to mint ARC3 compliant NFTs.
 - [Auction Demo](https://github.com/algorand/auction-demo) - On-chain NFT auction using smart contracts.
 - [AlgoMart](https://github.com/deptagency/algomart) - NFT storefront platform.
