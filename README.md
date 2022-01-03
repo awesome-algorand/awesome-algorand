@@ -22,6 +22,8 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [Official](#official)
 - [Wallets](#wallets)
 - [Blockchain Explorers](#blockchain-explorers)
+- [Learning](#learning)
+    - [Tutorials](#tutorials)
 - [Development](#development)
     - [Go](#go)
     - [Python](#python)
@@ -57,6 +59,18 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [Goalseeker](https://goalseeker.purestake.io/algorand/mainnet) - Algorand blockchain explorer build by [PureStake](https://www.purestake.com/).
 - [NFTExplorer](https://www.nftexplorer.app/) - Algorand Standard Asset (ASA) explorer build by [@TomassoAE](https://twitter.com/TommasoAE) and [JoshLmao](https://twitter.com/JoshLmao).
 
+## Learning
+
+### Tutorials
+
+- [AlgoMinter](https://developer.algorand.org/tutorials/algominter-a-web-app-for-minting-assets-using-python-algosigner-and-anvil-platform/) - Build your own web app for minting assets using Python, AlgoSigner and Anvil Platform.
+- [Getting Started with Django, Python and Algorand](https://developer.algorand.org/solutions/getting-started-with-python-algorand-sdk-and-django/) - Tutorial from algorand developer portal.
+- [Swift iOS app using Augmented Reality for Algorand purchases](https://developer.algorand.org/tutorials/ios-app-using-augmented-reality-for-purchases/) - An iOS App Using Augmented Reality for Purchases.
+- [MultiSig with Algorand for Co-operative Groups](https://developer.algorand.org/tutorials/decentralised-co-operative-unions-algorand-multisignature-account/) - Decentralised co-operative unions with Algorand Multisignature Account.
+- [Algorand on RaspberryPi](https://developer.algorand.org/tutorials/development-on-algorand-using-raspberry-pi-part-1/) - Development on Algorand using Raspberry Pi.
+- [Adding Notes to Transactions](https://developer.algorand.org/tutorials/v2-read-and-write-transaction-note-field-python/) - Read and Write to the Transaction Note Field with Python.
+- [Create Assets with a Stateful Smart Contract](https://developer.algorand.org/solutions/using-stateful-smart-contract-to-create-algorand-standard-asset/) - Using Stateful Smart Contract To Create Algorand Standard Asset.
+
 ## Development
 
 The following structure is to be finalized. The general convention for now is to sort libraries, utilities and projects based on their language of implementation.
@@ -70,7 +84,6 @@ The following structure is to be finalized. The general convention for now is to
 
 - [py-algorand-sdk](https://github.com/algorand/py-algorand-sdk) - The Algorand Python SDK.
 - [pyteal](https://github.com/algorand/pyteal) - Algorand Smart Contracts in Python.
-- [algoworld-swapper](https://github.com/algoworldNFT/algoworld-swapper) - Collection of ASC1 contracts in pyteal for creating ASA swappers.
 
 ### JavaScript
 
@@ -95,12 +108,13 @@ The following structure is to be finalized. The general convention for now is to
 - [AlgoGems](https://algogems.io/) - Algorand Standard Asset (ASA) markeplace and trading platform for NFT collectors.
 - [AlgoWorldExplorer](https://algoworldexplorer.io/) - NFT marketplace, explorer and gallery for AlgoWorld NFTs developed by [@millionalgosfather](https://twitter.com/millionalgos).
 
+
 ## DeFi Platforms
 
-- [Yieldly](https://ab2.gallery/) - DeFI suite for cross-chain swapping, ASA staking and lottery games.
-- [Tinyman](https://www.randgallery.com/) - A decentralized trading protocol, AMM and platform.
+- [Yieldly](https://yieldly.finance/) - DeFI suite for cross-chain swapping, ASA staking and lottery games.
+- [Tinyman](https://tinyman.org/) - A decentralized trading protocol, AMM and platform.
 - [Algofi](https://www.algofi.org/) - Decentralized lending market and stablecoin on the Algorand blockchain.
-- [Lofty.ai](https://algoworldexplorer.io/) - NFT marketplace, explorer and gallery for AlgoWorld NFTs developed by [@millionalgosfather](https://twitter.com/millionalgos).
+- [Lofty.ai](https://www.lofty.ai/) - Tokenized real estate investing platform.
 
 ## Community
 
@@ -112,8 +126,10 @@ The following contains a set of sections related to open source projects, utilit
 - [Auction Demo](https://github.com/algorand/auction-demo) - On-chain NFT auction using smart contracts.
 - [AlgoMart](https://github.com/deptagency/algomart) - NFT storefront platform.
 - [Algorand Session Wallet](https://github.com/barnjamin/algorand-session-wallet) - Session wallet to allow persisted wallet connections across multiple wallets.
+- [AlgoWorld-Swapper](https://github.com/algoworldNFT/algoworld-swapper) - Collection of ASC1 contracts in pyteal for creating ASA swappers.
 - [WalletConnect Example DApp](https://github.com/algorand/walletconnect-example-dapp) - Algorand WalletConnect demo.
 - [paytx](https://github.com/algorand-devrel/paytx) - Examples of common pay transaction scenarios using the Algorand Python SDK.
+- [TinyBar App](https://tinybar.app) - A tiny macOS menu bar app for tracking ASA prices from TinyMan.
 
 ## Contribute
 
