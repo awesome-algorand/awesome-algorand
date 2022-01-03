@@ -11,6 +11,8 @@
 <br />
 Algorand is an open-source, proof of stake blockchain and smart contract computing platform.
 <br/>
+<a><img src="https://visitor-badge.glitch.me/badge?page_id=aorumbayev.awesome-algorand&right_color=green" /></a>
+<a href="https://github.com/aorumbayev/Awesome-Algorand/actions/workflows/ci.yaml"><img src="https://github.com/aorumbayev/Awesome-Algorand/actions/workflows/ci.yaml/badge.svg" /></a>
 
 </div>
 <br/>
