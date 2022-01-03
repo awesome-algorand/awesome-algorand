@@ -101,9 +101,6 @@ The following structure is to be finalized. The general convention for now is to
 - [py-algorand-sdk](https://github.com/algorand/py-algorand-sdk) - The Algorand Python SDK.
 - [pyteal](https://github.com/algorand/pyteal) - Algorand Smart Contracts in Python.
 - [pyteal-utils](https://github.com/algorand/pyteal-utils) - PyTEAL utilites library.
-- [algoworld-swapper](https://github.com/algoworldNFT/algoworld-swapper) - Collection of ASC1 contracts in pyteal for creating ASA swappers.
-- [algonim](https://github.com/cusma/algonim) - First Algorand mini-puzzle-game by [@cusma](https://github.com/cusma).
-- [algorealm](https://github.com/cusma/algorealm) - Claim the Crown and the Sceptre of Algorand Realm! By [@cusma](https://github.com/cusma).
 
 ### JavaScript
 
@@ -176,6 +173,8 @@ The following contains a set of sections related to open source projects, utilit
 - [paytx](https://github.com/algorand-devrel/paytx) - Examples of common pay transaction scenarios using the Algorand Python SDK.
 - [TinyBar App](https://tinybar.app) - A tiny macOS menu bar app for tracking ASA prices from TinyMan.
 - [Algodesk](https://www.algodesk.io/) - Create, configure and manage your Assets on Algorand Blockchain.
+- [algonim](https://github.com/cusma/algonim) - First Algorand mini-puzzle-game. Written in Python+PyTEAL by [@cusma](https://github.com/cusma).
+- [algorealm](https://github.com/cusma/algorealm) - Claim the Crown and the Sceptre of Algorand Realm! Written in Python+PyTEAL by [@cusma](https://github.com/cusma).
 
 ## Algorand Requests for Comments
 
