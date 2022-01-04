@@ -32,17 +32,17 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
     - [Java](#java)
     - [.NET](#net)
     - [Swift](#swift)
-- [IDEs-Tools](#ides-tools)
-    - [Docker](#docker)
+- [IDEs](#ides)
     - [vim](#vim)
     - [IntelliJ](#intellij)
+- [Tools](#tools)
 - [NFT Marketplaces](#nft-marketplaces)
 - [DeFi Platforms](#defi-platforms)
-- [Oracles](#oracles)
 - [Bridges](#bridges)
+- [Oracles](#oracles)
 - [Community](#community)
     - [Projects](#projects)
-- [ARCs](#arc)
+- [ARCs](#arcs)
 - [Contribute](#contribute)
 - [License](#license)
     - [Credits](#credits)
@@ -119,19 +119,22 @@ The following structure is to be finalized. The general convention for now is to
 
 - [algorand-wallet](https://github.com/algorand/algorand-wallet) - Algorand wallet official implementation in Swift.
 
-## IDEs & Tools
+## IDEs
+
+### vim
+
+- [vim-algorand-teal](https://github.com/aldur/vim-algorand-teal) - Minimalistic syntax highlight for Algorand's TEAL Smart Contract language to vim.
+
+### IntelliJ
+
+- [algoDEA](https://algodea-docs.bloxbean.com/) - Algorand IntelliJ Plugin.
+
+## Tools
 
 ### Docker
 
 - [Algorand Sandbox](https://github.com/algorand/sandbox) - Fast way to create and configure an Algorand development environment.
 
-### vim
-
-- [vim-algorand-teal](https://github.com/aldur/vim-algorand-teal): Minimalistic syntax highlight for Algorand's TEAL Smart Contract language to vim.
-
-### IntelliJ
-
-- [algoDEA](https://algodea-docs.bloxbean.com/) - Algorand IntelliJ Plugin.
 
 ## NFT Marketplaces
 
@@ -177,7 +180,7 @@ The following contains a set of sections related to open source projects, utilit
 - [algonim](https://github.com/cusma/algonim) - First Algorand mini-puzzle-game. Written in Python+PyTEAL by [@cusma](https://github.com/cusma).
 - [algorealm](https://github.com/cusma/algorealm) - Claim the Crown and the Sceptre of Algorand Realm! Written in Python+PyTEAL by [@cusma](https://github.com/cusma).
 
-## Algorand Requests for Comments
+## ARCs
 
 Standards and specs defined in *finalized* ARCs.
 
