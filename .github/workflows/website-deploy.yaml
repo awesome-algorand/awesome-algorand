@@ -2,7 +2,7 @@ name: Website Deployment
 on:
     push:
         branches:
-            - tweaks-and-testing-ghp-deploys
+            - main
 jobs:
     Website_Deployment:
         runs-on: ubuntu-latest
@@ -25,7 +25,7 @@ jobs:
               with:
                 source_file: 'index.md'
                 destination_repo: 'aorumbayev/awesome-algorand'
-                destination_branch: 'gh-pages-test'
+                destination_branch: 'gh-pages'
                 user_email: 'millionalgos@pm.me'
                 user_name: 'AwesomeAlgoBot'
                 commit_message: '🤖 Updating website with latest content 📜'
