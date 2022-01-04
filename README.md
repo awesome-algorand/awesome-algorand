@@ -95,7 +95,7 @@ The following structure is to be finalized. The general convention for now is to
 ### PHP
 
 - [php-algorand-sdk](https://github.com/ffsolutions/php-algorand-sdk) - Algorand PHP SDK created by [@ffsolutions](https://github.com/ffsolutions).
-- [php-algorand-sdk](https://github.com/ffsolutions/php-algorand-sdk) - Algorand PHP SDK created by [@RootSoft](https://github.com/RootSoft).
+- [algorand-php](https://github.com/RootSoft/algorand-php) - Algorand PHP SDK created by [@RootSoft](https://github.com/RootSoft).
 
 ### Python
 
