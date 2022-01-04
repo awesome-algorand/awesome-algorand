@@ -70,6 +70,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [Algorand Ballet](https://akaalias.github.io/algorand-ballet/) - Algorand accounts' 2D graphs.
 - [Algorand Multiverse](https://algo3d.live/) - Algorand accounts' 3D graphs.
 - [Algorand Mempool](https://www.iamnotabot.com/pool) - Algorand mempool explorer.
+- [Metrika](https://app.metrika.co/dashboard/algorand/) - Algorand network performance and account monitor.
 
 ## Learning
 
