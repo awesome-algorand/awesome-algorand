@@ -150,7 +150,6 @@ The following structure is to be finalized. The general convention for now is to
 - [Yieldly](https://yieldly.finance/) - DeFI suite for cross-chain swapping, ASA staking and lottery games.
 - [Tinyman](https://tinyman.org/) - A decentralized trading protocol, AMM and platform.
 - [Algofi](https://www.algofi.org/) - Decentralized lending market and stablecoin on the Algorand blockchain.
-- [Lofty.ai](https://algoworldexplorer.io/) - NFT marketplace, explorer and gallery for AlgoWorld NFTs developed by [@millionalgosfather](https://twitter.com/millionalgos).
 - [Lofty.ai](https://www.lofty.ai/) - Tokenized real estate investing platform.
 - [Folks.finance](https://folks.finance/) - Decentralized capital markets protocol.
 - [C3](https://c3.io/) - Cross-margin cross-collateralization clearing engine protocol.
