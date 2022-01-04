@@ -1,5 +1,8 @@
 name: CI
 on:
+    push:
+        branches:
+            - tweaks-and-testing-ghp-deploys
     pull_request:
         branches: [main]
 jobs:
@@ -10,3 +13,14 @@ jobs:
               with:
                   fetch-depth: 0
             - run: npx awesome-lint
+            - name: Pushes test file
+              uses: dmnemec/copy_file_to_another_repo_action@main
+              env:
+                 API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                source_file: 'README.md'
+                destination_repo: 'aorumbayev/awesome-algorand'
+                destination_branch: 'gh-pages'
+                user_email: 'millionalgos@pm.me'
+                user_name: 'AwesomeAlgoBot'
+                commit_message: '🤖 Updating website with latest content 📜'

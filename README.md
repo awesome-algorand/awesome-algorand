@@ -1,9 +1,9 @@
-<!--lint disable awesome-license awesome-github awesome-git-repo-age double-link-->
+<!-- lint disable awesome-license awesome-github awesome-git-repo-age double-link -->
 # Awesome Algorand [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 <br/>
 <div align="center">
-<img width="100%" src="./markdown/logo.png">
+<img width="100%" src="https://raw.githubusercontent.com/aorumbayev/Awesome-Algorand/main/markdown/logo.png">
 </div>
 <br/>
 <div align="center">
@@ -202,7 +202,7 @@ Special thanks to everyone who forked or starred the repository ❤️
 
 To the extent possible under law, [@aorumbayev](https://github.com/aorumbayev) has waived all copyright and related or neighboring rights to `Awesome Algorand`.
 
-For the full license see [LICENSE](LICENSE).
+For the full license see [LICENSE](https://github.com/aorumbayev/Awesome-Algorand/blob/main/LICENSE).
 
 ### Credits
 
