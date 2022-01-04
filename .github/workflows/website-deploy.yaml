@@ -4,7 +4,7 @@ on:
         branches:
             - tweaks-and-testing-ghp-deploys
 jobs:
-    Awesome_Lint:
+    Website_Deployment:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
