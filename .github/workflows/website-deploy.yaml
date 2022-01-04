@@ -1,0 +1,31 @@
+name: Website Deployment
+on:
+    push:
+        branches:
+            - main
+jobs:
+    Website_Deployment:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+              with:
+                  fetch-depth: 0
+
+            - name: Run linters
+              run: npx awesome-lint
+
+            - name: Copy latest README
+              run: |
+                cp README.md index.md
+
+            - name: Push latest index.md
+              uses: dmnemec/copy_file_to_another_repo_action@main
+              env:
+                 API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                source_file: 'index.md'
+                destination_repo: 'aorumbayev/awesome-algorand'
+                destination_branch: 'gh-pages'
+                user_email: 'millionalgos@pm.me'
+                user_name: 'AwesomeAlgoBot'
+                commit_message: '🤖 Updating website with latest content 📜'

@@ -1,12 +1,14 @@
 name: CI
 on:
     pull_request:
-        branches: [main]
+        branches:
+            - main
 jobs:
-    Awesome_Lint:
+    Lint_and_Validate:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
               with:
                   fetch-depth: 0
-            - run: npx awesome-lint
+            - name: Check style guide
+              run: npx awesome-lint
