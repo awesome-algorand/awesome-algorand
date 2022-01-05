@@ -35,6 +35,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [IDEs](#ides)
     - [vim](#vim)
     - [IntelliJ](#intellij)
+    - [VSCode](#vscode)
 - [Tools](#tools)
 - [NFT Marketplaces](#nft-marketplaces)
 - [DeFi Platforms](#defi-platforms)
@@ -129,6 +130,10 @@ The following structure is to be finalized. The general convention for now is to
 ### IntelliJ
 
 - [algoDEA](https://algodea-docs.bloxbean.com/) - Algorand IntelliJ Plugin.
+
+### VSCode
+
+- [Obsidian Labs/vscode-algorand](https://github.com/ObsidianLabs/vscode-algorand) - Algorand VS Code Extension.
 
 ## Tools
 
