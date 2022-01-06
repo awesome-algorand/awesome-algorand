@@ -148,7 +148,16 @@ The following structure is to be finalized. The general convention for now is to
 - [Rand Gallery](https://www.randgallery.com/) - Algorand Standard Asset (ASA) explorer and markeplace developed by [Chris Antaki](https://github.com/ChrisAntaki).
 - [AlgoGems](https://algogems.io/) - Algorand Standard Asset (ASA) markeplace and trading platform for NFT collectors.
 - [AlgoWorldExplorer](https://algoworldexplorer.io/) - NFT marketplace, explorer and gallery for AlgoWorld NFTs developed by [@millionalgosfather](https://twitter.com/millionalgos).
-
+- [AlgoMart](https://github.com/deptagency/algomart) - Opensource NFT marketplace whitelabel solution.
+- [The GIF Economy](https://gifeconomy.com/) - Decentralized NFT explorer, minting and trading.
+- [ALGOxNFT](https://algoxnft.com/listings/live) - NFT gallery and marketplace.
+- [Dartroom](https://dartroom.xyz/overview) - Decentralized NFT explorer, minting and trading.
+- [Alchemon](https://alchemon.net/) - Monster-collecting NFT card game.
+- [Otherverse](https://otherverse.io/) - NFT collections marketplace.
+- [Musa](https://www.musanft.io/) - Music, Art & Fashion NFT gallery and marketplace.
+- [Flatter](https://www.flatternft.com/) - NFT art and collectible marketplace.
+- [Dahai](https://www.dahai.uk/) - NFT art gallery and marketplace.
+- [Aorist](https://aorist.art/) - NFT art gallery and marketplace.
 
 ## DeFi Platforms
 
