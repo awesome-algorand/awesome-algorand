@@ -25,13 +25,16 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [Learning](#learning)
     - [Tutorials](#tutorials)
 - [Development](#development)
+    - [Dart](#dart)
     - [Go](#go)
     - [PHP](#php)
     - [Python](#python)
     - [JavaScript](#javascript)
     - [Java](#java)
     - [.NET](#net)
+    - [Rust](#rust)
     - [Swift](#swift)
+    - [Vertices](#vertices)
 - [IDEs](#ides)
     - [vim](#vim)
     - [IntelliJ](#intellij)
@@ -72,6 +75,9 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [Algorand Multiverse](https://algo3d.live/) - Algorand accounts' 3D graphs.
 - [Algorand Mempool](https://www.iamnotabot.com/pool) - Algorand mempool explorer.
 - [Metrika](https://app.metrika.co/dashboard/algorand/) - Algorand network performance and account monitor.
+- [Algoscan](https://algoscan.app/) - Algoscan is a Blockchain Explorer and Analytics Platform. Built on top of the Algorand Network.
+- [Howbigisalgorand](https://howbigisalgorand.com/) - Small dashboard after noticing many people asking on the Discord and Forums about the size of an Algorand Archival Node.
+- [Algorand Stats](https://www.algorandstats.com/) - All stats about Algorand Govenance.
 
 ## Learning
 
@@ -88,6 +94,10 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 ## Development
 
 The following structure is to be finalized. The general convention for now is to sort libraries, utilities and projects based on their language of implementation.
+
+### Dart
+
+- [dart-algorand-sdk](https://pub.dev/packages/algorand_dart) - Dart Algorand SDK.
 
 ### Go
 
@@ -116,10 +126,21 @@ The following structure is to be finalized. The general convention for now is to
 ### .NET
 
 - [dotnet-algorand-sdk](https://github.com/RileyGe/dotnet-algorand-sdk) - Algorand .NET SDK created by [@RileyGe](https://github.com/RileyGe).
+- [unity-algorand-sdk](https://github.com/CareBoo/unity-algorand-sdk) - An Algorand SDK for Unity. Use the Algorand blockchain in your video game.
+- [unity-algorand-sdk-based-on-net-sdk](https://github.com/Vytek/AlgorandUnitySDK)- Quick and dirty Unity SDK based on .NET Algorand SDK by RileyGe.
+
+### Rust
+
+- [rust-algorand-sdk](https://github.com/manuelmauro/algonaut)- Rust Algorand SDK.
 
 ### Swift
 
 - [algorand-wallet](https://github.com/algorand/algorand-wallet) - Algorand wallet official implementation in Swift.
+- [swift-algorand-sdk](https://github.com/Jesulonimi21/Swift-Algorand-Sdk) - A Swift Sdk for interacting with the Algorand Blockchain.
+
+### Vertices
+
+- [vertices-algorand-sdk](https://github.com/vertices-network/c-vertices-sdk) - The Vertices SDK provides developers with an easy way for devices to interact with Blockchains.
 
 ## IDEs
 
@@ -195,6 +216,8 @@ The following contains a set of sections related to open source projects, utilit
 - [algonim](https://github.com/cusma/algonim) - First Algorand mini-puzzle-game. Written in Python+PyTEAL by [@cusma](https://github.com/cusma).
 - [algorealm](https://github.com/cusma/algorealm) - Claim the Crown and the Sceptre of Algorand Realm! Written in Python+PyTEAL by [@cusma](https://github.com/cusma).
 - [minter](https://github.com/algofishexe/minter) - Bulk mint Algorand NFTs following the ARC-69 community standard. Written in Node.js by [@fish.exe](https://twitter.com/AlgofishExe).
+- [algovanity](https://algovanity.com/) - Algorand Vanity Address Generator from [Ripe](https://github.com/Ripe/algovanity)
+- [galvanity](https://github.com/shmutalov/galvanity) - Galvanity is Algorand vanity address generator written in Go.
 
 ## ARCs
 
