@@ -77,6 +77,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [Metrika](https://app.metrika.co/dashboard/algorand/) - Algorand network performance and account monitor.
 - [Algoscan](https://algoscan.app/) - Algoscan is a Blockchain Explorer and Analytics Platform. Built on top of the Algorand Network.
 - [Howbigisalgorand](https://howbigisalgorand.com/) - Small dashboard after noticing many people asking on the Discord and Forums about the size of an Algorand Archival Node.
+- [Algorand Stats](https://www.algorandstats.com/) - All stats about Algorand Govenance.
 
 ## Learning
 
@@ -96,7 +97,7 @@ The following structure is to be finalized. The general convention for now is to
 
 ### Dart
 
--[dart-algorand-sdk](https://pub.dev/packages/algorand_dart) - Dart Algorand SDK.
+- [dart-algorand-sdk](https://pub.dev/packages/algorand_dart) - Dart Algorand SDK.
 
 ### Go
 
@@ -135,6 +136,7 @@ The following structure is to be finalized. The general convention for now is to
 ### Swift
 
 - [algorand-wallet](https://github.com/algorand/algorand-wallet) - Algorand wallet official implementation in Swift.
+- [swift-algorand-sdk](https://github.com/Jesulonimi21/Swift-Algorand-Sdk) - A Swift Sdk for interacting with the Algorand Blockchain.
 
 ### Vertices
 
@@ -215,7 +217,7 @@ The following contains a set of sections related to open source projects, utilit
 - [algorealm](https://github.com/cusma/algorealm) - Claim the Crown and the Sceptre of Algorand Realm! Written in Python+PyTEAL by [@cusma](https://github.com/cusma).
 - [minter](https://github.com/algofishexe/minter) - Bulk mint Algorand NFTs following the ARC-69 community standard. Written in Node.js by [@fish.exe](https://twitter.com/AlgofishExe).
 - [algovanity](https://algovanity.com/) - Algorand Vanity Address Generator from [Ripe](https://github.com/Ripe/algovanity)
-- [galvanity](https://github.com/shmutalov/galvanity) - Galvanity is Algorand vanity address generator written in Go. 
+- [galvanity](https://github.com/shmutalov/galvanity) - Galvanity is Algorand vanity address generator written in Go.
 
 ## ARCs
 
