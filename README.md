@@ -1,9 +1,9 @@
-<!--lint disable awesome-license awesome-github awesome-git-repo-age double-link-->
+<!-- lint disable awesome-license awesome-github awesome-git-repo-age double-link -->
 # Awesome Algorand [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 <br/>
 <div align="center">
-<img width="100%" src="./markdown/logo.png">
+<img width="100%" src="https://raw.githubusercontent.com/aorumbayev/Awesome-Algorand/main/markdown/logo.png">
 </div>
 <br/>
 <div align="center">
@@ -35,6 +35,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [IDEs](#ides)
     - [vim](#vim)
     - [IntelliJ](#intellij)
+    - [VSCode](#vscode)
 - [Tools](#tools)
 - [NFT Marketplaces](#nft-marketplaces)
 - [DeFi Platforms](#defi-platforms)
@@ -130,6 +131,10 @@ The following structure is to be finalized. The general convention for now is to
 
 - [algoDEA](https://algodea-docs.bloxbean.com/) - Algorand IntelliJ Plugin.
 
+### VSCode
+
+- [Obsidian Labs/vscode-algorand](https://github.com/ObsidianLabs/vscode-algorand) - Algorand VS Code Extension.
+
 ## Tools
 
 ### Docker
@@ -180,6 +185,7 @@ The following contains a set of sections related to open source projects, utilit
 - [Algodesk](https://www.algodesk.io/) - Create, configure and manage your Assets on Algorand Blockchain.
 - [algonim](https://github.com/cusma/algonim) - First Algorand mini-puzzle-game. Written in Python+PyTEAL by [@cusma](https://github.com/cusma).
 - [algorealm](https://github.com/cusma/algorealm) - Claim the Crown and the Sceptre of Algorand Realm! Written in Python+PyTEAL by [@cusma](https://github.com/cusma).
+- [minter](https://github.com/algofishexe/minter) - Bulk mint Algorand NFTs following the ARC-69 community standard. Written in Node.js by [@fish.exe](https://twitter.com/AlgofishExe).
 
 ## ARCs
 
@@ -189,7 +195,7 @@ Standards and specs defined in *finalized* ARCs.
 
 ## Contribute
 
-Contributions welcome! Read the [contribution guidelines](contributing.md) first.
+Contributions welcome! Read the [contribution guidelines](https://github.com/aorumbayev/Awesome-Algorand/blob/main/contributing.md) first.
 
 Special thanks to everyone who forked or starred the repository ❤️
 
@@ -203,7 +209,7 @@ Special thanks to everyone who forked or starred the repository ❤️
 
 To the extent possible under law, [@aorumbayev](https://github.com/aorumbayev) has waived all copyright and related or neighboring rights to `Awesome Algorand`.
 
-For the full license see [LICENSE](LICENSE).
+For the full license see [LICENSE](https://github.com/aorumbayev/Awesome-Algorand/blob/main/LICENSE).
 
 ### Credits
 
