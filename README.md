@@ -76,7 +76,6 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [Algorand Mempool](https://www.iamnotabot.com/pool) - Algorand mempool explorer.
 - [Metrika](https://app.metrika.co/dashboard/algorand/) - Algorand network performance and account monitor.
 - [Algoscan](https://algoscan.app/) - Algoscan is a Blockchain Explorer and Analytics Platform. Built on top of the Algorand Network.
-- [Howbigisalgorand](https://howbigisalgorand.com/) - Small dashboard after noticing many people asking on the Discord and Forums about the size of an Algorand Archival Node.
 - [Algorand Stats](https://www.algorandstats.com/) - All stats about Algorand Govenance.
 
 ## Learning
