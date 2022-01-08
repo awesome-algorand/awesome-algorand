@@ -199,6 +199,10 @@ The following structure is to be finalized. The general convention for now is to
 
 - [Algoracle](https://www.algoracle.ai/) - Decentralized oracle networks that connect the Algorand blockchain with the real world.
 
+## Name Services
+
+- [NFDomains](https://nf.domains/) - Algorand name service and marketplace for Non-Fungible Domains (NFDs) — unique, readable aliases for wallet addresses.
+
 ## Community
 
 The following contains a set of sections related to open source projects, utilities and news resources.
