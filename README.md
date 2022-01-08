@@ -116,10 +116,13 @@ The following structure is to be finalized. The general convention for now is to
 - [py-algorand-sdk](https://github.com/algorand/py-algorand-sdk) - The Algorand Python SDK.
 - [pyteal](https://github.com/algorand/pyteal) - Algorand Smart Contracts in Python.
 - [pyteal-utils](https://github.com/algorand/pyteal-utils) - PyTEAL utilites library.
+- [tinyman-py-sdk](https://github.com/tinymanorg/tinyman-py-sdk) - Tinyman Python SDK.
+- [algofi-py-sdk](https://github.com/Algofiorg/algofi-py-sdk) - Algofi Python SDK.
 
 ### JavaScript
 
 - [js-algorand-sdk](https://github.com/algorand/js-algorand-sdk) - The Algorand JavaScript SDK.
+- [algofi-js-sdk](https://github.com/Algofiorg/algofi-js-sdk) - Algofi JavaScript SDK.
 
 ### Java
 
