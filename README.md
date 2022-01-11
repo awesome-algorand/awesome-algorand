@@ -167,6 +167,10 @@ The following structure is to be finalized. The general convention for now is to
 
 - [Algorand Sandbox](https://github.com/algorand/sandbox) - Fast way to create and configure an Algorand development environment.
 
+### Nodes and Indexers 
+
+- [Algorand - The Undocumented Docs](https://github.com/AlgoChads/algorand-undoc-docs) - Dev Notes for Archival Node, Indexer Setup (and more)
+- [AlgoNode](https://algonode.cloud) - Node running FAQ, Node/Indexer daily snapshots, Free Node/Indexer APIs 
 
 ## NFT Marketplaces
 
