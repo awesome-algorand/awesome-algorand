@@ -232,12 +232,14 @@ The following contains a set of sections related to open source projects, utilit
 - [algovanity](https://algovanity.com/) - Algorand Vanity Address Generator from [Ripe](https://github.com/Ripe/algovanity)
 - [galvanity](https://github.com/shmutalov/galvanity) - Galvanity is Algorand vanity address generator written in Go.
 - [Algocurator](https://www.algocurator.com/home) - The Biggest Unofficial One-Stop Hub for Algorand.
+- [`genpyteal`](https://github.com/runvnc/genpyteal) - Generate PyTeal from (mostly) normal Python
 
 ## ARCs
 
 Standards and specs defined in *finalized* ARCs.
 
 - [ARC3](https://github.com/algorandfoundation/ARCs/blob/main/ARCs/arc-0003.md) - Algorand Standard Asset Parameters Conventions for Fungible and Non-Fungible Tokens.
+- [ARC4](https://github.com/algorandfoundation/ARCs/blob/main/ARCs/arc-0004.md) - Algorand Transaction Calling Conventions
 
 ## Contribute
 
