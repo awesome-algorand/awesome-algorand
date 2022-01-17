@@ -239,7 +239,6 @@ The following contains a set of sections related to open source projects, utilit
 Standards and specs defined in *finalized* ARCs.
 
 - [ARC3](https://github.com/algorandfoundation/ARCs/blob/main/ARCs/arc-0003.md) - Algorand Standard Asset Parameters Conventions for Fungible and Non-Fungible Tokens.
-- [ARC4](https://github.com/algorandfoundation/ARCs/blob/main/ARCs/arc-0004.md) - Algorand Transaction Calling Conventions
 
 ## Contribute
 
