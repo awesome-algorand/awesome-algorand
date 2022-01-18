@@ -233,6 +233,7 @@ The following contains a set of sections related to open source projects, utilit
 - [galvanity](https://github.com/shmutalov/galvanity) - Galvanity is Algorand vanity address generator written in Go.
 - [Algocurator](https://www.algocurator.com/home) - The Biggest Unofficial One-Stop Hub for Algorand.
 - [genpyteal](https://github.com/runvnc/genpyteal) - Generate PyTeal from (mostly) normal Python
+- [AgorHash](http://www.agorhash.com/) - Public, permissionless, decentralized and uncensorable free speech protocol.
 
 ## ARCs
 
