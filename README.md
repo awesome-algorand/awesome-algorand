@@ -50,6 +50,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [Community](#community)
     - [Projects](#projects)
 - [ARCs](#arcs)
+- [Metrics](#metrics)
 - [Contribute](#contribute)
 - [License](#license)
     - [Credits](#credits)
@@ -85,6 +86,10 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 
 ### Tutorials
 
+- [Building a lending pool using Reach](https://developer.algorand.org/tutorials/building-a-lending-pool-using-reach/)
+- [Voting using Choice Coin and Algorand Python SDK](https://developer.algorand.org/tutorials/voting-using-choice-coin/)
+- [Creating a License Manager Contract utilizing PyTEAL and Inner Transactions](https://developer.algorand.org/tutorials/creating-a-license-manager-contract-utilizing-pyteal-and-inner-transactions/)
+- [Redux Example: Connect to Algorand Wallet via WalletConnect](https://developer.algorand.org/tutorials/redux-example-connect-wallet-walletconnect/)
 - [AlgoMinter](https://developer.algorand.org/tutorials/algominter-a-web-app-for-minting-assets-using-python-algosigner-and-anvil-platform/) - Build your own web app for minting assets using Python, AlgoSigner and Anvil Platform.
 - [Getting Started with Django, Python and Algorand](https://developer.algorand.org/solutions/getting-started-with-python-algorand-sdk-and-django/) - Tutorial from algorand developer portal.
 - [Swift iOS app using Augmented Reality for Algorand purchases](https://developer.algorand.org/tutorials/ios-app-using-augmented-reality-for-purchases/) - An iOS App Using Augmented Reality for Purchases.
@@ -121,7 +126,7 @@ The following structure is to be finalized. The general convention for now is to
 
 ### JavaScript
 
-- [js-algorand-sdk](https://github.com/algorand/js-algorand-sdk) - The Algorand JavaScript SDK.
+- [js-algorand-sdk](https://github.com/algorand/js-algorand-sdk) and [JS SDK examples](https://github.com/algorand/js-algorand-sdk/tree/develop/examples) - The Algorand JavaScript SDK.
 - [algofi-js-sdk](https://github.com/Algofiorg/algofi-js-sdk) - Algofi JavaScript SDK.
 
 ### Java
@@ -188,6 +193,7 @@ The following structure is to be finalized. The general convention for now is to
 - [Flatter](https://www.flatternft.com/) - NFT art and collectible marketplace.
 - [Dahai](https://www.dahai.uk/) - NFT art gallery and marketplace.
 - [Aorist](https://aorist.art/) - NFT art gallery and marketplace.
+- [ZestBloom](https://zestbloom.com/) - Digital Media NFT marketplace that offers ways to promote artists for their contributions.
 
 ## DeFi Platforms
 
@@ -210,6 +216,7 @@ The following structure is to be finalized. The general convention for now is to
 ## Name Services
 
 - [NFDomains](https://nf.domains/) - Algorand name service and marketplace for Non-Fungible Domains (NFDs) — unique, readable aliases for wallet addresses.
+- [Algorand Name Service](https://algonameservice.com/home) - ANS is a decentralized naming service. An Algorand smart contract is used to store names and govern the naming policy.
 
 ## Community
 
@@ -241,6 +248,10 @@ Standards and specs defined in *finalized* ARCs.
 
 - [ARC3](https://github.com/algorandfoundation/ARCs/blob/main/ARCs/arc-0003.md) - Official Algorand Standard Asset Parameters Conventions for Fungible and Non-Fungible Tokens.
 - [ARC69](https://github.com/algokittens/arc69) - Unofficial Algorand Standart Asset Parameters Convention popular in Algorand NFT community, inspired by [Open Sea's metadata standards](https://docs.opensea.io/docs/metadata-standards) and [EIP-1155](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1155.md#erc-1155-metadata-uri-json-schema), created by [@algokittens](https://twitter.com/AlgoKittens).
+
+## Metrics
+
+- [Algorand mainnet metrics](https://metrics.algorand.org/) - Dashboard that measures the current scale, security, decentralization and adoption of the open source Algorand protocol.
 
 ## Contribute
 
