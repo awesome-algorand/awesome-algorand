@@ -216,6 +216,7 @@ The following structure is to be finalized. The general convention for now is to
 ## Name Services
 
 - [NFDomains](https://nf.domains/) - Algorand name service and marketplace for Non-Fungible Domains (NFDs) — unique, readable aliases for wallet addresses.
+- [Algorand Name Service](https://algonameservice.com/home) - ANS is a decentralized naming service. An Algorand smart contract is used to store names and govern the naming policy.
 
 ## Community
 
