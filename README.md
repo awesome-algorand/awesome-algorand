@@ -15,7 +15,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 <a href="https://awesomealgo.com"><img src="https://img.shields.io/badge/Web 2.0-Website-yellow.svg" /></a>
 <a href="https://ipfs.io/ipfs/QmS6dTFMddKkNnPmixhXRLLCfhURYnnnWJupz5tRPbJg81" style="pointer-events: none;  cursor: default;"><img src="https://img.shields.io/badge/Web 3.0-Website-blue.svg"/></a>
 <a href="https://github.com/aorumbayev/Awesome-Algorand/actions/workflows/ci.yaml"><img src="https://github.com/aorumbayev/Awesome-Algorand/actions/workflows/ci.yaml/badge.svg" /></a>
-    
+
 </div>
 <br/>
 
@@ -74,13 +74,9 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [AlgoExplorer](https://www.algoexplorer.io/) - Algorand blockchain explorer build by [RandLabs](https://randlabs.io/).
 - [Goalseeker](https://goalseeker.purestake.io/algorand/mainnet) - Algorand blockchain explorer build by [PureStake](https://www.purestake.com/).
 - [NFTExplorer](https://www.nftexplorer.app/) - Algorand Standard Asset (ASA) explorer build by [@TomassoAE](https://twitter.com/TommasoAE) and [JoshLmao](https://twitter.com/JoshLmao).
-- [How Big is Algorand?](https://howbigisalgorand.com/) - Algorand's networks size monitor.
 - [Algorand Ballet](https://akaalias.github.io/algorand-ballet/) - Algorand accounts' 2D graphs.
 - [Algorand Multiverse](https://algo3d.live/) - Algorand accounts' 3D graphs.
-- [Algorand Mempool](https://www.iamnotabot.com/pool) - Algorand mempool explorer.
-- [Metrika](https://app.metrika.co/dashboard/algorand/) - Algorand network performance and account monitor.
 - [Algoscan](https://algoscan.app/) - Algoscan is a Blockchain Explorer and Analytics Platform. Built on top of the Algorand Network.
-- [Algorand Stats](https://www.algorandstats.com/) - All stats about Algorand Govenance.
 
 ## Learning
 
@@ -172,10 +168,10 @@ The following structure is to be finalized. The general convention for now is to
 
 - [Algorand Sandbox](https://github.com/algorand/sandbox) - Fast way to create and configure an Algorand development environment.
 
-### Nodes and Indexers 
+### Nodes and Indexers
 
 - [Algorand - The Undocumented Docs](https://github.com/AlgoChads/algorand-undoc-docs) - Dev Notes for Archival Node, Indexer Setup (and more)
-- [AlgoNode](https://algonode.cloud) - Node running FAQ, Node/Indexer daily snapshots, Free Node/Indexer APIs 
+- [AlgoNode](https://algonode.cloud) - Node running FAQ, Node/Indexer daily snapshots, Free Node/Indexer APIs
 
 ## NFT Marketplaces
 
@@ -252,6 +248,10 @@ Standards and specs defined in *finalized* ARCs.
 ## Metrics
 
 - [Algorand mainnet metrics](https://metrics.algorand.org/) - Dashboard that measures the current scale, security, decentralization and adoption of the open source Algorand protocol.
+- [How Big is Algorand?](https://howbigisalgorand.com/) - Algorand's networks size monitor.
+- [Algorand Mempool](https://www.iamnotabot.com/pool) - Algorand mempool explorer.
+- [Metrika](https://app.metrika.co/dashboard/algorand/) - Algorand network performance and account monitor.
+- [Algorand Stats](https://www.algorandstats.com/) - All stats about Algorand Govenance.
 
 ## Contribute
 
