@@ -3,7 +3,6 @@ on:
     push:
         branches:
             - main
-            - compliance
 jobs:
     Website_Deployment:
         runs-on: ubuntu-latest
@@ -25,14 +24,14 @@ jobs:
               run: |
                 cp README.md index.md
 
-            # - name: Push latest index.md
-            #   uses: dmnemec/copy_file_to_another_repo_action@main
-            #   env:
-            #      API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
-            #   with:
-            #     source_file: 'index.md'
-            #     destination_repo: 'aorumbayev/awesome-algorand'
-            #     destination_branch: 'gh-pages'
-            #     user_email: 'millionalgos@pm.me'
-            #     user_name: 'AwesomeAlgoBot'
-            #     commit_message: '🤖 Updating website with latest content 📜'
+            - name: Push latest index.md
+              uses: dmnemec/copy_file_to_another_repo_action@main
+              env:
+                 API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                source_file: 'index.md'
+                destination_repo: 'aorumbayev/awesome-algorand'
+                destination_branch: 'gh-pages'
+                user_email: 'millionalgos@pm.me'
+                user_name: 'AwesomeAlgoBot'
+                commit_message: '🤖 Updating website with latest content 📜'
