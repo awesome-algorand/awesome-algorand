@@ -7,7 +7,7 @@ on:
 jobs:
     Website_Deployment:
         runs-on: ubuntu-latest
-        if: ${{ !contains(github.event.head_commit.message, '[nodeploy]') }}
+        if: github.event_name == 'push' && !(contains(github.event.head_commit.message, '[skip-deploy]'))
         steps:
             - uses: actions/checkout@v2
               with:
