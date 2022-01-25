@@ -1,20 +1,19 @@
-<!-- lint disable awesome-license awesome-github awesome-git-repo-age double-link -->
+<!--lint disable awesome-license awesome-git-repo-age-->
 # Awesome Algorand [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 <br/>
 <div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/aorumbayev/Awesome-Algorand/main/markdown/logo.png">
+<a href="https://awesomealgo.com" target="_blank"> <img width="100%" src="https://raw.githubusercontent.com/aorumbayev/Awesome-Algorand/main/markdown/logo.png"> </a>
 </div>
 <br/>
 <div align="center">
-⚡ An awesome list about everything related to the <a href='https://www.algorand.com/'>Algorand</a> Blockchain.
+⚡ A curated list of awesome resources related to the <a href='https://www.algorand.com/'>Algorand</a> Blockchain.
 <br />
 Algorand is an open-source, proof of stake blockchain and smart contract computing platform.
 <br/>
 <a><img src="https://visitor-badge.glitch.me/badge?page_id=aorumbayev.awesome-algorand&right_color=green" /></a>
 <a href="https://awesomealgo.com"><img src="https://img.shields.io/badge/Web 2.0-Website-yellow.svg" /></a>
 <a href="https://ipfs.io/ipfs/QmS6dTFMddKkNnPmixhXRLLCfhURYnnnWJupz5tRPbJg81" style="pointer-events: none;  cursor: default;"><img src="https://img.shields.io/badge/Web 3.0-Website-blue.svg"/></a>
-<a href="https://github.com/aorumbayev/Awesome-Algorand/actions/workflows/ci.yaml"><img src="https://github.com/aorumbayev/Awesome-Algorand/actions/workflows/ci.yaml/badge.svg" /></a>
 
 </div>
 <br/>
@@ -25,22 +24,8 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [Wallets](#wallets)
 - [Blockchain Explorers](#blockchain-explorers)
 - [Learning](#learning)
-    - [Tutorials](#tutorials)
 - [Development](#development)
-    - [Dart](#dart)
-    - [Go](#go)
-    - [PHP](#php)
-    - [Python](#python)
-    - [JavaScript](#javascript)
-    - [Java](#java)
-    - [.NET](#net)
-    - [Rust](#rust)
-    - [Swift](#swift)
-    - [Vertices](#vertices)
 - [IDEs](#ides)
-    - [vim](#vim)
-    - [IntelliJ](#intellij)
-    - [VSCode](#vscode)
 - [Tools](#tools)
 - [NFT Marketplaces](#nft-marketplaces)
 - [DeFi Platforms](#defi-platforms)
@@ -48,12 +33,8 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [Oracles](#oracles)
 - [Name Services](#name-services)
 - [Community](#community)
-    - [Projects](#projects)
 - [ARCs](#arcs)
 - [Metrics](#metrics)
-- [Contribute](#contribute)
-- [License](#license)
-    - [Credits](#credits)
 
 ## Official
 
@@ -86,8 +67,8 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [Voting using Choice Coin and Algorand Python SDK](https://developer.algorand.org/tutorials/voting-using-choice-coin/)
 - [Creating a License Manager Contract utilizing PyTEAL and Inner Transactions](https://developer.algorand.org/tutorials/creating-a-license-manager-contract-utilizing-pyteal-and-inner-transactions/)
 - [Redux Example: Connect to Algorand Wallet via WalletConnect](https://developer.algorand.org/tutorials/redux-example-connect-wallet-walletconnect/)
-- [AlgoMinter](https://developer.algorand.org/tutorials/algominter-a-web-app-for-minting-assets-using-python-algosigner-and-anvil-platform/) - Build your own web app for minting assets using Python, AlgoSigner and Anvil Platform.
-- [Getting Started with Django, Python and Algorand](https://developer.algorand.org/solutions/getting-started-with-python-algorand-sdk-and-django/) - Tutorial from algorand developer portal.
+- [AlgoMinter](https://developer.algorand.org/tutorials/algominter-a-web-app-for-minting-assets-using-python-algosigner-and-anvil-platform/) - Build your web app for minting assets using Python, AlgoSigner, and Anvil Platform.
+- [Getting Started with Django, Python, and Algorand](https://developer.algorand.org/solutions/getting-started-with-python-algorand-sdk-and-django/) - Tutorial from algorand developer portal.
 - [Swift iOS app using Augmented Reality for Algorand purchases](https://developer.algorand.org/tutorials/ios-app-using-augmented-reality-for-purchases/) - An iOS App Using Augmented Reality for Purchases.
 - [MultiSig with Algorand for Co-operative Groups](https://developer.algorand.org/tutorials/decentralised-co-operative-unions-algorand-multisignature-account/) - Decentralised co-operative unions with Algorand Multisignature Account.
 - [Algorand on RaspberryPi](https://developer.algorand.org/tutorials/development-on-algorand-using-raspberry-pi-part-1/) - Development on Algorand using Raspberry Pi.
@@ -96,7 +77,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 
 ## Development
 
-The following structure is to be finalized. The general convention for now is to sort libraries, utilities and projects based on their language of implementation.
+> Awesome client libraries, tools, and community utilities sorted by the language of implementation.
 
 ### Dart
 
@@ -122,7 +103,7 @@ The following structure is to be finalized. The general convention for now is to
 
 ### JavaScript
 
-- [js-algorand-sdk](https://github.com/algorand/js-algorand-sdk) and [JS SDK examples](https://github.com/algorand/js-algorand-sdk/tree/develop/examples) - The Algorand JavaScript SDK.
+- [js-algorand-sdk](https://github.com/algorand/js-algorand-sdk) - The Algorand JavaScript SDK & Examples.
 - [algofi-js-sdk](https://github.com/Algofiorg/algofi-js-sdk) - Algofi JavaScript SDK.
 
 ### Java
@@ -133,22 +114,24 @@ The following structure is to be finalized. The general convention for now is to
 
 - [dotnet-algorand-sdk](https://github.com/RileyGe/dotnet-algorand-sdk) - Algorand .NET SDK created by [@RileyGe](https://github.com/RileyGe).
 - [unity-algorand-sdk](https://github.com/CareBoo/unity-algorand-sdk) - An Algorand SDK for Unity. Use the Algorand blockchain in your video game.
-- [unity-algorand-sdk-based-on-net-sdk](https://github.com/Vytek/AlgorandUnitySDK)- Quick and dirty Unity SDK based on .NET Algorand SDK by RileyGe.
+- [unity-algorand-sdk-based-on-net-sdk](https://github.com/Vytek/AlgorandUnitySDK) - Quick and dirty Unity SDK based on .NET Algorand SDK by RileyGe.
 
 ### Rust
 
-- [rust-algorand-sdk](https://github.com/manuelmauro/algonaut)- Rust Algorand SDK.
+- [rust-algorand-sdk](https://github.com/manuelmauro/algonaut) - Rust Algorand SDK.
 
 ### Swift
 
 - [algorand-wallet](https://github.com/algorand/algorand-wallet) - Algorand wallet official implementation in Swift.
-- [swift-algorand-sdk](https://github.com/Jesulonimi21/Swift-Algorand-Sdk) - A Swift Sdk for interacting with the Algorand Blockchain.
+- [swift-algorand-sdk](https://github.com/Jesulonimi21/Swift-Algorand-Sdk) - A Swift SDK for interacting with the Algorand Blockchain.
 
 ### Vertices
 
-- [vertices-algorand-sdk](https://github.com/vertices-network/c-vertices-sdk) - The Vertices SDK provides developers with an easy way for devices to interact with Blockchains.
+- [vertices-algorand-sdk](https://github.com/vertices-network/c-vertices-sdk) - The Vertices SDK provides developers with easy device access to interact with Blockchains.
 
 ## IDEs
+
+> Awesome client libraries, tools, community plugins and integrations for IDEs.
 
 ### vim
 
@@ -170,8 +153,8 @@ The following structure is to be finalized. The general convention for now is to
 
 ### Nodes and Indexers
 
-- [Algorand - The Undocumented Docs](https://github.com/AlgoChads/algorand-undoc-docs) - Dev Notes for Archival Node, Indexer Setup (and more)
-- [AlgoNode](https://algonode.cloud) - Node running FAQ, Node/Indexer daily snapshots, Free Node/Indexer APIs
+- [Algorand - The Undocumented Docs](https://github.com/AlgoChads/algorand-undoc-docs) - Dev Notes for Archival Node, Indexer Setup (and more).
+- [AlgoNode](https://algonode.cloud) - Node running FAQ, Node/Indexer daily snapshots, Free Node/Indexer APIs.
 
 ## NFT Marketplaces
 
@@ -212,48 +195,47 @@ The following structure is to be finalized. The general convention for now is to
 ## Name Services
 
 - [NFDomains](https://nf.domains/) - Algorand name service and marketplace for Non-Fungible Domains (NFDs) — unique, readable aliases for wallet addresses.
-- [Algorand Name Service](https://algonameservice.com/home) - ANS is a decentralized naming service. An Algorand smart contract is used to store names and govern the naming policy.
+- [Algorand Name Service](https://algonameservice.com/home) - ANS is a decentralized naming service. An Algorand smart contract stores names and governs the naming policy.
 
 ## Community
 
-The following contains a set of sections related to open source projects, utilities and news resources.
+> The following contains sections related to open source projects, utilities, and news resources.
 
 ### Projects
 
 - [arc3.xyz](https://github.com/barnjamin/arc3.xyz) - Dapp that can be used to mint ARC3 compliant NFTs.
 - [Auction Demo](https://github.com/algorand/auction-demo) - On-chain NFT auction using smart contracts.
-- [AlgoMart](https://github.com/deptagency/algomart) - NFT storefront platform.
 - [Algorand Session Wallet](https://github.com/barnjamin/algorand-session-wallet) - Session wallet to allow persisted wallet connections across multiple wallets.
 - [AlgoWorld-Swapper](https://github.com/algoworldNFT/algoworld-swapper) - Collection of ASC1 contracts in pyteal for creating ASA swappers.
 - [WalletConnect Example DApp](https://github.com/algorand/walletconnect-example-dapp) - Algorand WalletConnect demo.
 - [paytx](https://github.com/algorand-devrel/paytx) - Examples of common pay transaction scenarios using the Algorand Python SDK.
 - [TinyBar App](https://tinybar.app) - A tiny macOS menu bar app for tracking ASA prices from TinyMan.
 - [Algodesk](https://www.algodesk.io/) - Create, configure and manage your Assets on Algorand Blockchain.
-- [algonim](https://github.com/cusma/algonim) - First Algorand mini-puzzle-game. Written in Python+PyTEAL by [@cusma](https://github.com/cusma).
+- [algonim](https://github.com/cusma/algonim) - First Algorand mini-puzzle-game. Written in Python+PyTEAL by [@cusma](https://twitter.com/cusma_b).
 - [algorealm](https://github.com/cusma/algorealm) - Claim the Crown and the Sceptre of Algorand Realm! Written in Python+PyTEAL by [@cusma](https://github.com/cusma).
 - [minter](https://github.com/algofishexe/minter) - Bulk mint Algorand NFTs following the ARC-69 community standard. Written in Node.js by [@fish.exe](https://twitter.com/AlgofishExe).
 - [algovanity](https://algovanity.com/) - Algorand Vanity Address Generator from [Ripe](https://github.com/Ripe/algovanity)
 - [galvanity](https://github.com/shmutalov/galvanity) - Galvanity is Algorand vanity address generator written in Go.
 - [Algocurator](https://www.algocurator.com/home) - The Biggest Unofficial One-Stop Hub for Algorand.
-- [genpyteal](https://github.com/runvnc/genpyteal) - Generate PyTeal from (mostly) normal Python
+- [genpyteal](https://github.com/runvnc/genpyteal) - Generate PyTeal from (mostly) normal Python.
 - [AgorHash](http://www.agorhash.com/) - Public, permissionless, decentralized and uncensorable free speech protocol.
 
 ## ARCs
 
-Standards and specs defined in *finalized* ARCs.
+> Standards and specs defined in *finalized* ARCs.
 
 - [ARC3](https://github.com/algorandfoundation/ARCs/blob/main/ARCs/arc-0003.md) - Official Algorand Standard Asset Parameters Conventions for Fungible and Non-Fungible Tokens.
 - [ARC69](https://github.com/algokittens/arc69) - Unofficial Algorand Standart Asset Parameters Convention popular in Algorand NFT community, inspired by [Open Sea's metadata standards](https://docs.opensea.io/docs/metadata-standards) and [EIP-1155](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1155.md#erc-1155-metadata-uri-json-schema), created by [@algokittens](https://twitter.com/AlgoKittens).
 
 ## Metrics
 
-- [Algorand mainnet metrics](https://metrics.algorand.org/) - Dashboard that measures the current scale, security, decentralization and adoption of the open source Algorand protocol.
+- [Algorand MainNet metrics](https://metrics.algorand.org/) - Dashboard that measures the current scale, security, decentralization, and adoption of the open-source Algorand protocol.
 - [How Big is Algorand?](https://howbigisalgorand.com/) - Algorand's networks size monitor.
 - [Algorand Mempool](https://www.iamnotabot.com/pool) - Algorand mempool explorer.
 - [Metrika](https://app.metrika.co/dashboard/algorand/) - Algorand network performance and account monitor.
-- [Algorand Stats](https://www.algorandstats.com/) - All stats about Algorand Govenance.
+- [Algorand Stats](https://www.algorandstats.com/) - All stats about Algorand Governance.
 
-## Contribute
+## Contributing
 
 Contributions welcome! Read the [contribution guidelines](https://github.com/aorumbayev/Awesome-Algorand/blob/main/contributing.md) first.
 
@@ -263,13 +245,13 @@ Special thanks to everyone who forked or starred the repository ❤️
 
 [![Forkers repo roster for @aorumbayev/AwesomeAlgorand](https://reporoster.com/forks/dark/aorumbayev/Awesome-Algorand)](https://github.com/aorumbayev/Awesome-Algorand/network/members)
 
-## License
+### License
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](http://creativecommons.org/publicdomain/zero/1.0)
 
-To the extent possible under law, [@aorumbayev](https://github.com/aorumbayev) has waived all copyright and related or neighboring rights to `Awesome Algorand`.
+To the extent possible under law, [@aorumbayev](https://github.com/aorumbayev) has waived all copyright and related or neighboring rights to `Awesome Algorand.`
 
-For the full license see [LICENSE](https://github.com/aorumbayev/Awesome-Algorand/blob/main/LICENSE).
+For the full license, see [LICENSE](https://github.com/aorumbayev/Awesome-Algorand/blob/main/LICENSE).
 
 ### Credits
 
