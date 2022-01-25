@@ -6,7 +6,6 @@ on:
 jobs:
     Website_Deployment:
         runs-on: ubuntu-latest
-        if: github.event_name == 'push' && !(contains(github.event.head_commit.message, '[skip-deploy]'))
         steps:
             - name: Cancel Previous Runs
               uses: styfle/cancel-workflow-action@0.9.1
