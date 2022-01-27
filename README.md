@@ -1,4 +1,4 @@
-<!--lint disable awesome-license awesome-git-repo-age-->
+<!--lint disable awesome-git-repo-age-->
 # Awesome Algorand [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 <br/>
@@ -63,10 +63,10 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 
 ### Tutorials
 
-- [Building a lending pool using Reach](https://developer.algorand.org/tutorials/building-a-lending-pool-using-reach/)
-- [Voting using Choice Coin and Algorand Python SDK](https://developer.algorand.org/tutorials/voting-using-choice-coin/)
-- [Creating a License Manager Contract utilizing PyTEAL and Inner Transactions](https://developer.algorand.org/tutorials/creating-a-license-manager-contract-utilizing-pyteal-and-inner-transactions/)
-- [Redux Example: Connect to Algorand Wallet via WalletConnect](https://developer.algorand.org/tutorials/redux-example-connect-wallet-walletconnect/)
+- [Lending pool using Reach](https://developer.algorand.org/tutorials/building-a-lending-pool-using-reach/) - Tutorial on how to build a lending pool using the Reach language.
+- [Voting using Choice Coin](https://developer.algorand.org/tutorials/voting-using-choice-coin/) - Tutorial on how to use the Choice Coin voting mechanism with Algorand Python SDK.
+- [Creating a License Manager Contract](https://developer.algorand.org/tutorials/creating-a-license-manager-contract-utilizing-pyteal-and-inner-transactions/) - Tutorial on utilizing PyTEAL and Inner Transactions.
+- [Connect to Algorand Wallet via WalletConnect](https://developer.algorand.org/tutorials/redux-example-connect-wallet-walletconnect/) - Redux example using WalletConnect.
 - [AlgoMinter](https://developer.algorand.org/tutorials/algominter-a-web-app-for-minting-assets-using-python-algosigner-and-anvil-platform/) - Build your web app for minting assets using Python, AlgoSigner, and Anvil Platform.
 - [Getting Started with Django, Python, and Algorand](https://developer.algorand.org/solutions/getting-started-with-python-algorand-sdk-and-django/) - Tutorial from algorand developer portal.
 - [Swift iOS app using Augmented Reality for Algorand purchases](https://developer.algorand.org/tutorials/ios-app-using-augmented-reality-for-purchases/) - An iOS App Using Augmented Reality for Purchases.
@@ -214,7 +214,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [algonim](https://github.com/cusma/algonim) - First Algorand mini-puzzle-game. Written in Python+PyTEAL by [@cusma](https://twitter.com/cusma_b).
 - [algorealm](https://github.com/cusma/algorealm) - Claim the Crown and the Sceptre of Algorand Realm! Written in Python+PyTEAL by [@cusma](https://github.com/cusma).
 - [minter](https://github.com/algofishexe/minter) - Bulk mint Algorand NFTs following the ARC-69 community standard. Written in Node.js by [@fish.exe](https://twitter.com/AlgofishExe).
-- [algovanity](https://algovanity.com/) - Algorand Vanity Address Generator from [Ripe](https://github.com/Ripe/algovanity)
+- [algovanity](https://algovanity.com/) - Algorand Vanity Address Generator from [Ripe](https://github.com/Ripe/algovanity).
 - [galvanity](https://github.com/shmutalov/galvanity) - Galvanity is Algorand vanity address generator written in Go.
 - [Algocurator](https://www.algocurator.com/home) - The Biggest Unofficial One-Stop Hub for Algorand.
 - [genpyteal](https://github.com/runvnc/genpyteal) - Generate PyTeal from (mostly) normal Python.
@@ -245,7 +245,9 @@ Special thanks to everyone who forked or starred the repository ❤️
 
 [![Forkers repo roster for @aorumbayev/AwesomeAlgorand](https://reporoster.com/forks/dark/aorumbayev/Awesome-Algorand)](https://github.com/aorumbayev/Awesome-Algorand/network/members)
 
-### License
+---
+
+License
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](http://creativecommons.org/publicdomain/zero/1.0)
 
@@ -253,7 +255,7 @@ To the extent possible under law, [@aorumbayev](https://github.com/aorumbayev) h
 
 For the full license, see [LICENSE](https://github.com/aorumbayev/Awesome-Algorand/blob/main/LICENSE).
 
-### Credits
+Credits
 
 This awesome list is inspired by:
 
