@@ -144,6 +144,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 ### VSCode
 
 - [Obsidian Labs/vscode-algorand](https://github.com/ObsidianLabs/vscode-algorand) - Algorand VS Code Extension.
+- [optio-labs/teal-debugger-extension](https://github.com/optio-labs/teal-debugger-extension) - Debug teal with minimal AVM configuration inside VSCode.
 
 ## Tools
 
