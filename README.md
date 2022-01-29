@@ -23,6 +23,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [Official](#official)
 - [Wallets](#wallets)
 - [Blockchain Explorers](#blockchain-explorers)
+- [Portfolio Trackers](#portfolio-trackers)
 - [Learning](#learning)
 - [Development](#development)
 - [IDEs](#ides)
@@ -58,6 +59,10 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [Algorand Ballet](https://akaalias.github.io/algorand-ballet/) - Algorand accounts' 2D graphs.
 - [Algorand Multiverse](https://algo3d.live/) - Algorand accounts' 3D graphs.
 - [Algoscan](https://algoscan.app/) - Algoscan is a Blockchain Explorer and Analytics Platform. Built on top of the Algorand Network.
+
+## Portfolio Trackers
+
+- [AlgoGator](https://algogator.finance/) - Track or search assets, rewards, yield farming and NFTs on your Algorand wallet.
 
 ## Learning
 
