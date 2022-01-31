@@ -153,6 +153,11 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 
 ## Tools
 
+### Smart Contracts
+
+- [reach](https://docs.reach.sh) - A domain-specific language for building cross chain decentralized applications (DApps).
+- [aqua-compiler](https://github.com/optio-labs/aqua-compiler) - An expressive high level language for the Algorand block chain that compiles to TEAL code.
+
 ### Docker
 
 - [Algorand Sandbox](https://github.com/algorand/sandbox) - Fast way to create and configure an Algorand development environment.
