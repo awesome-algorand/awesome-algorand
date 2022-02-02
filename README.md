@@ -1,4 +1,3 @@
-<!--lint disable awesome-git-repo-age-->
 # Awesome Algorand [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 <br/>
