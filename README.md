@@ -230,6 +230,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [Algocurator](https://www.algocurator.com/home) - The Biggest Unofficial One-Stop Hub for Algorand.
 - [genpyteal](https://github.com/runvnc/genpyteal) - Generate PyTeal from (mostly) normal Python.
 - [AgorHash](http://www.agorhash.com/) - Public, permissionless, decentralized and uncensorable free speech protocol.
+- [Algorand School](https://github.com/cusma/algorand-school) - Algorand School crash course slide deck.
 
 ## ARCs
 
