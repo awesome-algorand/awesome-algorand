@@ -249,6 +249,8 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [Algorand Mempool](https://www.iamnotabot.com/pool) - Algorand mempool explorer.
 - [Metrika](https://app.metrika.co/dashboard/algorand/) - Algorand network performance and account monitor.
 - [Algorand Stats](https://www.algorandstats.com/) - All stats about Algorand Governance.
+- [ASA Stats](https://www.asastats.com/) - evaluate and present the current balance in Algos for any address.
+
 
 ## Contributing
 
