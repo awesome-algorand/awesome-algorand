@@ -46,7 +46,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 
 ## Wallets
 
-- [Algorand Wallet](https://www.algorandwallet.com/) - Official wallet for mobile devices.
+- [Pera Wallet](https://github.com/perawallet) - Secure, open source and community driven wallet for mobile devices. Maintained by the team behind official Algorand Wallet. 
 - [MyAlgo Connect](https://github.com/randlabs/myalgo-connect) - Web Wallet and JS library for signing transactions in the browser.
 - [AlgoSigner](https://github.com/PureStake/algosigner) - Browser plugin Web Wallet and JS library for signing transactions in the browser.
 
@@ -204,6 +204,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 
 - [Algomint](https://algomint.io/) - Centralized BTC and ETH bridge to Algorand.
 - [QUIGON](https://bridge.quigon.com/) - Centralized cross-chain NFT bridge.
+- [GlitterFinance](https://glitter.finance/) - Centralized (soon to be decentralized upon TEAL 6) bridge for Solana, Polygon, Terra and Cudos to Algorand.
 
 ## Oracles
 
@@ -236,6 +237,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [Algocurator](https://www.algocurator.com/home) - The Biggest Unofficial One-Stop Hub for Algorand.
 - [genpyteal](https://github.com/runvnc/genpyteal) - Generate PyTeal from (mostly) normal Python.
 - [AgorHash](http://www.agorhash.com/) - Public, permissionless, decentralized and uncensorable free speech protocol.
+- [QRCode Generator](https://github.com/emg110/algorand-qrcode)
 
 ## ARCs
 
