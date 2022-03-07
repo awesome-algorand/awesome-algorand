@@ -168,6 +168,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 ### Docker
 
 - [Algorand Sandbox](https://github.com/algorand/sandbox) - Fast way to create and configure an Algorand development environment.
+- [algorand-sandbox-dev](https://github.com/MakerXStudio/algorand-sandbox-dev) - Algorand sandbox containers with dev configuration and patched for indexer speed.
 
 ### Nodes and Indexers
 
