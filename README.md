@@ -171,6 +171,11 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [Algorand Sandbox](https://github.com/algorand/sandbox) - Fast way to create and configure an Algorand development environment.
 - [Algorand Sandbox Dev](https://github.com/MakerXStudio/algorand-sandbox-dev) - Docker Hub image for faster local development and CI/CD usage.
 
+### Testing 
+
+- [graviton](https://github.com/algorand/graviton) - Algorand's TEAL blackbox testing toolkit.
+- [tealer](https://github.com/crytic/tealer) - Static TEAL analyser with a set of vulnerability detectors for quick contracts reviews.
+
 ### Nodes and Indexers
 
 - [Algorand - The Undocumented Docs](https://github.com/AlgoChads/algorand-undoc-docs) - Dev Notes for Archival Node, Indexer Setup (and more).
