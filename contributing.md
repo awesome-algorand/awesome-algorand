@@ -10,7 +10,7 @@ Please ensure your pull request adheres to the following guidelines:
 
 -   Search previous suggestions before making a new one, as yours may be a duplicate.
 -   Suggested packages should be tested and documented.
--   Make an individual pull request for each suggestion.
+-   Make an individual pull request for each suggestion. This can be ignored if packages share common theme or functionality, in that case can be in bulk.
 -   Use the following format: [PACKAGE](LINK) - DESCRIPTION.
 -   New categories, or improvements to the existing categorization are welcome.
 -   Keep descriptions short and simple, but descriptive.
