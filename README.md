@@ -43,6 +43,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [Algorand FAQ](https://algorand.foundation/faq) - FAQ maintained by the Algorand Foundation.
 - [Algorand Governance](https://governance.algorand.foundation/) - Official website of Algorand Governance program.
 - [Algorand Developer Portal](https://developer.algorand.com/) - Official Algorand developer portal.
+- [Algorand Discord](https://discord.com/invite/YgPTCVk) - Official Algorand Discord server.
 
 ## Wallets
 
