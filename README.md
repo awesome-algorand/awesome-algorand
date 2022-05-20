@@ -256,7 +256,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [QRCode Generator](https://github.com/emg110/algorand-qrcode)
 - [algofractals](https://github.com/aorumbayev/algofractals) - Mint randomly generated mandelbrot fractals with embedded ARC69 tags.
 - [algorewards](https://algorewards.github.io/) - Free and unofficial Algorand governance reward calculator. Hosted on GitHub Pages.
-- [algorand.dev] (https://algorand.dev/) - Algorand Developer: The unofficial developer resource. 
+- [algorand.dev](https://algorand.dev/) - Algorand Developer: The unofficial developer resource. 
 - [daotools] (https://daotools.org/) - Manage all your DAO voting sessions in one Dapp.
 
 ## ARCs
