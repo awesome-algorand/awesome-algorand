@@ -35,7 +35,7 @@ jobs:
             #     user_name: 'AwesomeAlgoBot'
             #     commit_message: '🤖 Updating website with latest content 📜'
     
-            - uses: ethomson/send-tweet-action@v1
+            - uses: Eomm/why-don-t-you-tweet@v1
               with:
                 status: "⭐️ Check out: ${{ github.event.pull_request.title }}. Head to awesomealgo.com to explore #awesome tools and platforms in #algorand ecosystem. ⚡️ "
                 consumer-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
