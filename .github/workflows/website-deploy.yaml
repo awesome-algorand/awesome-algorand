@@ -2,7 +2,7 @@ name: Website Deployment
 on:
     push:
         branches:
-            - twitter-test
+            - main
 jobs:
     Website_Deployment:
         runs-on: ubuntu-latest
@@ -16,24 +16,24 @@ jobs:
               with:
                   fetch-depth: 0
 
-            # - name: Run linters
-            #   run: npx awesome-lint
+            - name: Run linters
+              run: npx awesome-lint
 
-            # - name: Copy latest README
-            #   run: |
-            #     cp README.md index.md
+            - name: Copy latest README
+              run: |
+                cp README.md index.md
 
-            # - name: Push latest index.md
-            #   uses: dmnemec/copy_file_to_another_repo_action@main
-            #   env:
-            #      API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
-            #   with:
-            #     source_file: 'index.md'
-            #     destination_repo: 'aorumbayev/awesome-algorand'
-            #     destination_branch: 'gh-pages'
-            #     user_email: 'millionalgos@pm.me'
-            #     user_name: 'AwesomeAlgoBot'
-            #     commit_message: '🤖 Updating website with latest content 📜'
+            - name: Push latest index.md
+              uses: dmnemec/copy_file_to_another_repo_action@main
+              env:
+                 API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                source_file: 'index.md'
+                destination_repo: 'aorumbayev/awesome-algorand'
+                destination_branch: 'gh-pages'
+                user_email: 'millionalgos@pm.me'
+                user_name: 'AwesomeAlgoBot'
+                commit_message: '🤖 Updating website with latest content 📜'
             
             - uses: 8BitJonny/gh-get-current-pr@2.1.0
               id: PR
@@ -43,7 +43,7 @@ jobs:
               with:
                 # GitHub event payload
                 # https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#release
-                tweet-message: "⭐️ Check out: ${{ steps.PR.outputs.pr_title }}. Head to awesomealgo.com to explore #awesome tools and platforms in #algorand ecosystem. ⚡️"
+                tweet-message: "⭐️ Check out ${{ steps.PR.outputs.pr_title }} on AwesomeAlgo website. Head to awesomealgo.com to explore #awesome tools and platforms in #algorand ecosystem. ⚡️"
               env:
                 # Get your tokens from https://developer.twitter.com/apps
                 TWITTER_CONSUMER_API_KEY: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
