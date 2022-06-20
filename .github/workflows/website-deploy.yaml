@@ -1,20 +1,20 @@
 name: Website Deployment
 on:
-    pull_request:
+    push:
         branches:
-            - main
+            - twitter-test
 jobs:
     Website_Deployment:
         runs-on: ubuntu-latest
         steps:
-            # - name: Cancel Previous Runs
-            #   uses: styfle/cancel-workflow-action@0.9.1
-            #   with:
-            #     access_token: ${{ secrets.GITHUB_TOKEN }}
+            - name: Cancel Previous Runs
+              uses: styfle/cancel-workflow-action@0.9.1
+              with:
+                access_token: ${{ secrets.GITHUB_TOKEN }}
 
-            # - uses: actions/checkout@v2
-            #   with:
-            #       fetch-depth: 0
+            - uses: actions/checkout@v2
+              with:
+                  fetch-depth: 0
 
             # - name: Run linters
             #   run: npx awesome-lint
@@ -34,12 +34,21 @@ jobs:
             #     user_email: 'millionalgos@pm.me'
             #     user_name: 'AwesomeAlgoBot'
             #     commit_message: '🤖 Updating website with latest content 📜'
+            
+            - uses: 8BitJonny/gh-get-current-pr@2.1.0
+              id: PR
+
+            - run: echo "PR ${prNumber} ${prTitle} at ${prUrl} is ${prJSON}"
+              if: steps.PR.outcome == 'success'
+              env:
+                prTitle: ${{ steps.PR.outputs.pr_title }}
+              
             - uses: Eomm/why-don-t-you-tweet@v1
               if: ${{ !github.event.repository.private }}
               with:
                 # GitHub event payload
                 # https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#release
-                tweet-message: "⭐️ Check out: ${{ github.event.pull_request.title }}. Head to awesomealgo.com to explore #awesome tools and platforms in #algorand ecosystem. ⚡️"
+                tweet-message: "⭐️ Check out: ${{ env.prTitle }}. Head to awesomealgo.com to explore #awesome tools and platforms in #algorand ecosystem. ⚡️"
               env:
                 # Get your tokens from https://developer.twitter.com/apps
                 TWITTER_CONSUMER_API_KEY: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
