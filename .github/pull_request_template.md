@@ -23,3 +23,9 @@ _Please make sure you reviewed the checklist and comply with each requirement:_
 
 
 > ⚠️ PLEASE NOTE - Do not expect a prompt review for your PR unless you have truthfully went over contribution guidelines, filled the PR description correctly AND most importantly your changes are passing linters in [GitHub Actions pipeline](https://github.com/aorumbayev/awesome-algorand/actions/workflows/ci.yaml).
+
+### (Optional) AwesomeAlgo Podcast 
+
+Are you a creator/owner of your contribution and would like to do a technical deep dive into challenges and experieance learned during development of those tools with a bigger audience of developers in the ecosystem? Submit the sign up form below:
+
+[Sign up form](https://2c5n1ed3kz6.typeform.com/to/pAP5oPFx)
