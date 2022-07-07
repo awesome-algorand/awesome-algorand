@@ -2,7 +2,7 @@
 
 <br/>
 <div align="center">
-<a href="https://awesomealgo.com" target="_blank"> <img width="100%" src="https://raw.githubusercontent.com/aorumbayev/Awesome-Algorand/main/markdown/logo.png"> </a>
+<a href="https://awesomealgo.com" target="_blank"> <img width="100%" src="https://i.imgur.com/dnJHRNt.png"> </a>
 </div>
 <br/>
 <div align="center">
@@ -81,7 +81,6 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 ### Tutorials
 
 - [Lending pool using Reach](https://developer.algorand.org/tutorials/building-a-lending-pool-using-reach/) - Tutorial on how to build a lending pool using the Reach language.
-- [Voting using Choice Coin](https://developer.algorand.org/tutorials/voting-using-choice-coin/) - Tutorial on how to use the Choice Coin voting mechanism with Algorand Python SDK.
 - [Creating a License Manager Contract](https://developer.algorand.org/tutorials/creating-a-license-manager-contract-utilizing-pyteal-and-inner-transactions/) - Tutorial on utilizing PyTEAL and Inner Transactions.
 - [Connect to Algorand Wallet via WalletConnect](https://developer.algorand.org/tutorials/redux-example-connect-wallet-walletconnect/) - Redux example using WalletConnect.
 - [AlgoMinter](https://developer.algorand.org/tutorials/algominter-a-web-app-for-minting-assets-using-python-algosigner-and-anvil-platform/) - Build your web app for minting assets using Python, AlgoSigner, and Anvil Platform.
