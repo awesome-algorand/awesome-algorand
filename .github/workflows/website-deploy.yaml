@@ -34,12 +34,13 @@ jobs:
                 user_email: 'millionalgos@pm.me'
                 user_name: 'AwesomeAlgoBot'
                 commit_message: '🤖 Updating website with latest content 📜'
-            
+
             - uses: 8BitJonny/gh-get-current-pr@2.1.0
+              if: ${{ !startsWith(github.event.head_commit.message, '[no-tweet]') }}
               id: PR
-              
+
             - uses: Eomm/why-don-t-you-tweet@v1
-              if: ${{ !github.event.repository.private }}
+              if: ${{ !github.event.repository.private && !startsWith(github.event.head_commit.message, '[no-tweet]') }}
               with:
                 # GitHub event payload
                 # https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#release
