@@ -115,6 +115,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [pyteal-utils](https://github.com/algorand/pyteal-utils) - PyTEAL utilites library.
 - [tinyman-py-sdk](https://github.com/tinymanorg/tinyman-py-sdk) - Tinyman Python SDK.
 - [algofi-py-sdk](https://github.com/Algofiorg/algofi-py-sdk) - Algofi Python SDK.
+- [beaker](https://github.com/algorand-devrel/beaker) - A tool for smart contract development on the Algorand blockchain. Inspired by `flask`.
 
 ### JavaScript & TypeScript
 
@@ -183,7 +184,6 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [graviton](https://github.com/algorand/graviton) - Algorand's TEAL blackbox testing toolkit.
 - [tealer](https://github.com/crytic/tealer) - Static TEAL analyser with a set of vulnerability detectors for quick contracts reviews.
 - [irulan](https://irulan.dev/) - Web app for deploying + testing smart contracts ([open source! + PRs welcome](https://github.com/ncc/irulan)).
-- [beaker](https://github.com/algorand-devrel/beaker) - A tool for testing smart contracts on the Algorand blockchain. Inspired by `flask`.
 
 ### Nodes and Indexers
 
