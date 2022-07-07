@@ -2,7 +2,7 @@
 
 <br/>
 <div align="center">
-<a href="https://awesomealgo.com" target="_blank"> <img width="100%" src="https://i.imgur.com/dnJHRNt.png"> </a>
+<a href="https://awesomealgo.com" target="_blank"> <img width="100%" src="https://i.imgur.com/Z6kSoCr.png"> </a>
 </div>
 <br/>
 <div align="center">
