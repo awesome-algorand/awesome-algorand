@@ -308,4 +308,4 @@ License
 
 To the extent possible under law, [@aorumbayev](https://github.com/aorumbayev) has waived all copyright and related or neighboring rights to `Awesome Algorand.`
 
-For the full license, see [LICENSE](https://github.com/aorumbayev/Awesome-Algorand/blob/main/LICENSE).
+For the full license, see [LICENSE](https://github.com/aorumbayev/Awesome-Algorand/blob/main/LICENSE.md).
