@@ -2,7 +2,7 @@
 
 <br/>
 <div align="center">
-<a href="https://github.com/aorumbayev/awesome-algorand"><img width="100%" src="https://i.imgur.com/EMRYFqZ.png"></a>
+<a href="https://github.com/aorumbayev/awesome-algorand"><img src="https://i.imgur.com/EMRYFqZ.png"></a>
 </div>
 <br/>
 <div align="center">
@@ -13,7 +13,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 </div>
 
 
-<p align="center" width="100%">
+<p align="center">
     <img  src="https://visitor-badge.glitch.me/badge?page_id=aorumbayev.awesome-algorand&right_color=black" />
     <img  href="https://awesomealgo.com" src="https://img.shields.io/badge/Web2.0-Website-yellow.svg" />
     <a href="https://anchor.fm/awesomealgo"><img src="https://img.shields.io/badge/AwesomeAlgo-Podcast-teal.svg" /></a>
@@ -281,7 +281,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 ## ARCs
 
 > Standards and specs defined in *finalized* ARCs.
-> The list of all the ARCs can be found on https://arc.algorand.foundation
+> The list of all the ARCs can be found [here](https://arc.algorand.foundation).
 
 - [ARC3](https://github.com/algorandfoundation/ARCs/blob/main/ARCs/arc-0003.md) - Official Algorand Standard Asset Parameters Conventions for Fungible and Non-Fungible Tokens.
 - [ARC69](https://github.com/algokittens/arc69) - Unofficial Algorand Standart Asset Parameters Convention popular in Algorand NFT community, inspired by [Open Sea's metadata standards](https://docs.opensea.io/docs/metadata-standards) and [EIP-1155](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1155.md#erc-1155-metadata-uri-json-schema), created by [@algokittens](https://twitter.com/AlgoKittens).
