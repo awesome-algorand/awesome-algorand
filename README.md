@@ -15,10 +15,10 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 
 <p align="center" width="100%">
     <img  src="https://visitor-badge.glitch.me/badge?page_id=aorumbayev.awesome-algorand&right_color=black" />
-    <img  href="https://awesomealgo.com" src="https://img.shields.io/badge/Web2.0-Website-black.svg" />
-    <a href="https://anchor.fm/awesomealgo"><img src="https://img.shields.io/badge/AwesomeAlgo-Podcast-black.svg" /></a>
-    <a href="https://github.com/aorumbayev/awesome-algorand"><img src="https://img.shields.io/github/stars/aorumbayev/awesome-algorand?color=black" /></a>
-    <a  href="https://github.com/aorumbayev/awesome-algorand/network/members"><img src="https://img.shields.io/github/forks/aorumbayev/awesome-algorand?color=black" /></a>
+    <img  href="https://awesomealgo.com" src="https://img.shields.io/badge/Web2.0-Website-yellow.svg" />
+    <a href="https://anchor.fm/awesomealgo"><img src="https://img.shields.io/badge/AwesomeAlgo-Podcast-teal.svg" /></a>
+    <a href="https://github.com/aorumbayev/awesome-algorand"><img src="https://img.shields.io/github/stars/aorumbayev/awesome-algorand?color=gold" /></a>
+    <a  href="https://github.com/aorumbayev/awesome-algorand/network/members"><img src="https://img.shields.io/github/forks/aorumbayev/awesome-algorand?color=blue" /></a>
 </p>
 
 
