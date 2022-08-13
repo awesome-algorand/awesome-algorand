@@ -2,7 +2,7 @@
 
 <br/>
 <div align="center">
-<img width="100%" src="https://i.imgur.com/EMRYFqZ.png">
+<a href="https://github.com/aorumbayev/awesome-algorand"><img width="100%" src="https://i.imgur.com/EMRYFqZ.png"></a>
 </div>
 <br/>
 <div align="center">
