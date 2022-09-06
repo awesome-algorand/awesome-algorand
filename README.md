@@ -32,7 +32,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [Tools](#tools)
 - [NFT Marketplaces](#nft-marketplaces)
 - [DeFi Platforms](#defi-platforms)
-- [Security Audits](#defi-platforms)
+- [Security Audits](#security-audits)
 - [Bridges](#bridges)
 - [Oracles](#oracles)
 - [Name Services](#name-services)
