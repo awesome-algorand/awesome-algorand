@@ -231,7 +231,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [Folks.finance](https://folks.finance/) - Decentralized capital markets protocol.
 - [C3](https://c3.io/) - Cross-margin cross-collateralization clearing engine protocol.
 
-## Security audits
+## Security Audits
 
 > This section is not aimed to promote any of the companies below, please do your due diligence when researching on options available for audits. Instead, the following is simply aimed to highlight an expanding variety of companies offering smart contract audits for Algorand ecosystem.
 
@@ -240,7 +240,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [UlamLabs](https://www.ulam.io/software-services/smart-contract-audits) - A blockchain lab based in Poland, offering auditing services for Algorand smart contracts.
 - [Runtime Verification](https://runtimeverification.com/smartcontract) - Smart contract analysis and verification by the team who audited platforms like Algofi, FolksFinance, Yieldly and other prominent DeFi platforms in the ecosystem.
 - [Immunebytes](https://www.immunebytes.com) - Secure your Algorand Smart Contract with credible security auditing solutions.
-- [KudelskiSecurity](https://kudelskisecurity.com) - Move your blockchain project securely and successfully into production or onto mainnet. We’ll help you assess, design, customize, deploy and manage blockchain and digital ledger technology systems so you can confidently leverage security as a powerful differentiator in this dynamic market.
+- [KudelskiSecurity](https://kudelskisecurity.com) - Move your blockchain project securely and successfully into production or onto mainnet. Company can help you assess, design, customize, deploy and manage blockchain and digital ledger technology systems so you can confidently leverage security as a powerful differentiator in this dynamic market.
 
 ## Bridges
 
