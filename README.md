@@ -175,6 +175,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [aqua-compiler](https://github.com/optio-labs/aqua-compiler) - An expressive high level language for the Algorand block chain that compiles to TEAL code.
 - [algoml](https://github.com/petitnau/algoml) - A domain-specific language for specifying Algorand smart contracts, which compiles into TEAL scripts.
 - [tealang](https://github.com/pzbitskiy/tealang) - A high level language for Algorand ASC1 and TEAL.
+- [tealish](https://github.com/Hipo/tealish) - Tealish is a readable language for the Algorand Virtual Machine. It enables developers to write TEAL in a procedural style optimized for readability.
 
 ### Docker
 
