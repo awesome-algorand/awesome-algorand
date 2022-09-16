@@ -21,7 +21,7 @@ jobs:
 
             - name: Copy latest README
               run: |
-                cp README.md index.md
+                tail -n +3 README.md > index.md
 
             - name: Push latest index.md
               uses: dmnemec/copy_file_to_another_repo_action@main
