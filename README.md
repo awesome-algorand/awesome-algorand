@@ -216,6 +216,10 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [Algorand Node UI](https://github.com/algorand/node-ui) - Terminal UI for remote Algorand node management.
 - [SubQuery](https://subquery.network) - Open, fast, flexible, and decentralised cross-chain data indexer for Algorand ([getting started guide](https://academy.subquery.network/quickstart/quickstart_chains/algorand.html)).
 
+### Wallets
+
+- [use-wallet](https://github.com/txnlab/use-wallet) - React hooks for using Algorand compatible wallets with web applications. Developed by [txnlab](https://www.txnlab.dev/).
+
 ## NFT Marketplaces
 
 - [AB2](https://ab2.gallery/) - decentralized marketplace for crypto art assets secured on the Algorand blockchain created by [@ab2_gallery](https://twitter.com/AB2_Gallery).
