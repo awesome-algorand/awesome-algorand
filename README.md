@@ -1,8 +1,7 @@
 # Awesome Algorand [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-<br/>
 <div align="center">
-<a href="https://github.com/aorumbayev/awesome-algorand"><img src="https://i.imgur.com/EMRYFqZ.png"></a>
+<a href="https://github.com/aorumbayev/awesome-algorand"><img src="https://ipfs.algonode.xyz/ipfs/bafybeibsc2khpnpurdz43uunrxnbttes5skbeftnsjtm5axq2vqv7bwz3q"></a>
 </div>
 <br/>
 <div align="center">
