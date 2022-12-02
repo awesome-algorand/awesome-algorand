@@ -251,6 +251,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [Lofty.ai](https://www.lofty.ai/) - Tokenized real estate investing platform.
 - [Folks.finance](https://folks.finance/) - Decentralized capital markets protocol.
 - [C3](https://c3.io/) - Cross-margin cross-collateralization clearing engine protocol.
+- [Cometa.farm](https://cometa.farm/) - Decentralized liquidity-as-a-service.
 
 ## Security Audits
 
