@@ -49,7 +49,7 @@ jobs:
                   if [[ -n $(git status --porcelain) ]]; then
                     git add -A
                     git commit -m "[no-tweet] refreshed episodes 🤖"
-                    git push origin main
+                    git push
                   else
                     echo "no changes - skipping commit"
                   fi
