@@ -6,6 +6,10 @@ on:
 
   workflow_dispatch:
 
+  pull_request:
+    branches:
+        - main
+
 jobs:
     parse_rss:
         runs-on: ubuntu-latest
