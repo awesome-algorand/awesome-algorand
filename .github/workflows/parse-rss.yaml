@@ -36,15 +36,16 @@ jobs:
               id: commit_files
               if: always()
               run: |
-                git config --local user.email "millionalgos@pm.me"
-                git config --local user.name "github-actions[bot]"
-                if [ -n "$(git status --porcelain)" ]; then
-                  git commit -m "[no-tweet] refreshed episodes 🤖" -a
-                  echo "HAS_COMMITS=true" >> "$GITHUB_ENV"
-                else
-                  echo "no changes - skipping "
-                  echo "HAS_COMMITS=false" >> "$GITHUB_ENV"
-                fi
+                  git config --local user.email "millionalgos@pm.me"
+                  git config --local user.name "github-actions[bot]"
+                  if ! git diff-index --quiet HEAD --; then
+                    git add .
+                    git commit -m "[no-tweet] refreshed episodes 🤖"
+                    echo "HAS_COMMITS=true" >> "$GITHUB_ENV"
+                  else
+                    echo "no changes - skipping commit"
+                    echo "HAS_COMMITS=false" >> "$GITHUB_ENV"
+                  fi
 
             - name: Push changes
               uses: ad-m/github-push-action@master
