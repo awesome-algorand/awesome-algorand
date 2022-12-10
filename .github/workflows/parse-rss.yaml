@@ -15,6 +15,7 @@ jobs:
         runs-on: ubuntu-latest
         env:
           HAS_COMMITS: false
+          CUSTOM_GITHUB_TOKEN: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
         steps:
             - name: Cancel Previous Runs
               uses: styfle/cancel-workflow-action@0.11.0
@@ -42,6 +43,10 @@ jobs:
               run: |
                   git config --local user.email "millionalgos@pm.me"
                   git config --local user.name "github-actions[bot]"
+
+                  git config credential.helper "store --file=.git/credentials"
+                  echo "https://${CUSTOM_GITHUB_TOKEN}:@github.com" > .git/credentials
+
                   if [[ -n $(git status --porcelain) ]]; then
                     git add -A
                     git commit -m "[no-tweet] refreshed episodes 🤖"
