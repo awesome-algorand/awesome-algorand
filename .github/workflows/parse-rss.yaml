@@ -38,7 +38,7 @@ jobs:
               run: |
                   git config --local user.email "millionalgos@pm.me"
                   git config --local user.name "github-actions[bot]"
-                  if ! git diff-index --quiet HEAD --; then
+                  if [[ -n $(git status --porcelain) ]]; then
                     git add -A
                     git commit -m "[no-tweet] refreshed episodes 🤖"
                     echo "HAS_COMMITS=true" >> "$GITHUB_ENV"
