@@ -47,6 +47,8 @@ jobs:
                   echo "https://${CUSTOM_GITHUB_TOKEN}:@github.com" > .git/credentials
 
                   if [[ -n $(git status --porcelain) ]]; then
+                    git checkout main
+                    git pull
                     git add -A
                     git commit -m "[no-tweet] refreshed episodes 🤖"
                     git push
