@@ -51,7 +51,7 @@ jobs:
                     git pull
                     git add -A
                     git commit -m "[no-tweet] refreshed episodes 🤖"
-                    git push
+                    git push --force
                   else
                     echo "no changes - skipping commit"
                   fi
