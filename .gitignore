@@ -4,3 +4,6 @@ _site/
 index.md
 
 .DS_Store
+
+*.venv
+
