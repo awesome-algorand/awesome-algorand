@@ -40,7 +40,7 @@ jobs:
               id: commit_files
               if: always()
               run: |
-                  git config --local user.email "millionalgos@pm.me"
+                  git config --local user.email "aorumbayev@protonmail.com"
                   git config --local user.name "github-actions[bot]"
 
                   git config credential.helper "store --file=.git/credentials"
