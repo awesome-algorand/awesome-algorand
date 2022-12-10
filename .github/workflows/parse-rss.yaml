@@ -43,10 +43,10 @@ jobs:
                   if [[ -n $(git status --porcelain) ]]; then
                     git add -A
                     git commit -m "[no-tweet] refreshed episodes 🤖"
-                    echo "::set-env name=HAS_COMMITS::true"
+                    echo "HAS_COMMITS=true" >> $GITHUB_ENV
                   else
                     echo "no changes - skipping commit"
-                    echo "::set-env name=HAS_COMMITS::false"
+                    echo "HAS_COMMITS=false" >> $GITHUB_ENV
                   fi
 
             - name: Push changes
