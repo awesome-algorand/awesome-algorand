@@ -14,7 +14,6 @@ jobs:
     parse_rss:
         runs-on: ubuntu-latest
         env:
-          HAS_COMMITS: false
           CUSTOM_GITHUB_TOKEN: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
         steps:
             - name: Cancel Previous Runs
@@ -50,16 +49,8 @@ jobs:
                   if [[ -n $(git status --porcelain) ]]; then
                     git add -A
                     git commit -m "[no-tweet] refreshed episodes 🤖"
-                    echo "HAS_COMMITS=true" >> $GITHUB_ENV
+                    git push origin main
                   else
                     echo "no changes - skipping commit"
-                    echo "HAS_COMMITS=false" >> $GITHUB_ENV
                   fi
 
-            - name: Push changes
-              uses: ad-m/github-push-action@master
-              if: env.HAS_COMMITS != false
-              with:
-                github_token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
-                branch: main
-                force: true
