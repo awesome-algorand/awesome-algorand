@@ -13,6 +13,8 @@ on:
 jobs:
     parse_rss:
         runs-on: ubuntu-latest
+        env:
+          HAS_COMMITS: false
         steps:
             - name: Cancel Previous Runs
               uses: styfle/cancel-workflow-action@0.11.0
@@ -41,15 +43,15 @@ jobs:
                   if [[ -n $(git status --porcelain) ]]; then
                     git add -A
                     git commit -m "[no-tweet] refreshed episodes 🤖"
-                    echo "HAS_COMMITS=true" >> "$GITHUB_ENV"
+                    echo "::set-env name=HAS_COMMITS::true"
                   else
                     echo "no changes - skipping commit"
-                    echo "HAS_COMMITS=false" >> "$GITHUB_ENV"
+                    echo "::set-env name=HAS_COMMITS::false"
                   fi
 
             - name: Push changes
               uses: ad-m/github-push-action@master
-              if: env.HAS_COMMITS == true
+              if: env.HAS_COMMITS != false
               with:
                 github_token: ${{ secrets.GITHUB_TOKEN }}
                 branch: main
