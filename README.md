@@ -64,6 +64,8 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [AlgoSigner](https://github.com/PureStake/algosigner) - Browser plugin Web Wallet and JS library for signing transactions in the browser.
 - [Method Wallet](https://methodwallet.app/) - Algorand Wallet you'll love.
 - [Defly Wallet](https://defly.app/) - Defly is an Algorand wallet with great suit of integrated DeFi features.
+- [Exodus](https://www.exodus.com/) - Exodus is a multi-cryptocurrency wallet that supports Algorand.
+
 ## Blockchain Explorers
 
 > List of blockchain explorers for Algorand. Used to view transactions, accounts, assets, etc.
