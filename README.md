@@ -31,6 +31,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
   - [General courses](#general-courses)
   - [Tutorials](#tutorials)
 - [Development Tools](#development-tools)
+  - [CLI](#cli)
   - [Languages](#languages)
   - [IDEs](#ides)
   - [Other Development Tools](#other-development-tools)
@@ -125,6 +126,10 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 ## Development Tools
 
 > Awesome client libraries, tools, and community utilities.
+
+### CLI
+
+- [AlgoKit CLI](https://github.com/algorandfoundation/algokit-cli) - The Algorand AlgoKit CLI is the one-stop shop tool for developers building on the Algorand network. Official tooling maintained by the Algorand Foundation.
 
 ### Languages
 
