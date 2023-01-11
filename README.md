@@ -76,6 +76,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [AlgoExplorer](https://www.algoexplorer.io/) - Algorand blockchain explorer built by [RandLabs](https://randlabs.io/).
 - [Goalseeker](https://goalseeker.purestake.io/algorand/mainnet) - Algorand blockchain explorer built by [PureStake](https://www.purestake.com/).
 - [NFTExplorer](https://www.nftexplorer.app/) - Algorand Standard Asset (ASA) explorer built by [@TomassoAE](https://twitter.com/TommasoAE) and [JoshLmao](https://twitter.com/JoshLmao).
+- [Pera Explorer](https://explorer.perawallet.app/) - Algorand Accounts, Standard Asset (ASA) explorer built by [Pera Wallet](https://perawallet.app/)
 - [Algorand Ballet](https://akaalias.github.io/algorand-ballet/) - Algorand accounts' 2D graphs.
 - [Algorand Multiverse](https://algo3d.live/) - Algorand accounts' 3D graphs.
 - [Algoscan](https://algoscan.app/) - Algoscan is a Blockchain Explorer and Analytics Platform. Built on top of the Algorand Network.
