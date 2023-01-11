@@ -330,7 +330,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 
 ### Projects
 
-> A list of open source projects that are built on top of Algorand.
+> A list of open source projects, blogs, websites that are built on top of Algorand.
 
 - [arc3.xyz](https://github.com/barnjamin/arc3.xyz) - Dapp that can be used to mint ARC3 compliant NFTs.
 - [Auction Demo](https://github.com/algorand/auction-demo) - On-chain NFT auction using smart contracts.
@@ -362,6 +362,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [AlgoTables](https://github.com/algotables/algotables.github.io) - A suite of tools designed to aid everyday hodlers of ALGO who participate in the Algorand ecosystem.
 - [AlgoPing](https://github.com/aorumbayev/algoping) - A tiny cron job that issues a [tweet](https://twitter.com/algoping) if public Algorand Nodes (AlgoExplorer, AlgoNode and etc) are not healthy.
 - [SliceSwap](https://app.sliceswap.com) - One place to trade your assets across major Dex's. All swaps are powered by @deflexfi.
+- [algodaddy](https://www.algodaddy.org) - A blog website for Algorand community.
 
 ## Algorand Request for Comments
 
