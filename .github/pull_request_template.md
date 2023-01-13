@@ -26,7 +26,7 @@ _Please make sure you reviewed the checklist and comply with each requirement:_
 
 ## If you are adding a new PR for [AlgoHelp](algohelp.awesomealgo.com):
 
-> ⚠️ PLEASE NOTE - I kindly request that only pull requests from individuals or teams officially affiliated with Algorand Inc, Foundation or a team behind a platform/utility that provides significant engineering resources to support the adoption of Algorand by developers or the overall wellbeing of the ecosystem are submitted. This is to ensure that the community has access to the most relevant and useful information
+> ⚠️ PLEASE NOTE - I kindly request that only pull requests from individuals or teams officially affiliated with Algorand Inc, Foundation or a team behind a platform/utility that provides engineering resources to support the adoption of Algorand by developers or the overall wellbeing of the ecosystem are submitted. This is to ensure that the community has access to the most relevant and useful information.
 
 -  [ ] I have updated the [AlgoHelp](../markdown/algohelp.md) file by appending the new repository.
 

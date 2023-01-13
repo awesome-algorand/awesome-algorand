@@ -31,7 +31,7 @@ https://github.com/algorand/sandbox
 
 https://github.com/TxnLab/use-wallet
 
-https://github.com/tinymanorg/algojig
+https://github.com/Hipo/algojig
 
 https://github.com/tinymanorg/tealish
 
