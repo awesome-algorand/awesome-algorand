@@ -44,7 +44,7 @@ jobs:
               with:
                 # GitHub event payload
                 # https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#release
-                tweet-message: "⭐️ Check out  new submission at ${{ steps.PR.outputs.pr_url }}. Explore #awesome tools and platforms in #algorand ecosystem ⚡️ Consider, leaving a star on a repo to support the project <3 "
+                tweet-message: "⭐️ Check out new submission at ${{ steps.PR.outputs.pr_url }}. Explore #awesome tools and platforms in #algorand ecosystem. If you like it, please consider starring the repo to support the project ⚡️"
               env:
                 # Get your tokens from https://developer.twitter.com/apps
                 TWITTER_CONSUMER_API_KEY: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
