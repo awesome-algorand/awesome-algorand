@@ -160,11 +160,8 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 #### Python
 
 - [py-algorand-sdk](https://github.com/algorand/py-algorand-sdk) - The Algorand Python SDK.
-- [pyteal](https://github.com/algorand/pyteal) - Algorand Smart Contracts in Python.
-- [pyteal-utils](https://github.com/algorand/pyteal-utils) - PyTEAL utilites library.
 - [tinyman-py-sdk](https://github.com/tinymanorg/tinyman-py-sdk) - Tinyman Python SDK.
 - [algofi-py-sdk](https://github.com/Algofiorg/algofi-py-sdk) - Algofi Python SDK.
-- [beaker](https://github.com/algorand-devrel/beaker) - A tool for smart contract development on the Algorand blockchain. Inspired by `flask`.
 - [smart-asa](https://github.com/algorandlabs/smart-asa) - Smart ASA PyTeal reference implementation based on ARC-20.
 
 #### JavaScript & TypeScript
@@ -176,7 +173,6 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [algonaut.js](https://github.com/thencc/algonautjs) - An easier Algo sdk for front-end dapps (typescript).
 - [perawallet-connect](https://github.com/perawallet/connect) - JavaScript SDK for integrating Pera Wallet to web applications.
 - [defly-connect](https://github.com/blockshake-io/defly-connect) - JavaScript SDK for integrating Defly Wallet to web applications.
-- [beaker-ts](https://github.com/algorand-devrel/beaker-ts) - Generate typescript clients for your beaker applications.
 
 #### Java
 
@@ -228,6 +224,10 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 
 #### Smart Contracts
 
+- [pyteal](https://github.com/algorand/pyteal) - Algorand Smart Contracts in Python.
+- [beaker](https://github.com/algorand-devrel/beaker) - A tool for smart contract development on the Algorand blockchain. Inspired by `flask`.
+- [beaker-ts](https://github.com/algorand-devrel/beaker-ts) - Generate typescript clients for your beaker applications.
+- [pyteal-utils](https://github.com/algorand/pyteal-utils) - PyTEAL utilites library.
 - [reach](https://docs.reach.sh) - A domain-specific language for building cross chain decentralized applications (DApps).
 - [aqua-compiler](https://github.com/optio-labs/aqua-compiler) - An expressive high level language for the Algorand block chain that compiles to TEAL code.
 - [algoml](https://github.com/petitnau/algoml) - A domain-specific language for specifying Algorand smart contracts, which compiles into TEAL scripts.
