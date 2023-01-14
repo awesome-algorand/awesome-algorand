@@ -176,6 +176,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [algonaut.js](https://github.com/thencc/algonautjs) - An easier Algo sdk for front-end dapps (typescript).
 - [perawallet-connect](https://github.com/perawallet/connect) - JavaScript SDK for integrating Pera Wallet to web applications.
 - [defly-connect](https://github.com/blockshake-io/defly-connect) - JavaScript SDK for integrating Defly Wallet to web applications.
+- [beaker-ts](https://github.com/algorand-devrel/beaker-ts) - Generate typescript clients for your beaker applications.
 
 #### Java
 
