@@ -134,7 +134,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 ### CLI
 
 - [AlgoKit CLI](https://github.com/algorandfoundation/algokit-cli) - The Algorand AlgoKit CLI is the one-stop shop tool for developers building on the Algorand network. Official tooling maintained by the Algorand Foundation.
-
+- [tealinspector](https://github.com/Hipo/tealinspector) - Quick and easy TEAL code debugging by Hipo labs.
 ### Languages
 
 > Awesome client libraries, tools, and community utilities sorted by the language of implementation.

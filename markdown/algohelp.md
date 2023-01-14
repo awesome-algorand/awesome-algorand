@@ -23,6 +23,10 @@ https://github.com/algorand/js-algorand-sdk
 
 https://github.com/algorand/pyteal
 
+https://github.com/algorand-devrel/beaker
+
+https://github.com/algorand-devrel/beaker-ts
+
 https://github.com/algorand/py-algorand-sdk
 
 https://github.com/algorand/go-algorand-sdk
@@ -31,8 +35,10 @@ https://github.com/algorand/sandbox
 
 https://github.com/TxnLab/use-wallet
 
+https://github.com/tinymanorg/tealish
+
 https://github.com/Hipo/algojig
 
-https://github.com/tinymanorg/tealish
+https://github.com/Hipo/tealinspector
 
 https://github.com/aorumbayev/awesomealgo-hooks
