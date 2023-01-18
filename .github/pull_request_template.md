@@ -13,21 +13,7 @@ _Please make sure you reviewed the checklist and comply with each requirement (c
 
 <details><summary>Option 1. Flow diagram guideline 🖼️</summary>
 
-```mermaid
-graph TD
-    A[You] -->|submits PR| B(prepare for review)
-    B --> C{Are you\n contributing \n to AwesomeAlgo \nor AlgoHelp?}
-    C -->|AlgoHelp| D{Added repository to\n'markdown/algohelp.md' file?}
-    D -->|Yes| X{Ready for review\nawait for review}
-    D -->|No| D
-    C -->|AwesomeAlgo| E{My Code follows \n AwesomeAlgo Contribution \n guidelines\nand passing CI?}
-    E -->|Yes| F{PR is titled following\n this convention\n `Name of Resource` - description}
-    E -->|No| E
-    F -->|No| F
-    F -->|Yes| G{I am aware that merging\nthe PR will trigger a\ntweet announcing the change\non the repository}
-    G -->|Yes| X
-    G -->|No| G
-```
+[![](https://mermaid.ink/img/pako:eNplUstu2zAQ_JUFL0mBuL370EKRH80hQeD20KAqkI24lojyIZBUBEHyv3cpxbGC6kTN7s7MPgZROkliLSqPTQ0_N4UF_rLfT679A6vV1zG0L0bFAI-HEW6vG08NeoKj8-DpVVH3aa64TcmQDxkHe9cWjJbORq9e2qhsBQmIDrKOgjOU6coliFnS8zvp5ttpJson1TM6wmbIpCTJao0LKjrfMw-XXhn0f6Xr7Bfk3JpzPxt5BUel6Uy1maieKIzw6_pAKPuFb6bADlX8v5W57MGx9gdLF-sjbIf7HnIeHZdr7bowNbjsLn_v3tkpWLVKklaWQpK2EhoMIY0mvzsb3l4M74bHA6gAUUXN3c8qnD3NseYAT_eVbGJP0PMDGgJ3hAM7aH1Jz7ACSaH0qkk5HwRSa9sZ2L0DuyUwWdgPd4AGeEq801hjBEO-mj3EmvgioFNaA7dZVeQBE94RRUBrXWvL1FxKLGu0FaV12-n_sso3W_vFopZI8rUXN4J1DSrJZzqkcCGYxVAh1vyUfAaFKOyJ87CN7kdvS7GOvqUb0TYSI20U8nUbsT6iDoySTNr3891P53_6B5MdBZ4?type=png)](https://mermaid.live/edit#pako:eNplUstu2zAQ_JUFL0mBuL370EKRH80hQeD20KAqkI24lojyIZBUBEHyv3cpxbGC6kTN7s7MPgZROkliLSqPTQ0_N4UF_rLfT679A6vV1zG0L0bFAI-HEW6vG08NeoKj8-DpVVH3aa64TcmQDxkHe9cWjJbORq9e2qhsBQmIDrKOgjOU6coliFnS8zvp5ttpJson1TM6wmbIpCTJao0LKjrfMw-XXhn0f6Xr7Bfk3JpzPxt5BUel6Uy1maieKIzw6_pAKPuFb6bADlX8v5W57MGx9gdLF-sjbIf7HnIeHZdr7bowNbjsLn_v3tkpWLVKklaWQpK2EhoMIY0mvzsb3l4M74bHA6gAUUXN3c8qnD3NseYAT_eVbGJP0PMDGgJ3hAM7aH1Jz7ACSaH0qkk5HwRSa9sZ2L0DuyUwWdgPd4AGeEq801hjBEO-mj3EmvgioFNaA7dZVeQBE94RRUBrXWvL1FxKLGu0FaV12-n_sso3W_vFopZI8rUXN4J1DSrJZzqkcCGYxVAh1vyUfAaFKOyJ87CN7kdvS7GOvqUb0TYSI20U8nUbsT6iDoySTNr3891P53_6B5MdBZ4)
 
 </details>
 
