@@ -36,15 +36,22 @@ def get_ips():
         return []
 
     for rdata in answers:
+        print(f"Fetching for {rdata}")
+
         domain = rdata.target.to_text()
         try:
             answers = resolver.query(domain, "A")
-        except dns.resolver.NoAnswer:
+        except:
+            print(f"Failed to fetch for {domain}")
             continue
 
         record = random.choice(answers).to_text()
-        geo_data = get_geo_data(record)
-        ips.append({**geo_data, "domain": domain, "ip": record})
+        try:
+            geo_data = get_geo_data(record)
+            ips.append({**geo_data, "domain": domain, "ip": record})
+        except:
+            print(f"Failed to fetch for {record}")
+            continue
 
     return ips
 
