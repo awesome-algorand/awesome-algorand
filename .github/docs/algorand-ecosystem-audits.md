@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to algorand-ecosystem-audits, for more details refer to https://github.com/blockshake-io/algorand-ecosystem-audits
+
+---
+
 # Algorand Ecosystem Audits
 
 This is an incomplete but growing collection of audit reports in the Algorand

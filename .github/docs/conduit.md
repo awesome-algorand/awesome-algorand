@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to conduit, for more details refer to https://github.com/algorand/conduit
+
+---
+
 <div style="text-align:center" align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/assets/algorand_logo_mark_white.png">

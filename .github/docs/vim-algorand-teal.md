@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to vim-algorand-teal, for more details refer to https://github.com/aldur/vim-algorand-teal
+
+---
+
 # Algorand's TEAL support for vim
 
 This minimalistic plugin adds syntax highlight for [Algorand's

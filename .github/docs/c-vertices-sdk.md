@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to c-vertices-sdk, for more details refer to https://github.com/vertices-network/c-vertices-sdk
+
+---
+
 # 💎 Vertices SDK
 
 ## 📑 Specifications

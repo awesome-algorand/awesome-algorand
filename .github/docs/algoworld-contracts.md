@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to algoworld-contracts, for more details refer to https://github.com/algoworldNFT/algoworld-contracts
+
+---
+
 <p align="center"><a  href="https://twitter.com/algoworld_nft/status/1450608110268211203"><img  width=100%  src="https://i.imgur.com/cGWGmxa.png"  alt="687474703a2f2f6936332e74696e797069632e636f6d2f333031336c67342e706e67"  border="0" /></a></p>
 
 <p align="center">

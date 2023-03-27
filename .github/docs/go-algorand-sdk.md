@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to go-algorand-sdk, for more details refer to https://github.com/algorand/go-algorand-sdk
+
+---
+
 # go-algorand-sdk
 
 [![Build Status](https://travis-ci.com/algorand/go-algorand-sdk.svg?branch=master)](https://travis-ci.com/algorand/go-algorand-sdk)

@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to dotnet-yieldly-sdk, for more details refer to https://github.com/geoffodonnell/dotnet-yieldly-sdk
+
+---
+
 # dotnet-yieldly-sdk
 [![Dev CI Status](https://dev.azure.com/gbo-devops/github-pipelines/_apis/build/status/Yieldly/Yieldly%20Dev%20CI?branchName=develop)](https://dev.azure.com/gbo-devops/github-pipelines/_build/latest?definitionId=4&branchName=develop)
 [![NuGet version](https://badge.fury.io/nu/yieldly.svg)](https://badge.fury.io/nu/yieldly)

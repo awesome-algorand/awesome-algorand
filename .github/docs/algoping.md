@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to algoping, for more details refer to https://github.com/aorumbayev/algoping
+
+---
+
 <br/>
 <div align="center">
 <a href="https://github.com/aorumbayev/awesome-algorand"><img src="https://i.imgur.com/bffzQBG.png"></a>

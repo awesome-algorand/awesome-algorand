@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to go-algorand, for more details refer to https://github.com/algorand/go-algorand
+
+---
+
 | rel/stable <br> [![CircleCI](https://circleci.com/gh/algorand/go-algorand/tree/rel%2Fstable.svg?style=svg)](https://circleci.com/gh/algorand/go-algorand/tree/rel%2Fstable) | rel/beta  <br> [![CircleCI](https://circleci.com/gh/algorand/go-algorand/tree/rel%2Fbeta.svg?style=svg)](https://circleci.com/gh/algorand/go-algorand/tree/rel%2Fbeta) | rel/nightly  <br> [![CircleCI](https://circleci.com/gh/algorand/go-algorand/tree/rel%2Fnightly.svg?style=svg)](https://circleci.com/gh/algorand/go-algorand/tree/rel%2Fnightly) |
 | --- | --- | --- |
 

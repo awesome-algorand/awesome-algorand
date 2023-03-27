@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to beaker-ts, for more details refer to https://github.com/algorand-devrel/beaker-ts
+
+---
+
 # Beaker Typescript Client Generator
 
 > :warning: **Experimental. Zero tests. Please report issues**

@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to tealer, for more details refer to https://github.com/crytic/tealer
+
+---
+
 # Tealer
 
 Tealer is a static analyzer for [Teal](https://developer.algorand.org/docs/features/asc1/) code. It parses the Teal program, and builds its CFG. The analyzer comes with a set of vulnerabilities detectors and printers allowing to quickly review the contracts.

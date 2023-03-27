@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to ARCs, for more details refer to https://github.com/algorandfoundation/ARCs
+
+---
+
 # ARCs: Algorand Requests for Comments
 
 ## Mission

@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to algovanity, for more details refer to https://github.com/Ripe/algovanity
+
+---
+
 # Algorand Vanity Address Generator
 
 Source code for https://algovanity.com

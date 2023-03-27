@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to algorand-sandbox-dev, for more details refer to https://github.com/MakerXStudio/algorand-sandbox-dev
+
+---
+
 # algorand-sandbox-dev
 
 This repo is loosely based on [Algorand's official sandbox](https://github.com/algorand/sandbox), but solves some performance and experience problems which impact local development and CI/CD usage.

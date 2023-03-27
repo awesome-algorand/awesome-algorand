@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to EIPs, for more details refer to https://github.com/ethereum/EIPs
+
+---
+
 # Ethereum Improvement Proposals (EIPs)
 
 The goal of the EIP project is to standardize and provide high-quality documentation for Ethereum itself and conventions built upon it. This repository tracks past and ongoing improvements to Ethereum in the form of Ethereum Improvement Proposals (EIPs). [EIP-1](https://eips.ethereum.org/EIPS/eip-1) governs how EIPs are published.

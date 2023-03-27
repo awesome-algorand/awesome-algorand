@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to AlgorandUnitySDK, for more details refer to https://github.com/Vytek/AlgorandUnitySDK
+
+---
+
 # AlgorandUnitySDK
  Algorand Unity SDK
 

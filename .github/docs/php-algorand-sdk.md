@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to php-algorand-sdk, for more details refer to https://github.com/ffsolutions/php-algorand-sdk
+
+---
+
 # PHP Algorand SDK (algod, kmd and indexer)
 
 A PHP library for interacting with the Algorand network.

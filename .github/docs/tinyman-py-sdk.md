@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to tinyman-py-sdk, for more details refer to https://github.com/tinymanorg/tinyman-py-sdk
+
+---
+
 # tinyman-py-sdk
 Tinyman Python SDK
 

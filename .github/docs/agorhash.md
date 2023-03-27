@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to agorhash, for more details refer to https://github.com/bafio89/agorhash
+
+---
+
 # [AgorHash](http://www.agorhash.com/), a cryptographic decentralised [agora](https://en.wikipedia.org/wiki/Agora).
 
 AgorHash is a **public, permissionless, decentralized and uncensorable free speech protocol**.

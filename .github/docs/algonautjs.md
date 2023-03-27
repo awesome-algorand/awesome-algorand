@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to algonautjs, for more details refer to https://github.com/thencc/algonautjs
+
+---
+
 # Algonaut.js
 
 [Examples](https://thencc.github.io/algonautjs/examples/) | [API Docs](https://thencc.github.io/algonautjs/docs/classes/Algonaut.html)

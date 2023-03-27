@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to algorand-school, for more details refer to https://github.com/cusma/algorand-school
+
+---
+
 # Algorand School
 Algorand School is an open slide deck I've built over time during my talks on 
 Algorand's blockchain with the help of Algorand colleagues.

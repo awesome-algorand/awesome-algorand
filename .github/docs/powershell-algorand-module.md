@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to powershell-algorand-module, for more details refer to https://github.com/geoffodonnell/powershell-algorand-module
+
+---
+
 # powershell-algorand-module
 [![Dev CI](https://dev.azure.com/gbo-devops/github-pipelines/_apis/build/status/Algorand.PowerShell/Algorand.PowerShell%20Dev%20CI?branchName=develop)](https://dev.azure.com/gbo-devops/github-pipelines/_build/latest?definitionId=13&branchName=develop)
 [![PSGallery version](https://img.shields.io/powershellgallery/v/Algorand?include_prereleases)](https://www.powershellgallery.com/packages/Algorand)

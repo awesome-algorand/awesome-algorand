@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to Algorand-CPlusPlus-SDK, for more details refer to https://github.com/Wisdom-Labs/Algorand-CPlusPlus-SDK
+
+---
+
 # Algorand C++ SDK
 This repo is providing C++ sdk on algorand chain.
 =======

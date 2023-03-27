@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to AlgorandVisualStudio, for more details refer to https://github.com/FrankSzendzielarz/AlgorandVisualStudio
+
+---
+
 # **Algorand for Visual Studio**
 
 A warm welcome to Algorand for Visual Studio!

@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to aqua-compiler, for more details refer to https://github.com/optio-labs/aqua-compiler
+
+---
+
 # Aqua-compiler
 
 An expressive high level language for [the Algorand blockchain](https://en.wikipedia.org/wiki/Algorand) smart contracts that compiles to [TEAL](https://developer.algorand.org/docs/get-details/dapps/avm/teal/specification/) code.

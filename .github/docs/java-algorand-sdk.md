@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to java-algorand-sdk, for more details refer to https://github.com/algorand/java-algorand-sdk
+
+---
+
 # java-algorand-sdk
 
 [![Build Status](https://travis-ci.com/algorand/java-algorand-sdk.svg?branch=master)](https://travis-ci.com/algorand/java-algorand-sdk?branch=master)

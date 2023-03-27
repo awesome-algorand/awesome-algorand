@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to algorand-qrcode, for more details refer to https://github.com/emg110/algorand-qrcode
+
+---
+
 [<img title="Algorand QR Code Generator (Banner art by Stasya Tikhonova, curtsey of Algorand)" src="./examples/images/algorand-qrcode-banner.jpg">](https://developer.algorand.org/solutions/algorand-qr-code-generator-javascript/)
 
 # Algorand QR Code Generator V3.1.9

@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to algorealm-ui, for more details refer to https://github.com/algorealm/algorealm-ui
+
+---
+
 <p align="center"><a  href="https://github.com/cusma/algorealm"><img  width=100%  src="https://ipfs.algonode.xyz/ipfs/bafkreifsrjpzws5m6hwp37uyppzoin5nags4cckfvfrzzgjlkwsmtrdcbi"  border="0" /></a></p>
 
 <p align="center">

@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to pyteal, for more details refer to https://github.com/algorand/pyteal
+
+---
+
  <!-- markdownlint-disable-file MD041 -->
 
 ![PyTeal logo](https://github.com/algorand/pyteal/blob/master/docs/pyteal.png?raw=true)

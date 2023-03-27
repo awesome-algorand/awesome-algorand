@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to algofi-py-sdk, for more details refer to https://github.com/Algofiorg/algofi-py-sdk
+
+---
+
 ![algofi-py-sdk](https://user-images.githubusercontent.com/18899131/201798470-e5831f45-9e57-42de-bf0c-de26e1b1812c.jpg)
 
 # algofi-py-sdk

@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to connect, for more details refer to https://github.com/perawallet/connect
+
+---
+
 ![Pera Connect Cover Image](https://user-images.githubusercontent.com/54077855/179966121-bd9295c3-5f61-4203-b13f-851434e72d35.png)
 
 ## @perawallet/connect

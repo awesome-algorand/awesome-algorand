@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to vscode-algorand, for more details refer to https://github.com/ObsidianLabs/vscode-algorand
+
+---
+
 # Algorand VS Code Extension
 
 This is a VS Code extension for the [Algorand Blockchain](https://www.algorand.com/).

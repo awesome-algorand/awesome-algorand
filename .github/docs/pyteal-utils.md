@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to pyteal-utils, for more details refer to https://github.com/algorand/pyteal-utils
+
+---
+
 # pyteal-utils
 
 *EXPERIMENTAL WIP*

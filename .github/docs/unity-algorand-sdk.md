@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to unity-algorand-sdk, for more details refer to https://github.com/CareBoo/unity-algorand-sdk
+
+---
+
 <h1 id="unity-algorand-sdk" align="center">
 <picture>
   <img alt="The Algorand Logo" src="docs/images/algorand_logo_mark.svg"/>

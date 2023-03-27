@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to js-algorand-sdk, for more details refer to https://github.com/algorand/js-algorand-sdk
+
+---
+
 # js-algorand-sdk
 
 [![Build Status](https://travis-ci.com/algorand/js-algorand-sdk.svg?branch=master)](https://travis-ci.com/algorand/js-algorand-sdk) [![npm version](https://badge.fury.io/js/algosdk.svg)](https://www.npmjs.com/package/algosdk)

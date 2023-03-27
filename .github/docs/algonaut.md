@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to algonaut, for more details refer to https://github.com/manuelmauro/algonaut
+
+---
+
 <p align="center">
     <img src="assets/rocket-solid.png" width="128" height="128">
 </p>

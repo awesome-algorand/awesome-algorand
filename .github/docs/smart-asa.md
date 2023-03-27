@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to smart-asa, for more details refer to https://github.com/algorandlabs/smart-asa
+
+---
+
 # Smart-ASA
 
 Smart ASA reference implementation combines the simplicity and security of the Algorand Standard Assets (ASA)s with the composability and programmability of Algorand Smart Contracts. The Smart ASA offers a new, powerful, L1 feature that extends regular ASAs up to the limits of your imagination!

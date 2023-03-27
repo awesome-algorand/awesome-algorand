@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to sandbox, for more details refer to https://github.com/algorand/sandbox
+
+---
+
 # Algorand Sandbox
 
 This is a fast way to create and configure an Algorand development environment with [Algod](https://github.com/algorand/go-algorand) and [Indexer](https://github.com/algorand/indexer).

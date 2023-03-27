@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to tealang, for more details refer to https://github.com/pzbitskiy/tealang
+
+---
+
 # Tealang
 
 High-level language for Algorand Smart Contracts at Layer-1 and its low-level **TEAL v6** language.

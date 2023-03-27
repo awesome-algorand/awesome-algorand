@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to algomart, for more details refer to https://github.com/deptagency/algomart
+
+---
+
 <br />
 <p align="center"><img alt="AlgoMart Logo" src="./AlgoMart-Logo.png" width="400" height="140"></p>
 <br />

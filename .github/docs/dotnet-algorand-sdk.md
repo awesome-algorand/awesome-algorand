@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to dotnet-algorand-sdk, for more details refer to https://github.com/FrankSzendzielarz/dotnet-algorand-sdk
+
+---
+
 
 # .NET Algorand SDK (v2)
 

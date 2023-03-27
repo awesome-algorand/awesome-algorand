@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to py-algorand-sdk, for more details refer to https://github.com/algorand/py-algorand-sdk
+
+---
+
 # py-algorand-sdk
 
 [![PyPI version](https://badge.fury.io/py/py-algorand-sdk.svg)](https://badge.fury.io/py/py-algorand-sdk)

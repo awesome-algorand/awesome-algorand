@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to tealish, for more details refer to https://github.com/Hipo/tealish
+
+---
+
 ![Tealish, A readable language for Algorand, Powered by Tinyman](img/tealish_header.png)
 
 <p align="center">

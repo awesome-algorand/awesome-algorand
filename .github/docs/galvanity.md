@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to galvanity, for more details refer to https://github.com/shmutalov/galvanity
+
+---
+
 [![build](https://github.com/shmutalov/galvanity/actions/workflows/build.yml/badge.svg)](https://github.com/shmutalov/galvanity/actions/workflows/build.yml)
 
 # Galvanity

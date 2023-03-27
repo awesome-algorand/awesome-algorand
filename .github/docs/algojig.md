@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to algojig, for more details refer to https://github.com/Hipo/algojig
+
+---
+
 # algojig
 
 Algojig is a development and testing jig for Algorand. It allows developers to run transactions and write tests starting from a known Algorand ledger state. It is suitable for testing all kinds of transactions, including application calls and logic signatures.

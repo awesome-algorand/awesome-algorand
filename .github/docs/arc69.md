@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to arc69, for more details refer to https://github.com/algokittens/arc69
+
+---
+
 
 # NOTE: THIS REPOSITORY IS NO LONGER MAINTAINED, FOR THE OFFICIAL SPEC SEE THE ALGORAND FOUNDATION GITHUB:
 

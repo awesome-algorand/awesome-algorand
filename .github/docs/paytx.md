@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to paytx, for more details refer to https://github.com/algorand-devrel/paytx
+
+---
+
 # paytx
 Examples of common pay transaction scenarios using the Algorand Python SDK.
 

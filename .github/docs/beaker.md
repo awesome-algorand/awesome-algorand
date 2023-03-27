@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to beaker, for more details refer to https://github.com/algorand-devrel/beaker
+
+---
+
 Beaker
 ------
 <img align="left" src="https://raw.githubusercontent.com/algorand-devrel/beaker/master/beaker.png" margin="10px" >
@@ -68,7 +72,7 @@ print(result.return_value)  # "Hello, Beaker"
 
 You can install from pip:
 
-`pip install beaker-pyteal==1.0.0b2`
+`pip install beaker-pyteal`
 
 Or from github directly (no promises on stability): 
 

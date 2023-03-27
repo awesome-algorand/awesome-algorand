@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to algonim, for more details refer to https://github.com/cusma/algonim
+
+---
+
 ```
       _       __                 ____  _____   _               
      / \     [  |               |_   \|_   _| (_)              

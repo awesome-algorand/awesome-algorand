@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to algorand-session-wallet, for more details refer to https://github.com/barnjamin/algorand-session-wallet
+
+---
+
 # algorand-session-wallet
 
 *PRs welcome*

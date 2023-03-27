@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to tealinspector, for more details refer to https://github.com/Hipo/tealinspector
+
+---
+
 # tealinspector
 
 As a developer error like below is not descriptive,

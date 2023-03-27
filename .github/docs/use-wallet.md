@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to use-wallet, for more details refer to https://github.com/txnlab/use-wallet
+
+---
+
 # @TxnLab/use-wallet
 
 React hooks for using Algorand compatible wallets with web applications.

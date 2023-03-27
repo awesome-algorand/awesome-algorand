@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to algokit-cli, for more details refer to https://github.com/algorandfoundation/algokit-cli
+
+---
+
 # AlgoKit CLI
 
 The Algorand AlgoKit CLI is the one-stop shop tool for developers building on the Algorand network.

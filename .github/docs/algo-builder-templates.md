@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to algo-builder-templates, for more details refer to https://github.com/scale-it/algo-builder-templates
+
+---
+
 ![image](https://gitcdn.link/repo/scale-it/algo-builder/master/media/logo.svg)
 # Algo Builder Templates
 

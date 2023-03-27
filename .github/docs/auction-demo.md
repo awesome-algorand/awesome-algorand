@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to auction-demo, for more details refer to https://github.com/algorand/auction-demo
+
+---
+
 # Algorand Auction Demo
 
 This demo is an on-chain NFT auction using smart contracts on the Algorand blockchain.

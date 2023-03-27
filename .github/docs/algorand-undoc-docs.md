@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to algorand-undoc-docs, for more details refer to https://github.com/AlgoChads/algorand-undoc-docs
+
+---
+
 # Algorand - The Undocumented Docs
 
 Dev Notes for Archival Node, Indexer Setup (and more)

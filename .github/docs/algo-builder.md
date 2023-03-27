@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to algo-builder, for more details refer to https://github.com/scale-it/algo-builder
+
+---
+
 <img src="/docs/media/logo-website.png" height="200" title="Algo Builder" />
 
 The Algo Builder project is composed from the following packages:

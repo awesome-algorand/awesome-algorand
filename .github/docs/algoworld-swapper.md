@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to algoworld-swapper, for more details refer to https://github.com/algoworldNFT/algoworld-swapper
+
+---
+
 <p align="center"><img  width=100%  src="https://imgur.com/Sv4A6cq.png"  alt="687474703a2f2f6936332e74696e797069632e636f6d2f333031336c67342e706e67" /></p>
 
 <p align="center">

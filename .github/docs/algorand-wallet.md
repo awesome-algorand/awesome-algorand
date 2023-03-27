@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to algorand-wallet, for more details refer to https://github.com/algorand/algorand-wallet
+
+---
+
 # Pera Wallet
 
 ## Overview

@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to minter, for more details refer to https://github.com/algofishexe/minter
+
+---
+
 # minter
 mint algorand NFTs from node.js following [ARC-69](https://github.com/algokittens/arc69)
 

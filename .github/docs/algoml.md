@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to algoml, for more details refer to https://github.com/petitnau/algoml
+
+---
+
 # AlgoML
 
 AlgoML (*Algorand Modelling Language*) is a DSL for specifying Algorand smart contracts, which compiles into TEAL scripts.

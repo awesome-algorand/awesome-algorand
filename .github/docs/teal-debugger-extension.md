@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to teal-debugger-extension, for more details refer to https://github.com/optio-labs/teal-debugger-extension
+
+---
+
 # teal-debugger-extension
 
 This is TEAL debugger extension for VS Code with support up to and including TEAL 5. Support for TEAL 6 is coming in the future.

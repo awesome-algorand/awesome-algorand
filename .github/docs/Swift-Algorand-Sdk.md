@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to Swift-Algorand-Sdk, for more details refer to https://github.com/Jesulonimi21/Swift-Algorand-Sdk
+
+---
+
 # Swift Algorand SDK
 
 This is a swift sdk that allows interaction with the algorand blockchain. It also supports interecting with the V2 indexer and Algo Apis

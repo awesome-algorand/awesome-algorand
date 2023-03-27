@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to TEALrb, for more details refer to https://github.com/joe-p/TEALrb
+
+---
+
 # TEALrb
 
 TEALrb is a Ruby-based DSL for writing Algorand smart contracts. The goal is to make smart contracts easy to read and

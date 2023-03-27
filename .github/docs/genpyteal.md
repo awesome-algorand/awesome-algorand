@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to genpyteal, for more details refer to https://github.com/runvnc/genpyteal
+
+---
+
 # genpyteal
 
 Converts Python to PyTeal. Your mileage will vary depending on how much you deviate from the examples.

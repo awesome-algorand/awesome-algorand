@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to Awesome-Algorand, for more details refer to https://github.com/aorumbayev/Awesome-Algorand
+
+---
+
 # Awesome Algorand [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 <div align="center">
@@ -21,6 +25,8 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
     <a target="_blank" href="https://github.com/aorumbayev/awesome-algorand"><img src="https://img.shields.io/github/stars/aorumbayev/awesome-algorand?color=teal" /></a>
     <a target="_blank" href="https://github.com/aorumbayev/awesome-algorand/network/members"><img src="https://img.shields.io/github/forks/aorumbayev/awesome-algorand?color=gold" /></a>
 </p>
+
+🤖 By the way, you can also chat with AI chat bot available at [AwesomeAlgo AI Chat](https://chat.awesomealgo.com/) to get answers to your questions on any of the resources available in this repository and readme 😊
 
 ## Contents
 
@@ -135,6 +141,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 
 - [AlgoKit CLI](https://github.com/algorandfoundation/algokit-cli) - The Algorand AlgoKit CLI is the one-stop shop tool for developers building on the Algorand network. Official tooling maintained by the Algorand Foundation.
 - [tealinspector](https://github.com/Hipo/tealinspector) - Quick and easy TEAL code debugging by Hipo labs.
+
 ### Languages
 
 > Awesome client libraries, tools, and community utilities sorted by the language of implementation.

@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to avm-semantics, for more details refer to https://github.com/runtimeverification/avm-semantics
+
+---
+
 KAVM &mdash; Algorand Virtual Machine and TEAL Semantics in K
 =============================================================
 

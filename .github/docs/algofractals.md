@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to algofractals, for more details refer to https://github.com/aorumbayev/algofractals
+
+---
+
 <p align="center"><a  href="https://github.com/aorumbayev/AlgoFractals"><img  width=100%  src="https://i.imgur.com/TQL419f.png"   border="0" /></a></p>
 
 <p align="center">

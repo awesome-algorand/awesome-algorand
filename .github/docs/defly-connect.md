@@ -1,3 +1,7 @@
+> This resource is auto indexed by AwesomeAlgo, all credits to defly-connect, for more details refer to https://github.com/blockshake-io/defly-connect
+
+---
+
 
 ### @blockshake/defly-connect
 
