@@ -23,9 +23,12 @@ def download_readme(url, download_folder):
     raw_url = url.replace('github.com', 'raw.githubusercontent.com')
 
     # Check for main and master branches
-    branches = ['main', 'master', 'develop']
+    branches = ['main', 'master', 'develop', 'dev']
     for branch in branches:
         readme_url = f'{raw_url}/{branch}/README.md'
+        if "aorumbayev/awesome-algorand" in readme_url.lower():
+            return
+
         response = requests.get(readme_url)
         if response.status_code == 200:
             updated_content = append_message_to_readme(response.content.decode(), repo_name, url)
