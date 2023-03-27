@@ -2,3 +2,4 @@ feedparser==6.0.10
 markdownify==0.11.6
 requests
 dnspython
+bs4
