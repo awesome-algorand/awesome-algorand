@@ -18,12 +18,6 @@ Beaker is a smart contract development framework for [PyTeal](https://github.com
 
 
 
-## WARNING
-
- :warning: *Mostly Untested - Expect Breaking Changes* :warning:
-
- **Please report bugs and get any contracts audited**
-
 ## Hello, Beaker
 
 
@@ -105,3 +99,7 @@ You can run tests from the root of the project using `pytest`
 [Examples](/examples/)
 
 [Docs](https://beaker.algo.xyz)
+
+**Please report bugs and get any contracts audited**
+
+We recommend that any production smart contracts be audited by a professional before deployment. Beaker has been thoroughly tested, but we cannot guarantee that it is entirely free of bugs.

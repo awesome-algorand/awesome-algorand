@@ -1,285 +1,198 @@
-> This resource is auto indexed by AwesomeAlgo, all credits to dotnet-algorand-sdk, for more details refer to https://github.com/RileyGe/dotnet-algorand-sdk
+> This resource is auto indexed by AwesomeAlgo, all credits to dotnet-algorand-sdk, for more details refer to https://github.com/FrankSzendzielarz/dotnet-algorand-sdk
 
 ---
 
-# Dotnet Algorand SDK
 
-The SDK version 0.2 add the support of Algorand Api 2.0 and the Indexer Api.
+# .NET Algorand SDK (v2)
 
-dotnet-algorand-skd is a dotnet library for communicating and interacting with the Algorand network. It contains a REST client for accessing algod instances over the web, and also exposes functionality for mnemonics, creating transactions, signing transactions, and serializing data across the network.
+The .NET Algorand SDK is a dotnet library for communicating and interacting with the Algorand network from .NET applications. There is also a Unity build which offers a 'wrapped' single assembly (avoiding library conflicts with the Unity environment) and tooltip/serialization compatibility.
 
-Please find documents of dotnet-algorand-sdk on https://rileyge.github.io/dotnet-algorand-sdk/. You can find more Chinese resource from [https://developer.algorand.org/zh-hans/](https://developer.algorand.org/zh-hans/)
+**For full documentation and SDK examples please visit the [technical documentation](https://frankszendzielarz.github.io/dotnet-algorand-sdk/api/index.html)**
 
-## 1. Prerequisites
+Important release note: For this version KMD has been reworked completely, and is a breaking change. There is now full integration with Algorand/Generator, which led to minor capitalisation changes in some fields. The "shape" of the SDK is now stable.
 
-This library is compliant to .Net Standard 2.0.
+**The version numbers for NuGet packages are now 2.0 and onwards.**
 
-## 2. How to Install
+## General Usage
 
-Open the NuGet command line and type:
+Most operations involve producing, submitting and examining the status of transactions. To help achieve this the SDK offers a class model (Algod/Model/Transactions) of Algorand transactions and their properties. Transactions can then be instantiated, signed, sent and read back using this model. There are additional utility methods, such as on the Account class, which simplify tasks like signing the transaction and correlating transaction identifiers.
+
+The SDK offers client proxies and an HttpClientConfigurator. To interact with the Algorand network, you muse either have the Sandbox running, or have access to an Algod node.
+
+The KMD client allows for use of the local node as a key store. The Sandbox comes with a default "wallet" containing three accounts. 
+
+The Indexer client is used for connecting to the Algorand Indexer, which offers a predefined set of queries over a Postgres database of Algorand Blocks and Transactions. In this SDK the Indexer client and entity model is separate from Algod, mainly because the model in Indexer is expected to be an ongoing superset of fields and properties over historical versions of the model. For example, if a field becomes redundant, changes meaning, or is split into new fields, the Indexer model will continue to offer the historical view.
+
+## Installation
+
+From the NuGet command line you can execute:
 
 ```powershell
-Install-Package Algorand
+Install-Package Algorand2
 ```
-## 3. Quick Start
+Or from Project -> Manage NuGet Packages
 
-Algorand already released Algod API 2.0 for a long time, Some service providers no longer support API 1.0 (such as Purestake). It is highly recommended to use the API 2.0 and Indexer to build your program.
+The Nuget package is here <https://www.nuget.org/packages/Algorand2/>
 
-In dotnet-algorand-sdk, the algod API 2.0 is almost the same as API 1.0. The most important change is using the namespace **Algorand.V2**. 
+The Unity build is at <https://www.nuget.org/packages/Algorand2_Unity/>
 
-Normally, we can add the following namespace references at the beginning of the class. Note: Since ```Algorand.V2.Model``` and ```Algorand``` namespace both have the realization of the ```Account``` class, we can add the 5th line using ```Algorand.Account``` as default.
+The Unity build allows the DLL to be used directly in Unity without Newtonsoft or Codedom conflicts.
+It also offers a new optional parameter to HttpClientConfigurator allowing a shim to be injected
+so that WebGL builds can use a different http client by delegation.
 
-```c#
-using Algorand;
-using Algorand.V2;
-using Algorand.Client;
-using Algorand.V2.Model;
-using Account = Algorand.Account;
+
+## Getting a node and account(s) 
+To get working with the Algorand network you will need access to a node. There are a number of ways to do this. The quickest ways of getting set up are to rent access to a node from a service like PureStake, or to install the Algorand Sandbox.
+
+To install the Algorand Sandbox please see instructions here: <https://github.com/algorand/sandbox>
+
+Once you have a node you will get two key pieces of information:
+
+- The API URL
+- The API KEY
+
+If you installed sandbox you will also be given some dev pre-made test accounts. You will need to run [this command](https://developer.algorand.org/docs/clis/goal/account/export/) to extract the account mnemonic.
+
+An account mnemonic is a textual representation, a string of English language words, of the private key of the account.
+
+So in all you should now have:
+
+- The API URL and KEY
+- Account addresses
+- Account private key expressed as a mnemonic
+
+### Connecting to the network
+
+In Visual Studio create a new Console App and add the NuGet as described above.
+
+In the Main method add code as follows:
+
+```cs
+namespace sdk_examples
+{
+    class BasicExample
+    {
+        public static async Task Main(string[] args)
+        {
+            string ALGOD_API_ADDR = "<YOUR API URL, eg:http://localhost:4001/>";
+            string ALGOD_API_TOKEN = "<YOUR API KEY>";
+
+            var httpClient = HttpClientConfigurator.ConfigureHttpClient(ALGOD_API_ADDR, ALGOD_API_TOKEN);
+            DefaultApi algodApiInstance = new DefaultApi(httpClient);
+
 ```
 
-Let's try some code.
+*Technical note: when specifying the Host in HttpClientConfigurator, a trailing slash is automatically added to that host so that relative URIs can be combined with it correctly.
+If you are using DI to inject the HttpClient then the base URL should use a trailing slash (eg ps2/ on purestake) as according to https://datatracker.ietf.org/doc/html/rfc3986
+and HttpClient documentation remarks.*
 
-```csharp
-string ALGOD_API_ADDR = "your algod api address"; //find in algod.net
-string ALGOD_API_TOKEN = "your algod api token"; //find in algod.token
-AlgodApi algodApiInstance = new AlgodApi(ALGOD_API_ADDR, ALGOD_API_TOKEN);
+The above creates an httpClient and passes it into a new client of the AlgoD "default" api set. There are actually three APIs. "Common", "Default" and "Private". The "Common" and "Default" APIs contain the methods you will be using to interact with the network. The "Private" APIs are not exposed by the SDK, require a different type of authentication key, and are reserved for use by the Algorand command line tools.
 
-try
-{
-    var supply = algodApiInstance.GetSupply();
-    Console.WriteLine("Total Algorand Supply: " + supply.TotalMoney);
-    Console.WriteLine("Online Algorand Supply: " + supply.OnlineMoney);
-}
-catch (ApiException e)
-{
-    Console.WriteLine("Exception when calling algod#getSupply: " + e.Message);
-}
+### Test the connection
 
-try
-{
-    var transParams = algodApiInstance.TransactionParams();
-    Console.WriteLine("Transaction Params: " + transParams.ToJson());
-}
-catch (ApiException e)
-{
-    throw new Exception("Could not get params", e);
-}
+Let's call the network and get some information:
+
+```cs
+            try
+            {
+                var supply = await algodApiInstance.GetSupplyAsync();
+                Console.WriteLine("Total Algorand Supply: " + supply.TotalMoney);
+                Console.WriteLine("Online Algorand Supply: " + supply.OnlineMoney);
+
+            }
+            catch (Algorand.Algod.Model.ApiException<ErrorResponse> e)
+            {
+                Console.WriteLine("Exception when calling algod#getSupply:" + e.Result.Message);
+            }
+
 ```
 
-Dotnet-algorand-sdk has good support for PureStake, you can connect to PureStake by replacing the ALGOD_API_TOKEN use PureStake API KEY. It's very difficult to tell the difference between API 1.0 and API 2.0 besides the namespace is different. So if you are familiar with API 1.0, it's very easy to use API 2.0.
+The above asks the Algorand network for information on the total money supply. 
 
-It's simple to query information from Algod, the code blow show how to send an transaction using API 2.0.
+**Important** The ```ApiException<ErrorResponse>``` exception type is needed to catch information returned by the Algorand node in the case of an error. The ```e.Result.Message``` contains the error information.
 
-```c#
-string ALGOD_API_ADDR = "your algod api address"; //find in algod.net
-string ALGOD_API_TOKEN = "your algod api token"; //find in algod.token          
-string SRC_ACCOUNT = "typical permit hurdle hat song detail cattle merge oxygen crowd arctic cargo smooth fly rice vacuum lounge yard frown predict west wife latin absent cup";
-string DEST_ADDR = "KV2XGKMXGYJ6PWYQA5374BYIQBL3ONRMSIARPCFCJEAMAHQEVYPB7PL3KU";
-if (!Address.IsValid(DEST_ADDR))
-    Console.WriteLine("The address " + DEST_ADDR + " is not valid!");
-Account src = new Account(SRC_ACCOUNT);
-Console.WriteLine("My account address is:" + src.Address.ToString());
+### Make a payment from one account to another
 
-AlgodApi algodApiInstance = new AlgodApi(ALGOD_API_ADDR, ALGOD_API_TOKEN);
+When you use the Algorand Sandbox your node is initialised with some test accounts. At the time of writing there are three developer accounts created by the sandbox.
 
-try
-{
-    var supply = algodApiInstance.GetSupply();
-    Console.WriteLine("Total Algorand Supply: " + supply.TotalMoney);
-    Console.WriteLine("Online Algorand Supply: " + supply.OnlineMoney);
-}
-catch (ApiException e)
-{
-    Console.WriteLine("Exception when calling algod#getSupply:" + e.Message);
-}
+As described above you will want to try getting the mnemonic representation of the private key of one of those test accounts.
 
-var accountInfo = algodApiInstance.AccountInformation(src.Address.ToString());
-Console.WriteLine(string.Format("Account Balance: {0} microAlgos", accountInfo.Amount));
+Use another as a source account.
 
-try
-{
-    var trans = algodApiInstance.TransactionParams();
-    var lr = trans.LastRound;
-    var block = algodApiInstance.GetBlock(lr);
+Modify the above code to add something like the following, replacing the values with those specific to your sandbox:
+
+```cs
+            string DEST_ADDR = "KV2XGKMXGYJ6PWYQA5374BYIQBL3ONRMSIARPCFCJEAMAHQEVYPB7PL3KU";
+            string SRC_ACCOUNT = "lift gold aim couch filter amount novel scrap annual grow amazing pioneer disagree sense phrase menu unknown dolphin style blouse guide tell also about case";
+
+            Account src = new Account(SRC_ACCOUNT);
+            Console.WriteLine("My account address is:" + src.Address.ToString());
+
+```
+
+The above invokes the Account constructor overload for interpreting mnemonics into private key values and creates a representation of an Algorand "Account".
+
+Before we can create a Transaction, we need to get some information about the network. This information is general (such as that which identifies which sub-network of Algorand we are on, like the main, test or beta networks), and specific (such as the current time or 'round' of the network, to set transaction validity duration).
+
+To achieve this add this into the code above:
+
+```cs
+            TransactionParametersResponse transParams;
+            try
+            {
+                transParams = await algodApiInstance.TransactionParamsAsync();
+            }
+            catch (Algorand.Algod.Model.ApiException<ErrorResponse> e)
+            {
+                Console.WriteLine("Exception when calling algod#getSupply:" + e.Result.Message);
+            }
+
+```
+
+Now, with the above network state information, we will send a microalgo from one account to another.
+
+To achieve this we will use a help method on the ```PaymentMethod``` class.
+
+Add the following code:
+
+```cs
+            var amount = Utils.AlgosToMicroalgos(1);
+            
+            var tx = PaymentTransaction.GetPaymentTransactionFromNetworkTransactionParameters(src.Address, new Address(DEST_ADDR), amount, "pay message", transParams);
+```
+
+After that, we need to sign the transaction using the sender account, for which we have the private key:
+
+```cs
+            // payment transactions must be signed by the sender
+            var signedTx = tx.Sign(src);
+
+            Console.WriteLine("Signed transaction with txid: " + signedTx.Tx.TxID());
+
+```
+
+Now let's send it to the network and execute the payment:
+
+```cs
+            // send the transaction to the network
+            try
+            {
+                var id = await Utils.SubmitTransaction(algodApiInstance, signedTx);
+                Console.WriteLine("Successfully sent tx with id: " + id.Txid);
                 
-    Console.WriteLine("Lastround: " + trans.LastRound.ToString());
-    Console.WriteLine("Block txns: " + block.Block.ToString());
-}
-catch (ApiException e)
-{
-    Console.WriteLine("Exception when calling algod#getSupply:" + e.Message);
-}
-
-TransactionParametersResponse transParams;
-try
-{
-    transParams = algodApiInstance.TransactionParams();                
-}
-catch (ApiException e)
-{
-    throw new Exception("Could not get params", e);
-}
-var amount = Utils.AlgosToMicroalgos(1);
-var tx = Utils.GetPaymentTransaction(src.Address, new Address(DEST_ADDR), amount, "pay message", transParams);
-var signedTx = src.SignTransaction(tx);
-
-Console.WriteLine("Signed transaction with txid: " + signedTx.transactionID);
-
-// send the transaction to the network
-try
-{
-    var id = Utils.SubmitTransaction(algodApiInstance, signedTx);
-    Console.WriteLine("Successfully sent tx with id: " + id.TxId);
-    Console.WriteLine(Utils.WaitTransactionToComplete(algodApiInstance, id.TxId));
-}
-catch (ApiException e)
-{
-    // This is generally expected, but should give us an informative error message.
-    Console.WriteLine("Exception when calling algod#rawTransaction: " + e.Message);
-}
-Console.WriteLine("You have successefully arrived the end of this test, please press and key to exist.");
+                var resp = await Utils.WaitTransactionToComplete(algodApiInstance, id.Txid) as Transaction;
+                
+                Console.WriteLine("Confirmed Round is: " + resp.ConfirmedRound);
+            }
+            catch (ApiException<ErrorResponse> e)
+            {
+                // This is generally expected, but should give us an informative error message.
+                Console.WriteLine("Exception when calling algod#rawTransaction: " + e.Result.Message);
+            }
 ```
 
-**DO NOT SHOW THE MNEMONIC IN YOU CODE**. The code above is only used for function display and cannot be used in the actual production environment 
+The above submits our transaction, gets the id, sends that back to the node and asks to be notified when the transaction completes. This should take on average about 2 seconds even on the live main network. 
 
-You can find more examples in the **sdk-examples** project.
-
-## 4. Quick Start for Indexer
-
-As we all know blockchain has a chain data struct, so it's very different for us to search the data. So algorand retrieve the blockchain data from a PostgreSQL compatible database. Then we can search for the blockchain very easily.
-
-![Algorand Indexer](indexerv2.png)
-
-The indexer has 12 methods to search the blockchain and some of these methods have a lot of variables to control the result. Let's try some code.
-
-```csharp
-string ALGOD_API_ADDR = "your algod api address";
-string ALGOD_API_TOKEN = "your algod api token";
-
-IndexerApi indexer = new IndexerApi(ALGOD_API_ADDR, ALGOD_API_TOKEN);
-//AlgodApi algodApiInstance = new AlgodApi(ALGOD_API_ADDR, ALGOD_API_TOKEN);
-var health = indexer.MakeHealthCheck();
-Console.WriteLine("Make Health Check: " + health.ToJson());
-
-System.Threading.Thread.Sleep(1200); //test in purestake, imit 1 req/sec
-var address = "KV2XGKMXGYJ6PWYQA5374BYIQBL3ONRMSIARPCFCJEAMAHQEVYPB7PL3KU";
-var acctInfo = indexer.LookupAccountByID(address);
-Console.WriteLine("Look up account by id: " + acctInfo.ToJson());
-
-System.Threading.Thread.Sleep(1200); //test in purestake, imit 1 req/sec
-var transInfos = indexer.LookupAccountTransactions(address, 10);
-Console.WriteLine("Look up account transactions(limit 10): " + transInfos.ToJson());
-
-System.Threading.Thread.Sleep(1200); //test in purestake, imit 1 req/sec
-var appsInfo = indexer.SearchForApplications(limit: 10);
-Console.WriteLine("Search for application(limit 10): " + appsInfo.ToJson());
-
-var appIndex = appsInfo.Applications[0].Id;
-System.Threading.Thread.Sleep(1200); //test in purestake, imit 1 req/sec
-var appInfo = indexer.LookupApplicationByID(appIndex);
-Console.WriteLine("Look up application by id: " + appInfo.ToJson());
-
-System.Threading.Thread.Sleep(1200); //test in purestake, imit 1 req/sec
-var assetsInfo = indexer.SearchForAssets(limit: 10, unit: "LAT");
-Console.WriteLine("Search for assets" + assetsInfo.ToJson());
-
-var assetIndex = assetsInfo.Assets[0].Index;
-System.Threading.Thread.Sleep(1200); //test in purestake, imit 1 req/sec
-var assetInfo = indexer.LookupAssetByID(assetIndex);
-Console.WriteLine("Look up asset by id:" + assetInfo.ToJson());
-```
-
-Please enjoy!!!
-## 5. Quick Start for algod API 1.0
-
-```csharp
-string ALGOD_API_ADDR = "your algod api address"; //find in algod.net
-string ALGOD_API_TOKEN = "your algod api token"; //find in algod.token
-AlgodApi algodApiInstance = new AlgodApi(ALGOD_API_ADDR, ALGOD_API_TOKEN);
-```
-
-Now purestake **DO NOT** support algod API 1.0, please use your own node to test the functions below.
-
-Get information from algorand blockchain:
-
-``` csharp
-try
-{
-    Supply supply = algodApiInstance.GetSupply();
-    Console.WriteLine("Total Algorand Supply: " + supply.TotalMoney);
-    Console.WriteLine("Online Algorand Supply: " + supply.OnlineMoney);
-}
-catch (ApiException e)
-{
-    Console.WriteLine("Exception when calling algod#getSupply: " + e.Message);
-}
-ulong? feePerByte;
-string genesisID;
-Digest genesisHash;
-ulong? firstRound = 0;
-try
-{
-    TransactionParams transParams = algodApiInstance.TransactionParams();
-    feePerByte = transParams.Fee;
-    genesisHash = new Digest(Convert.FromBase64String(transParams.Genesishashb64));
-    genesisID = transParams.GenesisID;
-    Console.WriteLine("Suggested Fee: " + feePerByte);
-    NodeStatus s = algodApiInstance.GetStatus();
-    firstRound = s.LastRound;
-    Console.WriteLine("Current Round: " + firstRound);
-}
-catch (ApiException e)
-{
-    throw new Exception("Could not get params", e);
-}
-```
-
-If you want to go further, you should have an account.  You can use `Account acc = new Account();` to generate a random account. Surely you can use mnemonic to create an account. The example below using mnemonics to create an account and send some algos to another address.
-
-```csharp
-ulong? amount = 100000;
-ulong? lastRound = firstRound + 1000; // 1000 is the max tx window
-string SRC_ACCOUNT = "typical permit hurdle hat song detail cattle merge oxygen crowd arctic cargo smooth fly rice vacuum lounge yard frown predict west wife latin absent cup";
-Account src = new Account(SRC_ACCOUNT);
-Console.WriteLine("My account address is:" + src.Address.ToString());
-string DEST_ADDR = "KV2XGKMXGYJ6PWYQA5374BYIQBL3ONRMSIARPCFCJEAMAHQEVYPB7PL3KU";
-Transaction tx = new Transaction(src.Address, new Address(DEST_ADDR), amount, firstRound, lastRound, genesisID, genesisHash);
-//sign the transaction before send it to the blockchain
-SignedTransaction signedTx = src.SignTransactionWithFeePerByte(tx, feePerByte);
-Console.WriteLine("Signed transaction with txid: " + signedTx.transactionID);
-// send the transaction to the network
-try
-{
-    //encode to msg-pack
-    var encodedMsg = Algorand.Encoder.EncodeToMsgPack(signedTx);
-    TransactionID id = algodApiInstance.RawTransaction(encodedMsg);
-    Console.WriteLine("Successfully sent tx with id: " + id.TxId);
-}
-catch (ApiException e)
-{
-    // This is generally expected, but should give us an informative error message.
-    Console.WriteLine("Exception when calling algod#rawTransaction: " + e.Message);
-}
-```
-
-## 6. Migrate from dotnet-algorand-sdk 0.1.X to dotnet-algorand-sdk 0.2.X
-
-Dotnet-algorand-sdk Version 0.2.X modifies the namespace of algod API 1.0 compared to  dotnet-algorand-sdk Version 0.1.X. Please replaces the namespaces below:
-
-Replace **Algorand.Algod.Client.Model** with **Algorand.Algod.Model**
-
-Replace **Algorand.Algod.Client.Api** with **Algorand.Algod.Api**
-
-Replace **Algorand.Kmd.Client.Model** with **Algorand.Algod.Model**
-
-Replace **Algorand.Kmd.Client.Api** with **Algorand.Kmd.Api**
-
-Replace **Algorand.Algod.Client** with **Algorand.Client**
-
-Replace **Algorand.Kmd.Client** with **Algorand.Client**
-
-Everything else remains the same.
-
-That's all? Yes, this is a complete example, you can find more examples in the sdk-examples project.
+That's it! You have used .NET to interact with Algorand, work a bit with Accounts and send a payment from one account to another.
 
 
