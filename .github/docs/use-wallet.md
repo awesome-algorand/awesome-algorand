@@ -4,7 +4,7 @@
 
 # @TxnLab/use-wallet
 
-React hooks for using Algorand compatible wallets with web applications.
+React hooks for using Algorand compatible wallets with web applications. Flexible and extensible, `use-wallet` supports a variety of wallets and connection protocols. It also provides a simple interface for connecting, disconnecting, switching between accounts and signing transactions.
 
 ## Supported Providers
 
