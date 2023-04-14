@@ -20,3 +20,33 @@ TEALScript is still very much a work in progress. The current version is `0.x.x`
 * ABI ufixed encoding/decoding
 * More testing
 * More documentation
+
+## Example Contract
+
+The artifacts for this contract can be seen in [examples/calculator/artifacts](./examples/calculator/artifacts)
+
+```ts
+import { Contract } from '../../src/lib/index';
+
+class Calculator extends Contract {
+  private getSum(a: number, b: number): number {
+    return a + b;
+  }
+
+  private getDifference(a: number, b: number): number {
+    return a >= b ? a - b : b - a;
+  }
+
+  doMath(a: number, b: number, operation: string): number {
+    let result: number;
+
+    if (operation === 'sum') {
+      result = this.getSum(a, b);
+    } else if (operation === 'difference') {
+      result = this.getDifference(a, b);
+    } else throw Error('Invalid operation');
+
+    return result;
+  }
+}
+```
