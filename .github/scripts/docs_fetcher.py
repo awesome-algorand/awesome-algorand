@@ -46,7 +46,7 @@ def main():
     script_path = os.path.abspath(__file__)
     project_root = os.path.dirname(os.path.dirname(os.path.dirname(script_path)))
     markdown_file = os.path.join(project_root, "README.md")
-    download_folder = os.path.join(project_root, ".github", "docs")
+    download_folder = os.path.join(project_root, "indexed_docs")
 
     urls = find_git_urls(markdown_file)
     os.makedirs(download_folder, exist_ok=True)
