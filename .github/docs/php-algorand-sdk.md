@@ -2,17 +2,17 @@
 
 ---
 
-# PHP Algorand SDK (algod, kmd and indexer)
+# PHP Algorand SDK 2.0 (algod, algokey, kmd, transactions and indexer)
 
-A PHP library for interacting with the Algorand network.
+A Pure PHP (no dependencies) library for interacting with the Algorand network.
 
 All files in this directory will show you about the best pratices that you should do when implementing  **php-algorand-sdk** into your project.
 
 
 ## Requirements
-- PHP 7.2 and above.
+- PHP 7.3 and above.
 - Built-in libcurl support.
-- Algorand algod, kmd, indexer
+- Algorand node, algod, kmd, indexer or PureStake
 
 ## Frameworks Compatibility
 This SDK was developed to support several PHP Frameworks, tested with:
@@ -24,7 +24,6 @@ This SDK was developed to support several PHP Frameworks, tested with:
 - **Codeigniter**
 - **Symfony**
 
-New ones will be tested soon.
 
 In the **sdk** folder you will find the setup suggestions.
 
@@ -47,10 +46,9 @@ require_once 'sdk/algokey.php';
 
 #OR with namespace include
 
-use App\Algorand\algod;
-use App\Algorand\kmd;
+use App\Algorand\algorand;
+use App\Algorand\transactions;
 use App\Algorand\algokey;
-use App\Algorand\indexer;
 use App\Algorand\b32;
 use App\Algorand\msgpack;
 
@@ -58,26 +56,23 @@ use App\Algorand\msgpack;
 
 For use the **algod**:
 ```php
-$algorand = new Algorand_algod('{algod-token}',"localhost",53898); //get the token key in data/algod.admin.token
+# Node
+$algorand = new Algorand("algod","{algod-token}","localhost",53898); //get the token key in data/algod.admin.token
+
+# PureStake
+$algorand = new Algorand("algod","{pure-stake-token}","mainnet-algorand.api.purestake.io/ps2",0,true); //External PureStake
+
 $return=$algorand->get("v2","status");
 print_r($return);
 
-#OR with namespace include
-$algorand = new algod('{algod-token}',"localhost",53898); //get the token key in data/algod.admin.token
-$return=$algorand->get("v2","status");
-print_r($return);
 ```
 (see all avaliable functions in **algod.php**)
 
 
 For use the **kmd**:
 ```php
-$algorand_kmd = new Algorand_kmd('{kmd-token}',"localhost",64988); //get the token key in data/kmd-{version}/kmd.token
-$return=$algorand_kmd->get("versions");
-print_r($return);
-
-#OR with namespace include
-$algorand_kmd = new kmd('{kmd-token}',"localhost",64988); //get the token key in data/kmd-{version}/kmd.token
+#Node only
+$algorand_kmd = new  Algorand("kmd","{kmd-token}","localhost",7833); //get the token key in data/kmd-{version}/kmd.token and port in data/kmd-{version}/kmd.net
 $return=$algorand_kmd->get("versions");
 print_r($return);
 ```
@@ -86,17 +81,50 @@ print_r($return);
 
 For use the **indexer**:
 ```php
-$algorand_indexer = new Algorand_indexer('{algorand-indexer-token}',"localhost",8089);
-$return=$algorand_indexer->get("health");
-print_r($return);
+#Node
+$algorand_indexer = new Algorand("indexer","{algorand-indexer-token}","localhost",8089);
 
-#OR with namespace include
-$algorand_indexer = new indexer('{algorand-indexer-token}',"localhost",8089);
+#PureStake
+$algorand_indexer = new Algorand("indexer","{pure-stake-token}","mainnet-algorand.api.purestake.io/idx2",0,true); //true for External PureStake
+
 $return=$algorand_indexer->get("health");
 print_r($return);
 ```
 (see all avaliable functions in **indexer.php**)
 
+For use the **algokey**:
+```php
+$algokey=new  algokey;
+
+$key=$algokey->generate();
+print_r($key);
+```
+(see all avaliable functions in **algokey.php**)
+
+For use the **transactions**:
+```php
+$algorand_transactions = new  Algorand_transactions;
+#Build and Sign a transaction, for details: https://developer.algorand.org/docs/features/transactions
+
+#Payment Transaction (ALGO)
+
+$transaction=array(
+        "txn" => array(
+                "type" => "pay", //Tx Type
+                "fee" => 1000, //Fee
+                "fv" => 27151092, //First Valid
+                "gen" => "mainnet-v1.0", // GenesisID
+                "gh" => "wGHE2Pwdvd7S12BL5FaOP20EGYesN73ktiC1qzkkit8=", //Genesis Hash
+                "lv" => 27152092, //Last Valid
+                "note" => "Testes", //You note
+                "snd" => "3DKZLYQJXSUAE7ZCFZN7ODZSOA6733PI5BFM4L7WI4S3K6KEVOOA6KDN2I", //Sender
+                "rcv" => "IYVZLDFIF6KUMSDFVIKHPBT3FI5QVZJKJ6BPFSGIJDUJGUUASKNRA4HUHU", //Receiver
+                "amt" => 1000, //Amount
+            ),
+);
+
+```
+(see all avaliable functions in **transactions.php**)
 
 ## Vídeo Tutorial
 
@@ -123,7 +151,7 @@ https://www.youtube.com/watch?v=b__DhRzAex0
 ## Complete Guide
 
 ### Node setup (macOS and Linux)
-Verified on macOS Big Sur 11.2.2 and Ubuntu 20.04
+Verified on macOS Monterey 12.5.1 and Ubuntu 22.04
 
 For other cases, follow the instructions in Algorand's [developer resources](https://developer.algorand.org/docs/run-a-node/setup/install/) to install a node on your computer.
 
@@ -132,17 +160,6 @@ For other cases, follow the instructions in Algorand's [developer resources](htt
 - 2- Installing Algorand Indexer
 - 3- Installing and Using the **PHP Algorand SDK**
 
-
-### For macOS only, for Linux skip this step.
-#### Install Homebrew (https://brew.sh/)
-
-Paste that in a macOS Terminal or Linux shell prompt. The script explains what it will do and then pauses before it does it.
-```
-$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-$ brew install wget
-$ brew install git
-$ brew install htop
-```
 
 
 ### For macOS and Linux:
@@ -154,26 +171,26 @@ $ cd ~/node
 
 
 Download the updater script:
+
+#### macOS
 ```
-$ wget https://raw.githubusercontent.com/algorand/go-algorand-doc/master/downloads/installers/update.sh
+$ curl https://raw.githubusercontent.com/algorand/go-algorand/rel/stable/cmd/updater/update.sh -O
 ```
 
+#### Linux
+```
+$ wget https://raw.githubusercontent.com/algorand/go-algorand/rel/stable/cmd/updater/update.sh
+```
 
 Ensure that your system knows it's an executable file:
 ```
-$ chmod +x update.sh
+$ chmod 744 update.sh
 ```
 
 
 Run the installer from within your node directory:
 ```
 $ ./update.sh -i -c stable -p ~/node -d ~/node/data -n
-```
-
-
-For Apple Silicon (Mac M1) users:
-```
-$ arch -x86_64 ./update.sh -i -c stable -p ~/node -d ~/node/data -n
 ```
 
 
@@ -267,25 +284,92 @@ After cloning the repository, you need to include the `php-algorand-sdk`:
 ```php
 require_once 'sdk/algorand.php';
 require_once 'sdk/algokey.php';
+require_once 'sdk/transactions.php';
 
 #OR with namespace include
 
-use App\Algorand\algod;
-use App\Algorand\kmd;
+use App\Algorand\algorand;
 use App\Algorand\algokey;
-use App\Algorand\indexer;
+use App\Algorand\transactions;
 use App\Algorand\b32;
 use App\Algorand\msgpack;
 ```
 
+## For use the **Algokey**:
 
-## For use the **algod**:
+### Start the Algokey
+```php
+$algokey=new  algokey;
+```
+
+### Generate New Key/Account/Address
+```php
+$key=$algokey->generate();
+print_r($key);
+echo "Words to string: ".implode(" ",$key['words'])."\n";
+```
+
+### Words to Private Key and Public Key (Array)
+```php
+$words=explode(" ","connect produce defense output sibling idea oil siege decline dentist faint electric method notice style cook unlock rice confirm host tone test vehicle able keen"); //2OEZACD77WSR5C2HFEHO2BYHQEATOGFIUW3REGKOGNPPNYPPLROHDU2CQE
+$privateKey=$algokey->WordsToPrivateKey($words); //Array
+$privateKey_decoded=base64_decode($privateKey);
+$publicKey=$algokey->publicKeyFromPrivateKey($privateKey);
+$publicKey_decoded=$algokey->publicKeyFromPrivateKey($privateKey,false);
+echo "Private Key: ".$privateKey."\n";
+echo "Private Key decoded: ".$privateKey_decoded."\n";
+echo "Public Key B32: ".$publicKey."\n";
+echo "Public Key decoded: ".$publicKey_decoded."\n";
+```
+
+### Private Key to Words
+```php
+$privateKey="eenqctbZ48E5E8jHoc6jdhTGW/q6L3BP7l3gJnJ+P17TiZAIf/2lHotHKQ7tBweBATcYqKW3EhlOM1724e9cXA==";
+$return_words=$algokey->privateKeyToWords($privateKey);
+print_r($return_words);
+echo "Words: ".implode(" ",$return_words)."\n";
+```
+
+### Sign Transaction with Algokey PHP
+```php
+$transaction=array(
+        "txn" => array(
+                "type" => "pay", //Tx Type
+                "fee" => 1000, //Fee
+                "fv" => 28237321, //First Valid
+                "gen" => "mainnet-v1.0", // GenesisID
+                "gh" => "wGHE2Pwdvd7S12BL5FaOP20EGYesN73ktiC1qzkkit8=", //Genesis Hash
+                "lv" => 28238321, //Last Valid
+                "note" => "", //You note
+                "snd" => "2QAXTOHQJQH6I4FM6RWUIISXKFJ2QA4NVWELMIJ5XAKZB4N4XIEX7F5KPU", //Sender
+                "rcv" => "DI65FPLNUXOJJR47FDTIB5TNNIA5G4EZFA44RZMRBE7AA4D453OYD2JCW4", //Receiver
+                "amt" => 1003, //Amount
+            ),
+);
+
+$transaction_raw=$algorand_transactions->encode($transaction);
+$signature=$algokey->sign($transaction_raw,$privateKey);
+```
+
+### Broadcasts a raw transaction to the network.
+```php
+$transaction_raw_signed=$algorand_transactions->encode($transaction,true,$signature);
+
+$algorand = new Algorand("algod","4820e6e45f339e0026eaa2b74c2aa7d8735cbcb2db0cf0444fb492892e1c09b7","localhost",53898);
+$params['transaction']=$transaction_raw_signed;
+print_r($params);
+$return=$algorand->post("v2","transactions",$params);
+print_r($return);
+```
+
+## For use the **Algod**:
 Start the SDK
 ```php
-$algorand = new Algorand_algod('{algod-token}',"localhost",53898); //get the token key in data/algod.token
+#Node
+$algorand = new  Algorand("algod",'{algod-token}',"localhost",53898); //get the token key in data/algod.token
 
-#OR with namespace include
-$algorand = new algod('{algod-token}',"localhost",53898); //get the token key in data/algod.token
+#PureStake
+$algorand = new Algorand("algod","{pure-stake-token}","mainnet-algorand.api.purestake.io/ps2",0,true); //true for External PureStake
 ```
 
 ### Get the versions
@@ -302,124 +386,152 @@ $return=$algorand->get("v2","status");
 
 ### Gets the node status after waiting for the given round.
 ```php
-$return=$algorand->get("v2","status","wait-for-block-after",12385949);
+$return=$algorand->get("v2","status","wait-for-block-after",{block});
 ```
-
 
 ### Gets the genesis information.
 ```php
-$return=$algorand->get("genesis");
+return=$algorand->get("genesis");
 ```
-
 
 ### Returns 200 (OK) if healthy.
 ```php
 $return=$algorand->get("health");
 ```
 
-
 ### Return metrics about algod functioning.
 ```php
 $return=$algorand->get("metrics");
 ```
-
 
 ### Gets the current swagger spec.
 ```php
 $return=$algorand->get("swagger.json");
 ```
 
-
-### Check your balance.
+### Get account information and balances.
 ```php
-$return=$algorand->get("v1","account","{address}");
+$return=$algorand->get("v2","accounts","{address}","?exclude=none&?format=json"); //?exclude=none or all. When set to all will exclude asset holdings, &format=json or msgpack (opcional, default json)
 ```
 
-### Get a specific confirmed transaction.
+### Get account information about a given app.
 ```php
-$return=$algorand->get("v1","account","{address}","transaction","{txid}");
+$return=$algorand->get("v2","accounts","{address}","applications","{application-id}");
 ```
 
-
-### Get a list of unconfirmed transactions currently in the transaction pool by address.
+### Get account information about a given asset.
 ```php
-$return=$algorand->get("v1","account","{address}","transactions","pending");
+$return=$algorand->get("v2","accounts","{address}","assets","{asset-id}");
 ```
-
-
-### Get account information.
-```php
-$return=$algorand->get("v2","accounts","{address}","?format=json"); //?format=json or msgpack (opcional, default json)
-```
-
 
 ### Get a list of unconfirmed transactions currently in the transaction pool by address.
 ```php
 $return=$algorand->get("v2","accounts","{address}","transactions","pending","?format=json&max=2");
 ```
 
-
 ### Get application information.
 ```php
 $return=$algorand->get("v2","applications","{application-id}");
 ```
 
-
-### Get asses.
+### Get box information for a given application.
 ```php
-$return=$algorand->get("v1","assets");
+$return=$algorand->get("v2","applications","{application-id}","box","?name=");
 ```
 
+### Get all box names for a given application.
+```php
+$return=$algorand->get("v2","applications","{application-id}","boxes","?max=");
+```
 
 ### Get asset information.
 ```php
 $return=$algorand->get("v2","assets","{asset-id}");
 ```
 
-
 ### Get the block for the given round.
 ```php
-$return=$algorand->get("v1","block","{block-number}");
+$return=$algorand->get("v2","blocks","{block}");
 ```
 
-
-### Get the block for the given round.
+### Get the block hash for the block on the given round.
 ```php
-$return=$algorand->get("v2","blocks","{block-number}");
+$return=$algorand->get("v2","blocks","{block}","hash");
 ```
 
-
-### Starts a catchpoint catchup. For the last catchpoint access:
-https://algorand-catchpoints.s3.us-east-2.amazonaws.com/channel/mainnet/latest.catchpoint
+### Gets a proof for a given light block header inside a state proof commitment
 ```php
-$return=$algorand->post("v2","catchup",urlencode("{catchpoint}"));
+$return=$algorand->get("v2","blocks","{block}","lightheader","proof");
 ```
 
+### Get a proof for a transaction in a block.
+```php
+$return=$algorand->get("v2","blocks","{round}","transactions","{txid}","proof");
+```
+
+### Starts a catchpoint catchup. For the last catchpoint access: https://algorand-catchpoints.s3.us-east-2.amazonaws.com/channel/mainnet/latest.catchpoint
+```php
+$return=$algorand->post("v2","catchup","{catchpoint}");
+```
 
 ### Aborts a catchpoint catchup.
 ```php
-$return=$algorand->delete("v2","catchup",urlencode("{catchpoint}"));
+$return=$algorand->delete("v2","catchup","{catchpoint}");
 ```
 
+### Get a LedgerStateDelta object for a given round
+```php
+$return=$algorand->get("v2","deltas","{round}");
+```
 
 ### Get the current supply reported by the ledger.
 ```php
 $return=$algorand->get("v2","ledger","supply");
 ```
 
-
-### Generate (or renew) and register participation keys on the node for a given account address.
+### Returns the minimum sync round the ledger is keeping in cache.
 ```php
-$params['params'] = array(
-                        "fee"=>1000,
-                        "key-dilution" => 10000,
-                        "no-wait" => false,
-                        "round-last-valid" => 22149901
-                    );
-
-$return=$algorand->post("v2","register-participation-keys","{address}",$params);
+$return=$algorand->get("v2","ledger","sync");
 ```
 
+### Removes minimum sync round restriction from the ledger.
+```php
+$return=$algorand->delete("v2","ledger","sync");
+```
+
+### Given a round, tells the ledger to keep that round in its cache.
+```php
+$return=$algorand->post("v2","ledger","sync","{round}");
+```
+
+### Add a participation key to the node
+```php
+$params['body']="{participationkey}";
+$return=$algorand->post("v2","participation",$params);
+```
+
+
+### Return a list of participation keys
+```php
+$return=$algorand->get("v2","participation");
+```
+
+### Append state proof keys to a participation key
+```php
+$params['body']="{keymap}";
+$return=$algorand->post("v2","participation","{participation-id}",$params);
+```
+
+
+### Get participation key info given a participation ID
+```php
+$return=$algorand->get("v2","participation","{participation-id}");
+```
+
+### Delete a given participation key by ID
+```php
+$return=$algorand->delete("v2","participation","{participation-id}");
+```
 
 ### Special management endpoint to shutdown the node. Optionally provide a timeout parameter to indicate that the node should begin shutting down after a number of seconds.
 ```php
@@ -427,6 +539,10 @@ $params['params']=array("timeout" => 0);
 $return=$algorand->post("v2","shutdown", $params);
 ```
 
+### Get a state proof that covers a given round
+```php
+$return=$algorand->get("v2","stateproofs","{round}");
+```
 
 ### Compile TEAL source code to binary, produce its hash
 ```php
@@ -434,6 +550,11 @@ $params['body']="";
 $return=$algorand->post("v2","teal","compile",$params);
 ```
 
+### Disassemble program bytes into the TEAL source code.
+```php
+$params['body']="";
+$return=$algorand->post("v2","teal","disassemble",$params);
+```
 
 ### Provide debugging information for a transaction (or group).
 ```php
@@ -449,83 +570,29 @@ $params['$params']=array(
 $return=$algorand->post("v2","teal","dryrun",$params);
 ```
 
-
-### Get the suggested fee
-```php
-$return=$algorand->get("v1","transactions","fee");
-```
-
-
-### Get an information of a single transaction.
-```php
-$return=$algorand->get("v1","transaction","{txid}"); //start the algorand-indexer to run
-```
-
-
 ### Broadcasts a raw transaction to the network.
-Generate and Sign the transaction:
-
-#### With PHP Algorand SDK
-
-Payment Transaction
 ```php
-$transaction=array(
-        "txn" => array(
-                "fee" => 1000, //Fee
-                "fv" => 12581127, //First Valid
-                "gen" => "mainnet-v1.0", // GenesisID
-                "gh" => "wGHE2Pwdvd7S12BL5FaOP20EGYesN73ktiC1qzkkit8=", //Genesis Hash
-                "lv" => 12582127, //Last Valid
-                "note" => "", //Your note
-                "snd" => "{sender-address}", //Sender
-                "type" => "pay", //Tx Type
-                "rcv" => "{receive-address}", //Receiver
-                "amt" => 1000, //Amount
-            ),
-);
-
-$params['params']=array(
-   "transaction" => $algorand_kmd->txn_encode($transaction),
-   "wallet_handle_token" => $wallet_handle_token,
-   "wallet_password" => ""
-);
-
-$return=$algorand_kmd->post("v1","transaction","sign",$params);
-$r=json_decode($return['response']);
-$txn=base64_decode($r->signed_transaction);
-```
-
-Broadcasts a raw transaction to the network.
-```php
-$algorand = new Algorand_algod('{algod-token}',"localhost",53898);
-$params['transaction']=$txn;
-$return=$algorand->post("v2","transactions",$params);
-```
+#Generate and Sign the transaction with cli or this sdk:
+//CLI sample
+#./goal clerk send -a 1000 -f {address_from} -t {address_to} -d data -o transactions/tran.txn
+#./goal clerk sign --infile="trans/tran.txn" --outfile="trans/tran.stxn" -d data
 
 
-#### With goal
-```
-$ ./goal clerk send -a 1000 -f {sender-address} -t {receive-address} -d data -o transactions/tran.txn
-$ ./goal clerk sign --infile="transactions/tran.txn" --outfile="transactions/tran.stxn" -d data
-```
-
-```php
 $params['file']="transactions/tran.stxn";
+$params['transaction']="";
 $return=$algorand->post("v2","transactions",$params);
-```
 
+```
 
 ### Get parameters for constructing a new transaction
 ```php
 $return=$algorand->get("v2","transactions","params");
 ```
 
-
 ### Get a list of unconfirmed transactions currently in the transaction pool.
 ```php
 $return=$algorand->get("v2","transactions","pending","?format=json&max=2");
 ```
-
 
 ### Get a specific pending transaction.
 ```php
@@ -533,15 +600,15 @@ $return=$algorand->get("v2","transactions","pending","{txid}","?format=json");
 ```
 
 
+
 For more details: https://developer.algorand.org/docs/reference/rest-apis/algod/v2/
 
-## For use the **kmd**:
+## For use the **KMD**:
 Start the SDK
 ```php
-$algorand_kmd = new Algorand_kmd('{kmd-token}',"localhost",64988); //get the token key in data/kmd-{version}/kmd.token
+$algorand_kmd = new  Algorand("kmd","{kmd-token}","localhost",7833); //get the token key in data/kmd-{version}/kmd.token and port in data/kmd-{version}/kmd.net
 
-#OR with namespace include
-$algorand_kmd = new kmd('{kmd-token}',"localhost",64988); //get the token key in data/kmd-{version}/kmd.token
+$algorand_transactions = new  Algorand_transactions;
 ```
 
 #### Get Versions
@@ -790,6 +857,28 @@ $params['params']=array(
     "wallet_password" => ""
 );
 $return=$algorand_kmd->post("v1","program","sign",$params);
+```
+
+## For use **Transactions**:
+
+### To sign with Algokey load the Private Key
+```php
+$words=explode(" ","connect produce defense output sibling idea oil siege decline dentist faint electric method notice style cook unlock rice confirm host tone test vehicle able keen"); //2OEZACD77WSR5C2HFEHO2BYHQEATOGFIUW3REGKOGNPPNYPPLROHDU2CQE
+$privateKey=$algokey->WordsToPrivateKey($words); //Array to load words
+```
+
+### To sign with KMD load the Wallet
+```php
+$algorand_kmd = new Algorand("kmd","{kmd-token}","localhost",7833); //get the token key in data/kmd-{version}/kmd.token and port in data/kmd-{version}/kmd.net
+
+#Wallet Init  //Only if you will use the KMD.
+$params['params']=array(
+    "wallet_id" => "",
+    "wallet_password" => "tests",
+);
+$return=$algorand_kmd->post("v1","wallet","init",$params);
+$return_array=json_decode($return['response']);
+$wallet_handle_token=$return_array->wallet_handle_token;
 ```
 
 
@@ -1088,20 +1177,21 @@ For more details: https://developer.algorand.org/docs/reference/rest-apis/kmd/
 ## Atomic Transfers
 Create Transactions
 ```php
-//Transaction 1
 $transactions=array();
+
+//Transaction 1
 $transactions[]=array(
         "txn" => array(
                 "type" => "pay", //Tx Type
                 "fee" => 1000, //Fee
-                "fv" => 13089936, //First Valid
+                "fv" => 28259644, //First Valid
                 "gen" => "mainnet-v1.0", // GenesisID
                 "gh" => "wGHE2Pwdvd7S12BL5FaOP20EGYesN73ktiC1qzkkit8=", //Genesis Hash
-                "lv" => 13090936, //Last Valid
+                "lv" => 28260644, //Last Valid
                 "note" => "Testes", //You note
-                "snd" => "DI65FPLNUXOJJR47FDTIB5TNNIA5G4EZFA44RZMRBE7AA4D453OYD2JCW4", //Sender
-                "rcv" => "DOVA6TULHNY2DCS65LVT5QYLWZGM7WC2GISPRGNDWDUH3KUX56ZLQJW3AY", //Receiver
-                "amt" => 1000, //Amount
+                "snd" => "3DKZLYQJXSUAE7ZCFZN7ODZSOA6733PI5BFM4L7WI4S3K6KEVOOA6KDN2I", //Sender
+                "rcv" => "DI65FPLNUXOJJR47FDTIB5TNNIA5G4EZFA44RZMRBE7AA4D453OYD2JCW4", //Receiver
+                "amt" => 102, //Amount
             ),
 );
 
@@ -1110,37 +1200,54 @@ $transactions[]=array(
         "txn" => array(
                 "type" => "pay", //Tx Type
                 "fee" => 1000, //Fee
-                "fv" => 13089936, //First Valid
+                "fv" => 28259644, //First Valid
                 "gen" => "mainnet-v1.0", // GenesisID
                 "gh" => "wGHE2Pwdvd7S12BL5FaOP20EGYesN73ktiC1qzkkit8=", //Genesis Hash
-                "lv" => 13090936, //Last Valid
-                "note" => "Testes", //You note
-                "snd" => "DOVA6TULHNY2DCS65LVT5QYLWZGM7WC2GISPRGNDWDUH3KUX56ZLQJW3AY", //Sender
+                "lv" => 28260644, //Last Valid
+                "note" => "Testes 2", //You note
+                "snd" => "3DKZLYQJXSUAE7ZCFZN7ODZSOA6733PI5BFM4L7WI4S3K6KEVOOA6KDN2I", //Sender
                 "rcv" => "DI65FPLNUXOJJR47FDTIB5TNNIA5G4EZFA44RZMRBE7AA4D453OYD2JCW4", //Receiver
-                "amt" => 1000, //Amount
+                "amt" => 203, //Amount
             ),
 );
 ```
 
 Group Transactions
 ```php
-$groupid=$algorand_kmd->groupid($transactions);
+$groupid=$algorand_transactions->groupid($transactions);
+
 #Assigns Group ID
 $transactions[0]['txn']['grp']=$groupid;
 $transactions[1]['txn']['grp']=$groupid;
 ```
 
-Sign Transactions
+Sign Transactions with Algokey
+```php
+#Sign Transaction 1
+
+$txn="";
+$transaction_raw=$algorand_transactions->encode($transactions[0]);
+$signature=$algokey->sign($transaction_raw,$privateKey);
+$txn.=$algorand_transactions->encode($transactions[0],true,$signature);
+
+#Sign Transaction 2
+$transaction_raw=$algorand_transactions->encode($transactions[1]);
+$signature=$algokey->sign($transaction_raw,$privateKey);
+$txn.=$algorand_transactions->encode($transactions[1],true,$signature);
+
+```
+
+OR
+
+Sign Transactions with KMD
 ```php
 #Sign Transaction 1
 $txn="";
 $params['params']=array(
-   //"public_key" => $algorand_kmd->pk_encode("DI65FPLNUXOJJR47FDTIB5TNNIA5G4EZFA44RZMRBE7AA4D453OYD2JCW4"),
-   "transaction" => $algorand_kmd->txn_encode($transactions[0]),
+   "transaction" => $algorand_transactions->encode($transactions[0]),
    "wallet_handle_token" => $wallet_handle_token,
-   "wallet_password" => "testes",
+   "wallet_password" => "tests",
 );
-
 
 $return=$algorand_kmd->post("v1","transaction","sign",$params);
 $r=json_decode($return['response']);
@@ -1149,23 +1256,19 @@ $txn.=base64_decode($r->signed_transaction);
 
 #Sign Transaction 2
 $params['params']=array(
-   //"public_key" => $algorand_kmd->pk_encode("DOVA6TULHNY2DCS65LVT5QYLWZGM7WC2GISPRGNDWDUH3KUX56ZLQJW3AY"),
-   "transaction" => $algorand_kmd->txn_encode($transactions[1]),
+   "transaction" => $algorand_transactions->encode($transactions[1]),
    "wallet_handle_token" => $wallet_handle_token,
-   "wallet_password" => "testes",
+   "wallet_password" => "tests",
 );
 $return=$algorand_kmd->post("v1","transaction","sign",$params);
 $r=json_decode($return['response']);
-$txn.=base64_decode($r->signed_transaction);
-
-echo $txn;
+$txn.=base64_decode($r->signed_transaction);;
 ```
 
 Send Transaction Group
 ```php
 #Broadcasts a raw atomic transaction to the network.
-
-$algorand = new Algorand_algod('4820e6e45f339e0026eaa2b74c2aa7d8735cbcb2db0cf0444fb492892e1c09b7',"localhost",53898);
+$algorand = new Algorand("algod","4820e6e45f339e0026eaa2b74c2aa7d8735cbcb2db0cf0444fb492892e1c09b7","localhost",53898);
 $params['transaction']=$txn;
 $return=$algorand->post("v2","transactions",$params);
 $txId=$return['response']->txId;
@@ -1174,13 +1277,10 @@ echo "txId: $txId";
 
 For more details: https://developer.algorand.org/docs/features/atomic_transfers/
 
-## For use the **indexer**:
+## For use the **Indexer**:
 Start the SDK
 ```php
-$algorand_indexer = new Algorand_indexer('{algorand-indexer-token}',"localhost",8089);
-
-#OR with namespace include
-$algorand_indexer = new indexer('{algorand-indexer-token}',"localhost",8089);
+$algorand_indexer = new Algorand("indexer","{algorand-indexer-token}","localhost",8089);
 ```
 
 
