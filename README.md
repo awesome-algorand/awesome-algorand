@@ -382,6 +382,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [SliceSwap](https://app.sliceswap.com) - One place to trade your assets across major Dex's. All swaps are powered by @deflexfi.
 - [algodaddy](https://www.algodaddy.org) - A blog website for Algorand community.
 - [directorydotalgo](https://directorydotalgo.xyz/) - Algorand's unofficial ecosystem directory of projects.
+- [staketaxcsv](https://github.com/hodgerpodger/staketaxcsv) - Python backend for [stake.tax](https://stake.tax) that generates taxable transactions CSVs for Algorand and other blockchains.
 
 ## Algorand Request for Comments
 
