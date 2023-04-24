@@ -16,7 +16,7 @@ AlgoKit compromises of a number of components that make it the one-stop shop too
 
 ![AlgoKit components](https://raw.githubusercontent.com/algorandfoundation/algokit-cli/main/docs/imgs/algokit-map.png)
 
-AlgoKit can help you [**learn**](#learn), [**develop**](#develop) and deploy Algorand solutions.
+AlgoKit can help you [**learn**](#learn), [**develop**](#develop) and deploy Algorand solutions. It consists of [a number of repositories](https://github.com/search?q=org%3Aalgorandfoundation+algokit-&type=repositories), including this one.
 
 ### Learn
 
@@ -195,6 +195,14 @@ Verify AlgoKit is installed correctly by running `algokit --version` and you sho
 ```
 algokit, version 0.2.0
 ```
+
+> **Note**
+> If you get receive one of the following errors:
+> * `command not found: algokit` (bash/zsh)
+> * `The term 'algokit' is not recognized as the name of a cmdlet, function, script file, or operable program.` (PowerShell)
+>
+> Then ensure that `algokit` is available on the PATH by running `pipx ensurepath` and restarting the terminal.
+
 
 It is also recommended that you run `algokit doctor` to verify there are no issues in your local environment and to diagnose any problems if you do have difficulties running AlgoKit. The output of this command will look similar to:
 

@@ -4,25 +4,28 @@
 
 <br/>
 <div align="center">
-<a href="https://github.com/aorumbayev/awesome-algorand"><img src="https://i.imgur.com/bffzQBG.png"></a>
+<a href="https://github.com/aorumbayev/awesome-algorand"><img src="https://bafkreihb4jprrzqdswxohr3wrlxh74hjmo4vglbotf6ozp4xh2lma7var4.ipfs.nftstorage.link"></a>
 </div>
 <br/>
 <div align="center">
-📣 I am a free and open source health monitoring bot for Algorand Developers that issues a <a href="https://twitter.com/algoping">tweet</a> when <a href="http://AlgoExplorer.io">AlgoExplorer</a> or <a href="http://AlgoNode.io">AlgoNode</a>'s node or indexer health endpoints experience outages.
+📣 I am a free and open source health monitoring bot for Algorand Developers that issues a <a href="https://twitter.com/algoping">tweet</a> with statistics on number of block proposals and other useful daily information.
 <br />
 <br />
 </div>
 
 <p align="center">
-    <img  src="https://visitor-badge.glitch.me/badge?page_id=aorumbayev.algoping&right_color=teal" />
+    <img  src="https://visitor-badge.glitch.me/badge?page_id=aorumbayev.algoping&right_color=green" />
     <a target="_blank" href="https://twitter.com/algoping">
-        <img src="https://img.shields.io/badge/Browse-Twitter-teal.svg" />
+        <img src="https://img.shields.io/badge/Browse-Twitter-green.svg" />
+    </a>
+    <a target="_blank" href="https://algoping.betteruptime.com">
+        <img src="https://img.shields.io/badge/Browse-StatusPage-green.svg" />
     </a>
     <a href="https://github.com/aorumbayev/algoping">
-        <img src="https://img.shields.io/github/stars/aorumbayev/algoping?color=teal" />
+        <img src="https://img.shields.io/github/stars/aorumbayev/algoping?color=green" />
     </a>
     <a  href="https://github.com/aorumbayev/algoping/network/members">
-        <img src="https://img.shields.io/github/forks/aorumbayev/algoping?color=teal" />
+        <img src="https://img.shields.io/github/forks/aorumbayev/algoping?color=green" />
     </a>
 </p>
 
@@ -30,25 +33,21 @@
 
 ### What is AlgoPing?
 
-AlgoPing is a free and open source health monitoring and block analytics bot for Algorand Developers that issues a [tweet](https://twitter.com/algoping) when [AlgoExplorer](http://AlgoExplorer.io) or [AlgoNode](http://AlgoNode.io)'s node or indexer health endpoints experience outages as well as daily statistics. If you want to add more public node providers to the list, please submit a pull request ❤️
+**1. Analytics Tweet Bot**:
 
-### Why AlgoPing?
+AlgoPing is a daily cron triggered bot that uses [BitQuery](https://bitquery.io/) GraphQL API to fetch daily stats on total amount of block proposals and info on proposers. It then uses [Tweepy](https://www.tweepy.org/) to post a tweet with the stats on daily basis to [@algoping](https://twitter.com/algoping) Twitter account.
 
-Relying on free GitHub infrastructure allows this bot to be executed every 30 minutes via GitHub Actions. This means that AlgoPing will be able to monitor AlgoExplorer and AlgoNode's health endpoints for outages 24/7. Any developer in Algorand ecosystem can simply subsribe to the twitter account and be notified when AlgoExplorer or AlgoNode's health endpoints experience outages in real time.
+**2. Health Monitoring Status Page**:
 
-Additionally, AlgoPing relies on Bitquery GraphQL API to get daily stats on total amount of block proposals and info on proposers.
+Additionally, AlgoPing uses [BetterUptime](https://betteruptime.com/) to monitor the status of Node and Indexer servers provided by [AlgoNode](https://algonode.io/) and [AlgoExplorer](https://algoexplorer.io/) respectively. Please note the status page is not affiliated with AlgoNode or AlgoExplorer, for official status refer to their respective websites and communication channels. The aim is to simply provide a free unnoficial status page for the Algorand community that aggregates different Node and Indexer Providers.
 
-### How does AlgoPing work?
-
-AlgoPing runs a multithreaded Python script that checks the health endpoints of AlgoExplorer and AlgoNode triggered every `60` minutes. Once executed it independently queries AlgoNode and AlgoExplorer endpoints for `DURATION_SECONDS` and counts ratio of unsuccessful requests. If the ratio in relation to total amount requests made within `DURATION_SECONDS` (with `LIVENESS_DELAY_SECONDS` delay in between rounds) is greater than 50%, this means that within the `DURATION_SECONDS` minutes triggered execution timeframe the endpoints were down for at least `DURATION_SECONDS / 2` seconds. Hence, AlgoPing will issue a tweet to the [AlgoPing Twitter account](https://twitter.com/algoping) that some endpoints where down in the past `DURATION_SECONDS` minutes timeframe.
-
-If you want to contribute and improve the health monitoring logic of AlgoPing, please feel free to submit a pull request ❤️
+> Please note there are not source codes for health monitoring as AlgoPing relies on a free tier on a third party provider named [BetterUptime](https://betteruptime.com/). If you are interested in setting up your own health monitoring status page, please refer to [BetterUptime](https://betteruptime.com/) documentation.
 
 ## Prerequisites
 
-- [python 3.9.x](https://www.python.org/)
-- [poetry](https://python-poetry.org/)
-- [pre-commit](https://pre-commit.com/)
+-   [python 3.9.x](https://www.python.org/)
+-   [poetry](https://python-poetry.org/)
+-   [pre-commit](https://pre-commit.com/)
 
 ## Installation
 
@@ -76,22 +75,9 @@ pre-commit install
 
 Create twitter app and get your credentials. The following environment variables are required by [`tweepy`](https://www.tweepy.org/):
 
-- `BEARER_TOKEN` - (required) - obtain from Twitter Developers portal. Refer to tweepy documentation.
-- `CONSUMER_KEY` - (required) - obtain from Twitter Developers portal. Refer to tweepy documentation.
-- `CONSUMER_SECRET` - (required) - obtain from Twitter Developers portal. Refer to tweepy documentation.
-- `ACCESS_TOKEN` - (required) - obtain from Twitter Developers portal. Refer to tweepy documentation.
-- `ACCESS_TOKEN_SECRET` - (required) - obtain from Twitter Developers portal. Refer to tweepy documentation.
-- `DURATION_SECONDS` - (optional) specify total duration for executing health checks in seconds, defaults to 30 minutes.
-- `LIVENESS_DELAY_SECONDS` - (optional) specify the delay in between liveness checks, defaults to 5 seconds.
-- `BITQUERY_API_KEY` - (optional) specify Bitquery GraphQL API key to get daily stats on total amount of block proposals and info on proposers.
+-   `BITQUERY_API_KEY` - Specify Bitquery GraphQL API key to get daily stats on total amount of block proposals and info on proposers.
 
 Once you have your credentials, you can run the bot locally with:
-
-```bash
-PYTHONPATH="." poetry run python src/algoping.py
-```
-
-If you want to run the analytics instead:
 
 ```bash
 PYTHONPATH="." poetry run python src/analytics.py
