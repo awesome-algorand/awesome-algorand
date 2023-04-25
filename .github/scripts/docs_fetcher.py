@@ -142,15 +142,21 @@ def split_zip_file(zip_path):
     return left_zip_path, right_zip_path
 
 
+import time
+
+
 def exponential_retry(func, retries, delay, *args, **kwargs):
     for attempt in range(retries):
         result = func(*args, **kwargs)
         if not result.status_code // 100 == 4:
+            print(f"Request successful. Status code: {result.status_code}.")
             return result
         else:
             wait_time = delay * (2**attempt)
+            print(f"Request failed. Status code: {result.status_code}.")
             print(f"Retrying in {wait_time} seconds. Attempt {attempt + 1}/{retries}.")
             time.sleep(wait_time)
+    print(f"All retries failed. Status code: {result.status_code}.")
     return result
 
 
@@ -163,13 +169,17 @@ def upload_to_markprompt(zip_path, token, max_retries=3, retry_delay=1):
             requests.post, max_retries, retry_delay, url, headers=headers, data=zip_file
         )
 
-    if (
-        response.status_code == 504 or response.status_code // 100 == 4
-    ):  # Gateway Timeout
+    if response.status_code == 504:  # Gateway Timeout
+        print(f"Server timed out. Status code: {response.status_code}.")
         left_zip_path, right_zip_path = split_zip_file(zip_path)
+        print(
+            f"Splitting the file into two parts: {left_zip_path} and {right_zip_path}."
+        )
+        print("Uploading each part separately.")
         upload_to_markprompt(left_zip_path, token)
         upload_to_markprompt(right_zip_path, token)
     else:
+        print(f"Upload successful. Status code: {response.status_code}.")
         return response
 
 
