@@ -202,11 +202,12 @@ def main():
 
         if response is not None and response.status_code == 200:
             print("Successfully uploaded to Markprompt.")
-            update_folders(old_download_folder, download_folder)
         else:
             print("Error uploading to Markprompt. Response:", response)
     else:
         print("No changes detected in the folder. Skipping upload.")
+
+    update_folders(old_download_folder, download_folder)
 
 
 main()
