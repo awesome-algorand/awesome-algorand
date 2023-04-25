@@ -8,3 +8,4 @@ index.md
 *.venv
 
 .vs
+.github/scripts/data.zip

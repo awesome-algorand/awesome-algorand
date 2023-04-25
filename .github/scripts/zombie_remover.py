@@ -1,10 +1,8 @@
 import requests
 import os
 import re
-from bs4 import BeautifulSoup
-from urllib.parse import urljoin
-from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
+
 
 def is_link_valid(url):
     try:
@@ -22,33 +20,38 @@ def is_link_valid(url):
         print("Error: {}".format(url))
         return False
 
+
 def process_line(args):
     line, archived_file = args
-    if not re.match(r'- \[.*?\]\(https?://.*?\) - .*?\.(\s|$)', line):
+    if not re.match(r"- \[.*?\]\(https?://.*?\) - .*?\.(\s|$)", line):
         return line
 
-    links = re.findall(r'\((https?://.*?)\)', line)
+    links = re.findall(r"\((https?://.*?)\)", line)
     for link in links:
         if not is_link_valid(link):
-            with open(archived_file, 'r') as file:
+            with open(archived_file, "r") as file:
                 archived_content = file.read()
             if line not in archived_content:
-                with open(archived_file, 'a') as file:
+                with open(archived_file, "a") as file:
                     file.write(line)
             return None
     return line
 
+
 def process_lines(markdown_file, archived_file):
-    with open(markdown_file, 'r') as file:
+    with open(markdown_file, "r") as file:
         content = file.readlines()
 
     with ThreadPoolExecutor() as executor:
-        valid_lines = list(executor.map(process_line, [(line, archived_file) for line in content]))
+        valid_lines = list(
+            executor.map(process_line, [(line, archived_file) for line in content])
+        )
 
     valid_lines = list(filter(None, valid_lines))
 
-    with open(markdown_file, 'w') as file:
+    with open(markdown_file, "w") as file:
         file.writelines(valid_lines)
+
 
 def main():
     script_path = os.path.abspath(__file__)
@@ -57,5 +60,6 @@ def main():
     archived_file = os.path.join(project_root, "ARCHIVED.md")
 
     process_lines(markdown_file, archived_file)
+
 
 main()

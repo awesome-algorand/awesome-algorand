@@ -1,0 +1,56 @@
+name: Reindex docs for GPT chat
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+  workflow_dispatch:
+
+jobs:
+  parse_rss:
+    runs-on: ubuntu-latest
+    env:
+      HAS_COMMITS: false
+    steps:
+      - name: Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.11.0
+        with:
+          access_token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
+
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: gpt_docs
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+          cache: "pip" # caching pip dependencies
+
+      - name: Reindex documents
+        run: cd .github/scripts &&
+          pip install -r requirements.txt &&
+          python3 docs_fetcher.py
+
+      - name: Commit files
+        id: commit_files
+        if: always()
+        run: |
+          git config --local user.email "millionalgos@pm.me"
+          git config --local user.name "github-actions[bot]"
+
+          if [[ -n $(git status --porcelain) ]]; then
+            git add -A
+            git commit -m "[no-tweet] reindexed docs for gpt chat 🤖"
+            echo "HAS_COMMITS=true" >> $GITHUB_ENV
+          else
+            echo "no changes - skipping commit"
+            echo "HAS_COMMITS=false" >> $GITHUB_ENV
+          fi
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        if: env.HAS_COMMITS != false
+        with:
+          github_token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
+          branch: stats
