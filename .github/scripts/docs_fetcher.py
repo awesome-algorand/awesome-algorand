@@ -2,13 +2,18 @@ from concurrent.futures import ThreadPoolExecutor
 import requests
 import os
 import re
-
-
-import os
 import zipfile
 import requests
-
+import shutil
 import hashlib
+import time
+
+
+def update_folders(old_folder, new_folder):
+    if os.path.exists(old_folder):
+        shutil.rmtree(old_folder)
+
+    os.rename(new_folder, old_folder)
 
 
 def is_content_identical(file_path, content):
@@ -82,14 +87,39 @@ def zip_folder(folder_path, zip_path):
                 zip_file.write(file_path, os.path.relpath(file_path, folder_path))
 
 
-def has_changes_in_folder(folder_path):
+def collect_file_paths(folder_path, raw=False):
+    file_paths = set()
+
     for root, _, files in os.walk(folder_path):
         for file in files:
-            file_path = os.path.join(root, file)
-            if not os.path.exists(file_path) or not is_content_identical(
-                file_path, open(file_path, "rb").read()
-            ):
-                return True
+            if raw:
+                file_paths.add(file)
+            else:
+                file_path = os.path.join(root, file)
+                file_paths.add(file_path)
+
+    return file_paths
+
+
+def has_changes_in_folder(folder_path, reference_folder_path):
+    folder_file_paths = collect_file_paths(folder_path, True)
+    reference_folder_file_paths = collect_file_paths(reference_folder_path, True)
+
+    # Check for additions and deletions
+    if folder_file_paths != reference_folder_file_paths:
+        return True
+
+    # Check for content changes in files that exist in both folders
+    common_file_paths = folder_file_paths.intersection(reference_folder_file_paths)
+    for file_name in common_file_paths:
+        if file_name == "algofi-js-sdk.md":
+            print("stop")
+        if not is_content_identical(
+            os.path.join(folder_path, file_name),
+            open(os.path.join(reference_folder_path, file_name), "rb").read(),
+        ):
+            return True
+
     return False
 
 
@@ -112,14 +142,30 @@ def split_zip_file(zip_path):
     return left_zip_path, right_zip_path
 
 
-def upload_to_markprompt(zip_path, token):
+def exponential_retry(func, retries, delay, *args, **kwargs):
+    for attempt in range(retries):
+        result = func(*args, **kwargs)
+        if not result.status_code // 100 == 4:
+            return result
+        else:
+            wait_time = delay * (2**attempt)
+            print(f"Retrying in {wait_time} seconds. Attempt {attempt + 1}/{retries}.")
+            time.sleep(wait_time)
+    return result
+
+
+def upload_to_markprompt(zip_path, token, max_retries=3, retry_delay=1):
     url = "https://api.markprompt.com/v1/train"
     headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/zip"}
 
     with open(zip_path, "rb") as zip_file:
-        response = requests.post(url, headers=headers, data=zip_file)
+        response = exponential_retry(
+            requests.post, max_retries, retry_delay, url, headers=headers, data=zip_file
+        )
 
-    if response.status_code == 504:  # Gateway Timeout
+    if (
+        response.status_code == 504 or response.status_code // 100 == 4
+    ):  # Gateway Timeout
         left_zip_path, right_zip_path = split_zip_file(zip_path)
         upload_to_markprompt(left_zip_path, token)
         upload_to_markprompt(right_zip_path, token)
@@ -131,7 +177,8 @@ def main():
     script_path = os.path.abspath(__file__)
     project_root = os.path.dirname(os.path.dirname(os.path.dirname(script_path)))
     markdown_file = os.path.join(project_root, "README.md")
-    download_folder = os.path.join(project_root, ".github", "indexed_docs")
+    old_download_folder = os.path.join(project_root, ".github", "indexed_docs")
+    download_folder = os.path.join(project_root, ".github", "new_indexed_docs")
     token = os.environ.get("MARKPROMPT_TOKEN")
     zip_path = "data.zip"
 
@@ -139,14 +186,15 @@ def main():
     os.makedirs(download_folder, exist_ok=True)
     parallel_download_readme(urls, download_folder)
 
-    if has_changes_in_folder(download_folder):
+    if has_changes_in_folder(download_folder, old_download_folder):
         zip_folder(download_folder, zip_path)
         response = upload_to_markprompt(zip_path, token)
 
-        if response.status_code == 200:
+        if response is not None and response.status_code == 200:
             print("Successfully uploaded to Markprompt.")
+            update_folders(old_download_folder, download_folder)
         else:
-            print("Error uploading to Markprompt. Status code:", response.status_code)
+            print("Error uploading to Markprompt. Response:", response)
     else:
         print("No changes detected in the folder. Skipping upload.")
 

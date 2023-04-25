@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  parse_rss:
+  reindex_docs:
     runs-on: ubuntu-latest
     env:
       HAS_COMMITS: false
@@ -19,7 +19,7 @@ jobs:
 
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 0
+          fetch-depth: 1
           ref: gpt_docs
 
       - uses: actions/setup-python@v4
@@ -41,16 +41,18 @@ jobs:
 
           if [[ -n $(git status --porcelain) ]]; then
             git add -A
-            git commit -m "[no-tweet] reindexed docs for gpt chat 🤖"
-            echo "HAS_COMMITS=true" >> $GITHUB_ENV
+            git commit -m "[no-tweet] reindexed docs for gpt chat 🤖" || COMMIT_EXIT_CODE=$? || true
+            if [ "$COMMIT_EXIT_CODE" == "0" ]; then
+              echo "has_commits=true" >> $GITHUB_OUTPUT
+            else
+              echo "has_commits=false" >> $GITHUB_OUTPUT
+            fi
           else
             echo "no changes - skipping commit"
-            echo "HAS_COMMITS=false" >> $GITHUB_ENV
+            echo "has_commits=false" >> $GITHUB_OUTPUT
           fi
 
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        if: env.HAS_COMMITS != false
-        with:
-          github_token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
-          branch: stats
+      - name: Push files to gpt_docs branch
+        run: |
+          git push origin gpt_docs
+
