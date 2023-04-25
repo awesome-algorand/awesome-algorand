@@ -23,7 +23,7 @@ _Please make sure you reviewed the checklist and comply with each requirement (c
 
 ## You are submiting a new resource on AwesomeAlgo:
 
--   [ ] My code follows the [contribution guidelines](../CONTRIBUTING.md) of this project
+-   [ ] My code follows the [contribution guidelines](../contributing.md) of this project
 -   [ ] (**IMPORTANT**) This pull request title **must** have title in the following format `{Name of Resource} - description`. For example, if you're adding a new resource named `Awesome Algorand`, your pull request title must be `Awesome Algorand - a curated list of resources...`.
 -   [ ] I am aware that the PR title will be used as part of the automated tweet that will be sent on behalf of `@awesome_algo`'s official twitter account once this PR is merged.
     -   For your reference, the tweet message is assembled as follows:
