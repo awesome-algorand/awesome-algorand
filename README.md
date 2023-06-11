@@ -296,6 +296,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [Cometa.farm](https://cometa.farm/) - Decentralized liquidity-as-a-service.
 - [aramid.finance/](https://www.aramid.finance/) - A Decentralized Cross-Chain Protocol supporitng Algorand, Polygon, Ethereum and other EVM chains.
 - [stabilitas.finance](https://stabilitas.finance/) - Stable and secure digital assets for various purposes such as purchases, remittances and as a store of value.
+- [vestige.fi](https://vestige.fi/) - A decentralized ecosystem of tools primary used as a tool to track and trend Algorand Standard Assets and Liquidity Pools across the ecosystem. The platform also provides a decentralized swap and a launchpad platform.
 
 ## Subscription Management
 
