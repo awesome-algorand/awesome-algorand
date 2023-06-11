@@ -75,6 +75,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [Defly Wallet](https://defly.app/) - Defly is an Algorand wallet with great suit of integrated DeFi features.
 - [Daffi Wallet](https://www.daffi.me/) - Daffi is a mobile wallet for Algorand with integrated access to Daffi platform.
 - [Exodus](https://www.exodus.com/) - Exodus is a multi-cryptocurrency wallet that supports Algorand.
+- [A-Wallet](https://a-wallet.net/) - AWallet is an open source, HTML only, corporate friendly, and secure Algorand wallet.
 
 ## Blockchain Explorers
 
@@ -293,6 +294,8 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [Folks.finance](https://folks.finance/) - Decentralized capital markets protocol.
 - [C3](https://c3.io/) - Cross-margin cross-collateralization clearing engine protocol.
 - [Cometa.farm](https://cometa.farm/) - Decentralized liquidity-as-a-service.
+- [aramid.finance/](https://www.aramid.finance/) - A Decentralized Cross-Chain Protocol supporitng Algorand, Polygon, Ethereum and other EVM chains.
+- [stabilitas.finance](https://stabilitas.finance/) - Stable and secure digital assets for various purposes such as purchases, remittances and as a store of value.
 
 ## Subscription Management
 
@@ -398,7 +401,6 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 
 - [nft_voting_tool](https://github.com/algorandfoundation/nft_voting_tool) - Official voting tool by Algorand Foundation. The repository contains a voting tool that allows for creation and facilitation of immutable, tamperproof voting using the Algorand blockchain.
 - [vote-coin-demo](https://github.com/scholtz/vote-coin-demo) - Decentralized message standard for on-chain voting on Algorand developed by @scholtz.
-
 
 ## NFT Marketplaces
 
