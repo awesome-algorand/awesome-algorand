@@ -13,3 +13,4 @@ The following markdown is the place for archived, old, deleted or unmaintained p
 - [FORUM](https://forum.ax/) - A proof-of-stake social network on the Algorand blockchain.
 - [AlgoCloud](https://algocloud.org/) - Algorand ecosystem dashboard. Connect DeFi apps, display NFTs, account analytics, and more.
 - [Dahai](https://www.dahai.uk/) - NFT art gallery and marketplace.
+- [Yieldly](https://yieldly.finance/) - DeFI suite for cross-chain swapping, ASA staking and lottery games.
