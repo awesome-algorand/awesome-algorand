@@ -14,3 +14,4 @@ The following markdown is the place for archived, old, deleted or unmaintained p
 - [AlgoCloud](https://algocloud.org/) - Algorand ecosystem dashboard. Connect DeFi apps, display NFTs, account analytics, and more.
 - [Dahai](https://www.dahai.uk/) - NFT art gallery and marketplace.
 - [Yieldly](https://yieldly.finance/) - DeFI suite for cross-chain swapping, ASA staking and lottery games.
+- [AlgoExplorer](https://www.algoexplorer.io/) - Algorand blockchain explorer built by [RandLabs](https://randlabs.io/).
