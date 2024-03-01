@@ -82,7 +82,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 
 > List of blockchain explorers for Algorand. Used to view transactions, accounts, assets, etc.
 
-- [Allo](https://allo.info) - Allo is a blockchain explorer for all of Algorand created by [Nodely](https://algonode.io) team. 
+- [Allo](https://allo.info) - Allo is a blockchain explorer for all of Algorand created by Nodely. 
 - [NFTExplorer](https://www.nftexplorer.app/) - Algorand Standard Asset (ASA) explorer built by [@TomassoAE](https://twitter.com/TommasoAE) and [JoshLmao](https://twitter.com/JoshLmao).
 - [Pera Explorer](https://explorer.perawallet.app/) - Algorand Accounts, Standard Asset (ASA) explorer built by [Pera Wallet](https://perawallet.app/)
 - [Algorand Ballet](https://akaalias.github.io/algorand-ballet/) - Algorand accounts' 2D graphs.
@@ -300,7 +300,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 ## Nodes & Consensus Participation
 
 - [Algorand - The Undocumented Docs](https://github.com/AlgoChads/algorand-undoc-docs) - Dev Notes for Archival Node, Indexer Setup (and more).
-- [AlgoNode](https://algonode.io) - Free Node/Indexer APIs, Node running FAQ, Node/Indexer daily snapshots.
+- [Nodely](https://nodely.io) - Free Node/Indexer APIs, Node running FAQ, Node/Indexer daily snapshots.
 - [Algorand Node UI](https://github.com/algorand/node-ui) - Terminal UI for remote Algorand node management.
 - [SubQuery](https://subquery.network) - Open, fast, flexible, and decentralised cross-chain data indexer for Algorand ([getting started guide](https://academy.subquery.network/quickstart/quickstart_chains/algorand.html)).
 - [AlgoRun](https://github.com/algorandfoundation/algorun) - Simple CLI utility for setting up and starting Algorand MainNet participation node.
