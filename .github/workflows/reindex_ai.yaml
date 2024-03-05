@@ -13,7 +13,7 @@ jobs:
       HAS_COMMITS: false
     steps:
       - name: Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.12.0
+        uses: styfle/cancel-workflow-action@0.12.1
         with:
           access_token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
 
