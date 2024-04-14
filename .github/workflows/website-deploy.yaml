@@ -35,7 +35,7 @@ jobs:
                 user_name: 'AwesomeAlgoBot'
                 commit_message: '🤖 Updating website with latest content 📜'
 
-            - uses: 8BitJonny/gh-get-current-pr@v2.2.0
+            - uses: 8BitJonny/gh-get-current-pr@3.0.0
               if: ${{ !startsWith(github.event.head_commit.message, '[no-tweet]') }}
               id: PR
 
