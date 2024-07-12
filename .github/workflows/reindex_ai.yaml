@@ -1,9 +1,6 @@
 name: Reindex docs for GPT chat
 
 on:
-  schedule:
-    - cron: "0 0 * * *"
-
   workflow_dispatch:
 
 jobs:
