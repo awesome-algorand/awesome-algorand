@@ -3,14 +3,22 @@ on:
     push:
         branches:
             - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
     Website_Deployment:
         runs-on: ubuntu-latest
+        permissions:
+          contents: write
         steps:
-            - name: Cancel Previous Runs
-              uses: styfle/cancel-workflow-action@0.12.1
+            - uses: actions/create-github-app-token@v1
+              id: app-token
               with:
-                access_token: ${{ secrets.GITHUB_TOKEN }}
+                app-id: ${{ secrets.BOT_ID }}
+                private-key: ${{ secrets.BOT_SK }}
 
             - uses: actions/checkout@v4
               with:
@@ -29,10 +37,10 @@ jobs:
                  API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
               with:
                 source_file: 'index.md'
-                destination_repo: 'aorumbayev/awesome-algorand'
+                destination_repo: 'awesome-algorand/awesome-algorand'
                 destination_branch: 'gh-pages'
-                user_email: 'millionalgos@pm.me'
-                user_name: 'AwesomeAlgoBot'
+                user_email: 'github-actions@github.com'
+                user_name: 'github-actions'
                 commit_message: '🤖 Updating website with latest content 📜'
 
             - uses: 8BitJonny/gh-get-current-pr@3.0.0

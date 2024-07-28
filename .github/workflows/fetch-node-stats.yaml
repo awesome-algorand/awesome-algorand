@@ -3,17 +3,24 @@ name: Fetch Node Stats
 on:
   workflow_dispatch:
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   parse_rss:
     runs-on: ubuntu-latest
     env:
       HAS_COMMITS: false
+    permissions:
+      contents: write
     steps:
-      - name: Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.12.1
+      - uses: actions/create-github-app-token@v1
+        id: app-token
         with:
-          access_token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
-
+          app-id: ${{ secrets.BOT_ID }}
+          private-key: ${{ secrets.BOT_SK }}
+      
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -21,7 +28,7 @@ jobs:
 
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.9"
+          python-version: "3.12"
           cache: "pip" # caching pip dependencies
 
       - name: Fetch latest active relay nodes
@@ -49,5 +56,5 @@ jobs:
         uses: ad-m/github-push-action@master
         if: env.HAS_COMMITS != false
         with:
-          github_token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
+          github_token: ${{ steps.app-token.outputs.token }}
           branch: stats
