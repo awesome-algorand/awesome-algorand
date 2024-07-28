@@ -54,7 +54,7 @@ jobs:
 
       - name: Push changes
         uses: ad-m/github-push-action@master
-        if: env.HAS_COMMITS != false
+        if: env.HAS_COMMITS == 'true'
         with:
           github_token: ${{ steps.app-token.outputs.token }}
           branch: stats

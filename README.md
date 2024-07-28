@@ -22,10 +22,6 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
     <a target="_blank" href="https://github.com/aorumbayev/awesome-algorand/network/members"><img src="https://img.shields.io/github/forks/aorumbayev/awesome-algorand?color=gold" /></a>
 </p>
 
-🤖 You can enhance your experience by interacting with the AI chat bot available at [AwesomeAlgo Search](https://chat.awesomealgo.com/). It's designed to answer any questions you might have regarding resources in this repository and readme 😊.
-
-> **Additionally**, enhance your accessibility with the AwesomeAlgo Search desktop version, which can be downloaded [here](https://github.com/aorumbayev/awesome-algorand/releases/tag/v0.1.0).
-
 ## Contents
 
 - [Official Resources](#official-resources)
@@ -282,6 +278,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 
 - [use-wallet](https://github.com/txnlab/use-wallet) - React hooks for using Algorand compatible wallets with web applications. Developed by [txnlab](https://www.txnlab.dev/).
 - [use-wallet-js](https://github.com/TxnLab/use-wallet-js) - TypeScript library for integrating Algorand wallets into decentralized applications.
+- [rsagg](https://github.com/dragmz/rsagg) - A Rust library for Algorand wallets.
 
 ## DeFi Platforms
 
