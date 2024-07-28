@@ -278,7 +278,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 
 - [use-wallet](https://github.com/txnlab/use-wallet) - React hooks for using Algorand compatible wallets with web applications. Developed by [txnlab](https://www.txnlab.dev/).
 - [use-wallet-js](https://github.com/TxnLab/use-wallet-js) - TypeScript library for integrating Algorand wallets into decentralized applications.
-- [rsagg](https://github.com/dragmz/rsagg) - A Rust library for Algorand wallets.
+- [rsagg](https://github.com/dragmz/rsagg) - A Rust library for GPU accelerated Algorand 'vanity' address generation.
 
 ## DeFi Platforms
 
