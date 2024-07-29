@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://github.com/awesome-algorand/awesome-algorand"><img src="https://ipfs.algonode.xyz/ipfs/bafybeibsc2khpnpurdz43uunrxnbttes5skbeftnsjtm5axq2vqv7bwz3q"></a>
+<a href="https://github.com/awesome-algorand/awesome-algorand"><img src="https://ipfs.algonode.xyz/ipfs/bafybeidwt23qadzoz77kxdvzj4pkmernr5e7pjzzge3rffn56ugibb2ojq"></a>
 </div>
 <br/>
 
