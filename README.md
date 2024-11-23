@@ -390,7 +390,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [staketaxcsv](https://github.com/hodgerpodger/staketaxcsv) - Python backend for [stake.tax](https://stake.tax) that generates taxable transactions CSVs for Algorand and other blockchains.
 - [Automated Prediction Market Maker on Algorand](https://github.com/dspytdao/Algo_AMM) - backend repository with project hosted at [algoAMM.com](https://algoamm.com).
 - [AlgoDepo](https://github.com/dspytdao/AlgoDepo) - Single Deposit App Algorand.
-- [AlgoDeposit](https://github.com/dspytdao/AlgoDeposit).
+- [AlgoDeposit](https://github.com/dspytdao/AlgoDeposit) - AMM Pool App Algorand.
 
 ## Algorand Request for Comments
 
