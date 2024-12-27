@@ -24,32 +24,59 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 
 ## Contents
 
-- [Official Resources](#official-resources)
-- [Wallets](#wallets)
-- [Blockchain Explorers](#blockchain-explorers)
-- [Portfolio Trackers](#portfolio-trackers)
-- [Learning Resources](#learning-resources)
-  - [Crash Courses](#crash-courses)
-  - [General courses](#general-courses)
-  - [Tutorials](#tutorials)
-- [Development Tools](#development-tools)
-  - [CLI](#cli)
-  - [AlgoKit Templates](#algokit-templates)
-  - [Languages](#languages)
-  - [IDEs](#ides)
-  - [Other Development Tools](#other-development-tools)
-- [DeFi Platforms](#defi-platforms)
-- [Nodes & Consensus Participation](#nodes--consensus-participation)
-- [Subscription Management](#subscription-management)
-- [Security Auditing Services](#security-auditing-services)
-- [Blockchain Bridges](#blockchain-bridges)
-- [Oracles](#oracles)
-- [Name Services](#name-services)
-- [Community Resources](#community-resources)
-- [Algorand Request for Comments](#algorand-request-for-comments)
-- [Metrics and Analytics Services](#metrics-and-analytics-services)
-- [Decentralized voting](#decentralized-voting)
-- [NFT Marketplaces](#nft-marketplaces)
+- [Awesome Algorand ](#awesome-algorand-)
+  - [Contents](#contents)
+  - [Official Resources](#official-resources)
+  - [Wallets](#wallets)
+    - [Protocols](#protocols)
+  - [Blockchain Explorers](#blockchain-explorers)
+  - [Portfolio Trackers](#portfolio-trackers)
+  - [Learning Resources](#learning-resources)
+    - [Crash Courses](#crash-courses)
+    - [General courses](#general-courses)
+    - [Tutorials](#tutorials)
+  - [Development Tools](#development-tools)
+    - [CLI](#cli)
+    - [AlgoKit Templates](#algokit-templates)
+      - [Official](#official)
+      - [Community](#community)
+    - [Languages](#languages)
+      - [C/C++](#cc)
+      - [Dart](#dart)
+      - [Go](#go)
+      - [PHP](#php)
+      - [Python](#python)
+      - [JavaScript \& TypeScript](#javascript--typescript)
+      - [Java](#java)
+      - [.NET](#net)
+      - [Rust](#rust)
+      - [Swift](#swift)
+      - [Ruby](#ruby)
+    - [IDEs](#ides)
+      - [vim](#vim)
+      - [IntelliJ](#intellij)
+      - [VSCode](#vscode)
+      - [Visual Studio](#visual-studio)
+    - [Other Development Tools](#other-development-tools)
+      - [Smart Contracts](#smart-contracts)
+      - [Docker](#docker)
+      - [Testing](#testing)
+      - [Wallets](#wallets-1)
+  - [DeFi Platforms](#defi-platforms)
+  - [Nodes \& Consensus Participation](#nodes--consensus-participation)
+  - [Subscription Management](#subscription-management)
+  - [Security Auditing Services](#security-auditing-services)
+  - [Blockchain Bridges](#blockchain-bridges)
+  - [Oracles](#oracles)
+  - [Name Services](#name-services)
+  - [SSI, DID \& Verifiable Credentials](#ssi-did--verifiable-credentials)
+  - [Community Resources](#community-resources)
+    - [Projects](#projects)
+  - [Algorand Request for Comments](#algorand-request-for-comments)
+  - [Metrics and Analytics Services](#metrics-and-analytics-services)
+  - [Decentralized voting](#decentralized-voting)
+  - [NFT Marketplaces](#nft-marketplaces)
+  - [Contributing](#contributing)
 
 ## Official Resources
 
@@ -352,6 +379,14 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 
 - [NFDomains](https://nf.domains/) - Algorand name service and marketplace for Non-Fungible Domains (NFDs) — unique, readable aliases for wallet addresses.
 
+## SSI, DID & Verifiable Credentials
+
+> A list of W3C decentralized identifiers, verifiable credentials and Self soverigne identity service projects.
+
+- [GoPlausible](https://github.com/GoPlausible) - provides:
+  - [PLAUSIBLE protocol](https://goplausible.com), a W3C DIDs, Verifiable Credentials and Utility NFTs protocol built on Algorand.
+  - [ThisDID](https://thisdid.com) universal W3C DID and verifiable URI resolver by [GoPlausible](https://goplausible.com).
+
 ## Community Resources
 
 > The following contains sections related to open source projects, utilities, and news resources.
@@ -375,8 +410,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [galvanity](https://github.com/shmutalov/galvanity) - Galvanity is Algorand vanity address generator written in Go.
 - [genpyteal](https://github.com/runvnc/genpyteal) - Generate PyTeal from (mostly) normal Python.
 - [AgorHash](https://github.com/bafio89/agorhash) - Public, permissionless, decentralized and uncensorable free speech protocol.
-- [GoPlausible](https://github.com/GoPlausible) - Proof of anything protocol, built on Algorand. [Create or claim your first PLAUS on Algorand!](https://goplausible.com).
-- [QRCode Generator](https://github.com/emg110/algorand-qrcode)
+- [QRCode Generator](https://github.com/emg110/algorand-qrcode) - Algorand ARC-26 QRCode Generator universal ES module (Node, CLI, Browser)
 - [algofractals](https://github.com/aorumbayev/algofractals) - Mint randomly generated mandelbrot fractals with embedded ARC69 tags. (Archived on Dec 31, 2023)
 - [algorewards](https://algorewards.github.io/) - Free and unofficial Algorand governance reward calculator. Hosted on GitHub Pages.
 - [algorand.dev](https://algorand.dev/) - Algorand Developer: The unofficial developer resource.
