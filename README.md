@@ -70,6 +70,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
   - [Oracles](#oracles)
   - [Name Services](#name-services)
   - [SSI, DID \& Verifiable Credentials](#ssi-did--verifiable-credentials)
+  - [AI, ML \& Data Science](#ai-ml--data-science)
   - [Community Resources](#community-resources)
     - [Projects](#projects)
   - [Algorand Request for Comments](#algorand-request-for-comments)
@@ -386,6 +387,13 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 - [GoPlausible](https://github.com/GoPlausible) - provides:
   - [PLAUSIBLE protocol](https://goplausible.com), a W3C DIDs, Verifiable Credentials and Utility NFTs protocol built on Algorand.
   - [ThisDID](https://thisdid.com) universal W3C DID and verifiable URI resolver by [GoPlausible](https://goplausible.com).
+
+## AI, ML & Data Science
+
+> A list of AI, ML and Data Science projects that leverage Algorand.
+
+- [Algorand-GPT](https://chatgpt.com/g/g-izA6hnC93-algorand-gpt) is an Algorand Assistant Expert with access to all Algorand documentations and chain data built on OpenAI's ChatGPT platform by [GoPlausible](https://goplausible.com).
+- [DID-GPT](https://chatgpt.com/g/g-rOCQculZQ-did-gpt) is a W3C DID resolver assistant built on OpenAI's ChatGPT platform by [GoPlausible](https://goplausible.com).
 
 ## Community Resources
 
