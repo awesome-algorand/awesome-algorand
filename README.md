@@ -382,18 +382,18 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 
 ## SSI, DID & Verifiable Credentials
 
-> A list of W3C decentralized identifiers, verifiable credentials and Self soverigne identity service projects.
+> A list of W3C decentralized identifiers, verifiable credentials and Self sovereign identity service projects.
 
-- [GoPlausible](https://github.com/GoPlausible) - provides:
-  - [PLAUSIBLE protocol](https://goplausible.com), a W3C DIDs, Verifiable Credentials and Utility NFTs protocol built on Algorand.
-  - [ThisDID](https://thisdid.com) universal W3C DID and verifiable URI resolver by [GoPlausible](https://goplausible.com).
+- [GoPlausible](https://github.com/GoPlausible) - Provides:
+  - [PLAUSIBLE protocol](https://goplausible.com) - A W3C DIDs, Verifiable Credentials and Utility NFTs protocol built on Algorand.
+  - [ThisDID](https://thisdid.com) - Universal W3C DID and verifiable URI resolver by [GoPlausible](https://goplausible.com).
 
 ## AI, ML & Data Science
 
 > A list of AI, ML and Data Science projects that leverage Algorand.
 
-- [Algorand-GPT](https://chatgpt.com/g/g-izA6hnC93-algorand-gpt) is an Algorand Assistant Expert with access to all Algorand documentations and chain data built on OpenAI's ChatGPT platform by [GoPlausible](https://goplausible.com).
-- [DID-GPT](https://chatgpt.com/g/g-rOCQculZQ-did-gpt) is a W3C DID resolver assistant built on OpenAI's ChatGPT platform by [GoPlausible](https://goplausible.com).
+- [Algorand-GPT](https://chatgpt.com/g/g-izA6hnC93-algorand-gpt) - An Algorand Assistant Expert with access to all Algorand documentation and chain data built on OpenAI's ChatGPT platform by [GoPlausible](https://goplausible.com).
+- [DID-GPT](https://chatgpt.com/g/g-rOCQculZQ-did-gpt) - A W3C DID resolver assistant built on OpenAI's ChatGPT platform by [GoPlausible](https://goplausible.com).
 
 ## Community Resources
 
