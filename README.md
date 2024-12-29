@@ -358,7 +358,7 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 
 > A list of W3C decentralized identifiers, verifiable credentials and Self sovereign identity service projects.
 
-- [GoPlausible](https://goplausible.com) - Provides [PLAUSIBLE protocol](https://github.com/GoPlausible), A W3C DIDs, Verifiable Credentials and Utility NFTs protocol built on Algorand, as well as [ThisDID](https://thisdid.com) Universal W3C DID/URI resolver by GoPlausible.
+- [GoPlausible](https://goplausible.com) - Provides [PLAUSIBLE protocol](https://github.com/GoPlausible), A W3C DIDs, Verifiable Credentials and Utility NFTs protocol built on Algorand, as well as [ThisDID](https://thisdid.com) Universal W3C DID/URI resolver.
 
 ## AI and machine learning
 
