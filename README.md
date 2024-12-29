@@ -69,8 +69,8 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
   - [Blockchain Bridges](#blockchain-bridges)
   - [Oracles](#oracles)
   - [Name Services](#name-services)
-  - [SSI, DID \& Verifiable Credentials](#ssi-did--verifiable-credentials)
-  - [AI, ML \& Data Science](#ai-ml--data-science)
+  - [SSI, DID and Verifiable Credentials](#ssi-did-and-verifiable-credentials)
+  - [AI and machine learning](#ai-and-machine-learning)
   - [Community Resources](#community-resources)
     - [Projects](#projects)
   - [Algorand Request for Comments](#algorand-request-for-comments)
@@ -380,13 +380,13 @@ Algorand is an open-source, proof of stake blockchain and smart contract computi
 
 - [NFDomains](https://nf.domains/) - Algorand name service and marketplace for Non-Fungible Domains (NFDs) — unique, readable aliases for wallet addresses.
 
-## SSI, DID & Verifiable Credentials
+## SSI, DID and Verifiable Credentials
 
 > A list of W3C decentralized identifiers, verifiable credentials and Self sovereign identity service projects.
 
 - [GoPlausible](https://goplausible.com) - Provides [PLAUSIBLE protocol](https://github.com/GoPlausible), A W3C DIDs, Verifiable Credentials and Utility NFTs protocol built on Algorand, as well as [ThisDID](https://thisdid.com) Universal W3C DID/URI resolver by GoPlausible.
 
-## AI, ML & Data Science
+## AI and machine learning
 
 > A list of AI, ML and Data Science projects that leverage Algorand.
 
