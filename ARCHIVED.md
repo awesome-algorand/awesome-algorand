@@ -1,3 +1,7 @@
+# Archived Entries
+
+Entries moved here due to persistently failing links detected by the automated link checker. Please verify if the project/resource is defunct or if the link simply needs updating in the main `README.md`.
+
 # Archived
 
 The following markdown is the place for archived, old, deleted or unmaintained projects that used to be listed on the main README.md.
@@ -15,3 +19,4 @@ The following markdown is the place for archived, old, deleted or unmaintained p
 - [Dahai](https://www.dahai.uk/) - NFT art gallery and marketplace.
 - [Yieldly](https://yieldly.finance/) - DeFI suite for cross-chain swapping, ASA staking and lottery games.
 - [AlgoExplorer](https://www.algoexplorer.io/) - Algorand blockchain explorer built by [RandLabs](https://randlabs.io/).
+- [algokit-beaker-default-template](https://github.com/algorandfoundation/algokit-beaker-default-template) - Official AlgoKit beaker template provides a production-ready baseline for developing and deploying Beaker smart contracts. Also serves as a reference for template builders on implementing smart-contract-only algokit templates.
