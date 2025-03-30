@@ -25,7 +25,7 @@ jobs:
                   args: >
                       --verbose
                       --no-progress
-                      --max-concurrency 64
+                      --max-concurrency 4
                       --retry-wait-time 5
                       --max-retries 3
                       --exclude-mail
@@ -69,7 +69,7 @@ jobs:
                   args: >
                       --verbose
                       --no-progress
-                      --max-concurrency 64
+                      --max-concurrency 4
                       --retry-wait-time 5
                       --max-retries 3
                       --exclude-mail
