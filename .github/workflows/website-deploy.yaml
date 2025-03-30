@@ -1,25 +1,19 @@
-name: Website Deployment
+name: Post Merge actions
 on:
     push:
         branches:
             - main
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+    group: ${{ github.workflow }}-${{ github.ref }}
+    cancel-in-progress: true
 
 jobs:
-    Website_Deployment:
+    post-merge-actions:
         runs-on: ubuntu-latest
         permissions:
-          contents: write
+            contents: read
         steps:
-            - uses: actions/create-github-app-token@v1
-              id: app-token
-              with:
-                app-id: ${{ secrets.BOT_ID }}
-                private-key: ${{ secrets.BOT_SK }}
-
             - uses: actions/checkout@v4
               with:
                   fetch-depth: 0
@@ -27,35 +21,19 @@ jobs:
             - name: Run linters
               run: npx awesome-lint
 
-            - name: Copy latest README
-              run: |
-                tail -n +3 README.md > index.md
-
-            - name: Push latest index.md
-              uses: dmnemec/copy_file_to_another_repo_action@main
-              env:
-                 API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
-              with:
-                source_file: 'index.md'
-                destination_repo: 'awesome-algorand/awesome-algorand'
-                destination_branch: 'gh-pages'
-                user_email: 'github-actions@github.com'
-                user_name: 'github-actions'
-                commit_message: '🤖 Updating website with latest content 📜'
-
             - uses: 8BitJonny/gh-get-current-pr@3.0.0
-              if: ${{ !startsWith(github.event.head_commit.message, '[no-tweet]') }}
+              if: ${{ !contains(github.event.head_commit.message, '[no-tweet]') }}
               id: PR
 
             - uses: Eomm/why-don-t-you-tweet@v2
-              if: ${{ !github.event.repository.private && !startsWith(github.event.head_commit.message, '[no-tweet]') }}
+              if: ${{ !github.event.repository.private && !contains(github.event.head_commit.message, '[no-tweet]') }}
               with:
-                # GitHub event payload
-                # https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#release
-                tweet-message: "⭐️ Check out new submission at ${{ steps.PR.outputs.pr_url }}. Explore #awesome tools and platforms in #algorand ecosystem. If you like it, please consider starring the repo to support the project ⚡️"
+                  # GitHub event payload
+                  # https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#release
+                  tweet-message: "⭐️ Check out new submission at ${{ steps.PR.outputs.pr_url }}. Explore #awesome tools and platforms in #algorand ecosystem. If you like it, please consider starring the repo to support the project ⚡️"
               env:
-                # Get your tokens from https://developer.twitter.com/apps
-                TWITTER_CONSUMER_API_KEY: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
-                TWITTER_CONSUMER_API_SECRET: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
-                TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
-                TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+                  # Get your tokens from https://developer.twitter.com/apps
+                  TWITTER_CONSUMER_API_KEY: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
+                  TWITTER_CONSUMER_API_SECRET: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
+                  TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+                  TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
