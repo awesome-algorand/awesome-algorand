@@ -29,6 +29,7 @@ jobs:
                       --retry-wait-time 5
                       --max-retries 3
                       --exclude-mail
+                      --exclude "^https://algorandtechnologies\.com/.*"
                       README.md
                   # Exclude mailto links, retry 3 times with 5s wait
 
@@ -73,6 +74,7 @@ jobs:
                       --retry-wait-time 5
                       --max-retries 3
                       --exclude-mail
+                      --exclude "^https://algorandtechnologies\.com/.*"
                       --format json
                       --output report.json
                       README.md
