@@ -1,0 +1,29 @@
+# Lychee configuration for link checking in Awesome Algorand
+
+# Timeout for each request (in seconds)
+timeout = 10
+
+# Retry configuration
+max_retries = 3
+retry_wait_time = 5
+
+# Accept these status codes as valid
+accept = [200, 206]
+
+# User agent for requests
+user_agent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+
+# Exclude localhost patterns
+exclude_loopback = true
+
+# Max concurrent requests
+max_concurrency = 4
+
+# Exclude patterns
+exclude = [
+    "^http://localhost.*",
+    "^https://localhost.*",
+    "^https://algorandtechnologies\\.com/.*",
+    # Exclude mailto links
+    "^mailto:.*"
+]
