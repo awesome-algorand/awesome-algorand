@@ -1,0 +1,40 @@
+# Lychee configuration for link checking in Awesome Algorand
+
+# Timeout for each request (in seconds)
+timeout = 20
+
+# Retry configuration - retries happen for network errors and timeouts
+# NOT for HTTP error status codes (403, 503, etc)
+max_retries = 5
+retry_wait_time = 10
+
+# Accept these status codes as valid
+# 200-299: All success responses
+# 429: Too Many Requests (rate limiting indicates site is working)
+# 503: Service Unavailable (temporary server issues)
+accept = ["200..=299", 429, 503]
+
+# User agent for requests
+user_agent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+# Exclude localhost patterns
+exclude_loopback = true
+
+# Max concurrent requests (lower to reduce rate limiting)
+max_concurrency = 2
+
+# Exclude patterns
+exclude = [
+    "^http://localhost.*",
+    "^https://localhost.*",
+    "^https://algorandtechnologies\\.com/.*",
+    # Exclude mailto links
+    "^mailto:.*",
+    # Exclude sites that block automated checkers (403 Forbidden)
+    "^https://app\\.compx\\.io/.*",
+    "^https://explorer\\.perawallet\\.app/.*",
+    "^https://www\\.certik\\.com/.*",
+    "^https://www\\.exodus\\.com/.*",
+    "^https://www\\.immunebytes\\.com/.*",
+    "^https://www\\.alphaarcade\\.com/.*"
+]
