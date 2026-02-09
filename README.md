@@ -446,6 +446,10 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
 - [algorand-mcp](https://github.com/GoPlausible/algorand-mcp) - Algorand Model Context Protocol (Server & Client) by GoPlausible.
 - [algorand-remote-mcp](https://github.com/GoPlausible/algorand-remote-mcp) - Algorand remote SSE MCP Server Cloudflare Worker.
 - [arcontextify](https://github.com/aorumbayev/arcontextify) - Algorand ARC-56 to MCP server converter.
+- [VibeKit](https://github.com/gabrielkuettel/vibekit) - CLI + MCP server that gives AI coding assistants the skills and tools to build on Algorand.
+- [AlgoChat](https://github.com/CorvidLabs/ts-algochat) - Encrypted on-chain messaging protocol for Algorand, enabling AI agent-to-agent communication via transaction notes.
+- [CorvidAgent](https://github.com/CorvidLabs/corvid-agent) - AI agent orchestration platform with on-chain messaging, persistent memory, and autonomous scheduling via Algorand.
+- [algorand-agent-skills](https://github.com/algorand-devrel/algorand-agent-skills) - Canonical collection of Agent Skills for AI-assisted development on Algorand by Algorand DevRel.
 
 
 ## Application Platforms & Examples
