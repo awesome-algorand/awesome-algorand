@@ -256,6 +256,7 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
 #### Swift
 
 - [algorand-wallet](https://github.com/algorand/algorand-wallet) - Algorand wallet official implementation in Swift.
+- [swift-algorand](https://github.com/CorvidLabs/swift-algorand) - Modern Swift SDK for the Algorand blockchain with async/await and Swift concurrency support.
 - [swift-algorand-sdk](https://github.com/Jesulonimi21/Swift-Algorand-Sdk) - A Swift SDK for interacting with the Algorand Blockchain.
 
 #### Ruby
