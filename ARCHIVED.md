@@ -36,3 +36,10 @@ The following markdown is the place for archived, old, deleted or unmaintained p
 - [Otherverse](https://otherverse.io/) - NFT collections marketplace.
 - [Aorist](https://aorist.art/) - NFT art gallery and marketplace.
 - [algodaddy](https://www.algodaddy.org) - A blog website for Algorand community. Last post was in 2023, archived manually.
+- [NFTExplorer](https://www.nftexplorer.app/) - Algorand Standard Asset (ASA) explorer built by @TommasoAE and JoshLmao.
+- [directorydotalgo](https://directorydotalgo.xyz/) - Algorand's unofficial ecosystem directory of projects.
+- [Alchemon](https://alchemon.net/) - Monster-collecting NFT card game.
+- [XP.network](https://bridge.xp.network/) - Centralized cross-chain NFT bridge.
+- [ptokens](https://dapp.ptokens.io/swap?asset=btc&from=btc&to=algorand) - pNetwork Officially Launched Cross-Chain Bridges for Algorand.
+- [Asalytic](https://www.asalytic.app/) - Analyze the Algorand NFT space.
+- [Musa](https://www.musanft.io/) - Music, Art & Fashion NFT gallery and marketplace.
