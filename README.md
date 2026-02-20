@@ -358,6 +358,7 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
 - [Algorand Ballet](https://akaalias.github.io/algorand-ballet/) - Algorand accounts' 2D graphs.
 - [Algorand Multiverse](https://algo3d.live/) - Algorand accounts' 3D graphs.
 - [AlgoSurf](https://algo.surf/) - Algorand Network Explorer (supports LocalNet in `localhost`).
+- [Algo Explorer](https://github.com/corvid-agent/algo-explorer) - Modern Algorand blockchain explorer with real-time transaction monitoring.
 
 
 ### Portfolio Trackers
@@ -442,8 +443,8 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
 - [algorand-remote-mcp](https://github.com/GoPlausible/algorand-remote-mcp) - Algorand remote SSE MCP Server Cloudflare Worker.
 - [arcontextify](https://github.com/aorumbayev/arcontextify) - Algorand ARC-56 to MCP server converter.
 - [VibeKit](https://github.com/gabrielkuettel/vibekit) - CLI + MCP server that gives AI coding assistants the skills and tools to build on Algorand.
-- [AlgoChat](https://github.com/CorvidLabs/ts-algochat) - Encrypted on-chain messaging protocol for Algorand, enabling AI agent-to-agent communication via transaction notes.
-- [CorvidAgent](https://github.com/CorvidLabs/corvid-agent) - AI agent orchestration platform with on-chain messaging, persistent memory, and autonomous scheduling via Algorand.
+- [corvid-agent](https://github.com/corvid-agent/corvid-agent) - An autonomous AI agent platform built on Algorand with encrypted on-chain messaging.
+- [AlgoChat](https://github.com/corvid-agent/corvid-agent-chat) - Encrypted peer-to-peer chat client using Algorand transactions and PSK ratcheting.
 - [algorand-agent-skills](https://github.com/algorand-devrel/algorand-agent-skills) - Canonical collection of Agent Skills for AI-assisted development on Algorand by Algorand DevRel.
 
 
@@ -473,6 +474,7 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
 - [AlgoGems](https://algogems.io/) - Algorand Standard Asset (ASA) markeplace and trading platform for NFT collectors.
 - [AlgoMart](https://github.com/deptagency/algomart) - Opensource NFT marketplace whitelabel solution.
 - [Flatter](https://www.flatternft.com/) - NFT art and collectible marketplace.
+- [NFT Gallery](https://github.com/corvid-agent/nft-gallery) - Algorand NFT gallery browser with ARC-standard support.
 
 ### Prediction Markets
 
