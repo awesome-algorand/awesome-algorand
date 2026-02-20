@@ -160,6 +160,7 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
 - [algorealm](https://github.com/algorealm/algorealm) - Claim the Crown and the Sceptre of Algorand Realm! Written in Python+PyTEAL by [@cusma](https://github.com/cusma).
 - [algorealm-ui](https://github.com/algorealm/algorealm-ui) - A web CLI Emulator version of algorealm cli game by @aorumbayev.
 - [minter](https://github.com/algofishexe/minter) - Bulk mint Algorand NFTs following the ARC-69 community standard. Written in Node.js by [@fish.exe](https://twitter.com/AlgofishExe).
+- [NFTRemix](https://github.com/CorvidLabs/NFTRemix) - Collaborative generative NFT platform featuring community voting, ARC-19 minting with Pera Wallet, and IPFS storage. Built with Swift/Vapor backend, Angular frontend, and Python image generator.
 - [algovanity](https://algovanity.com/) - Algorand Vanity Address Generator from [Ripe](https://github.com/Ripe/algovanity).
 - [galvanity](https://github.com/shmutalov/galvanity) - Go-based Algorand vanity address generator.
 - [genpyteal](https://github.com/runvnc/genpyteal) - Generate PyTeal from (mostly) normal Python.
