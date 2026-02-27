@@ -358,7 +358,7 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
 - [Algorand Ballet](https://akaalias.github.io/algorand-ballet/) - Algorand accounts' 2D graphs.
 - [Algorand Multiverse](https://algo3d.live/) - Algorand accounts' 3D graphs.
 - [AlgoSurf](https://algo.surf/) - Algorand Network Explorer (supports LocalNet in `localhost`).
-- [Algo Explorer](https://github.com/corvid-agent/algo-explorer) - Modern Algorand blockchain explorer with real-time transaction monitoring.
+- [Algo Explorer](https://github.com/corvid-agent/algo-explorer) - Modern Algorand Blockchain explorer with real-time transaction monitoring.
 
 
 ### Portfolio Trackers
