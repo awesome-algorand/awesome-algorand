@@ -257,10 +257,10 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
 
 - [algorand-wallet](https://github.com/algorand/algorand-wallet) - Algorand wallet official implementation in Swift.
 - [swift-algorand-sdk](https://github.com/Jesulonimi21/Swift-Algorand-Sdk) - A Swift SDK for interacting with the Algorand Blockchain.
-- [swift-algorand](https://github.com/CorvidLabs/swift-algorand) - Modern Swift SDK for the Algorand blockchain with async/await support.
+- [swift-algorand](https://github.com/CorvidLabs/swift-algorand) - Modern Swift SDK for the Algorand Blockchain with async/await support.
 - [swift-algokit](https://github.com/CorvidLabs/swift-algokit) - AlgoKit utilities for Swift developers.
 - [swift-arc](https://github.com/CorvidLabs/swift-arc) - Swift library for working with Algorand ARC metadata standards for NFTs.
-- [swift-mint](https://github.com/CorvidLabs/swift-mint) - Swift library for minting NFTs on the Algorand blockchain.
+- [swift-mint](https://github.com/CorvidLabs/swift-mint) - Swift library for minting NFTs on the Algorand Blockchain.
 - [swift-algochat](https://github.com/CorvidLabs/swift-algochat) - End-to-end encrypted messaging on Algorand with hybrid ECDH and PSK ratcheting in Swift.
 
 #### Ruby
