@@ -471,6 +471,7 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
 - [vestige.fi](https://vestige.fi/) - A decentralized ecosystem of tools primary used as a tool to track and trend Algorand Standard Assets and Liquidity Pools across the ecosystem. The platform also provides a decentralized swap and a launchpad platform.
 - [folks-router](https://github.com/Folks-Finance/folks-router) - Efficient swap routing SDK on Algorand by Folks Finance.
 - [Folks-Finance/algorand-js-sdk](https://github.com/Folks-Finance/folks-finance-js-sdk) - Official Folks Finance Algorand Protocol SDK.
+- [DorkFi](https://dork.fi/) - Cross-chain borrow/lend protocol on Algorand and Voi Network. Features overcollateralized lending, WAD stablecoin minting, and UNIT governance token.
 
 
 ### NFT Marketplaces
