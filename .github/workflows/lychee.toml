@@ -37,5 +37,6 @@ exclude = [
     "^https://www\\.exodus\\.com/.*",
     "^https://www\\.immunebytes\\.com/.*",
     "^https://www\\.alphaarcade\\.com/.*",
-    "^https://app\\.metrika\\.co/.*"
+    "^https://app\\.metrika\\.co/.*",
+    "^https://medium\\.com/.*"
 ]
