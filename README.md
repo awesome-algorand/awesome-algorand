@@ -258,7 +258,6 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
 - [algorand-wallet](https://github.com/algorand/algorand-wallet) - Algorand wallet official implementation in Swift.
 - [swift-algorand](https://github.com/CorvidLabs/swift-algorand) - Modern Swift SDK for the Algorand Blockchain with async/await and Swift concurrency support.
 - [swift-algorand-sdk](https://github.com/Jesulonimi21/Swift-Algorand-Sdk) - A Swift SDK for interacting with the Algorand Blockchain.
-- [swift-algorand](https://github.com/CorvidLabs/swift-algorand) - Modern Swift SDK for the Algorand Blockchain with async/await support.
 - [swift-algokit](https://github.com/CorvidLabs/swift-algokit) - AlgoKit utilities for Swift developers.
 - [swift-arc](https://github.com/CorvidLabs/swift-arc) - Swift library for working with Algorand ARC metadata standards for NFTs.
 - [swift-mint](https://github.com/CorvidLabs/swift-mint) - Swift library for minting NFTs on the Algorand Blockchain.
@@ -502,7 +501,6 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
 > Tools for on-chain voting powered by Algorand
 
 - [nft_voting_tool](https://github.com/algorandfoundation/nft_voting_tool) - Official voting tool by Algorand Foundation. The repository contains a voting tool that allows for creation and facilitation of immutable, tamperproof voting using the Algorand Blockchain.
-- [vote-coin-demo](https://github.com/scholtz/vote-coin-demo) - Decentralized message standard for on-chain voting on Algorand developed by @scholtz.
 
 
 ## Standards
@@ -524,7 +522,3 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
 Contributions welcome! Read the [contribution guidelines](https://github.com/awesome-algorand/awesome-algorand/blob/main/contributing.md) first.
 
 Special thanks to everyone who forked or starred the repository ❤️
-
-[![Stargazers repo roster for @awesome-algorand/awesome-algorand](https://reporoster.com/stars/dark/awesome-algorand/awesome-algorand)](https://github.com/awesome-algorand/awesome-algorand/stargazers)
-
-[![Forkers repo roster for @awesome-algorand/awesome-algorand](https://reporoster.com/forks/dark/awesome-algorand/awesome-algorand)](https://github.com/awesome-algorand/awesome-algorand/network/members)

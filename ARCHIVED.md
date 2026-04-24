@@ -43,3 +43,4 @@ The following markdown is the place for archived, old, deleted or unmaintained p
 - [ptokens](https://dapp.ptokens.io/swap?asset=btc&from=btc&to=algorand) - pNetwork Officially Launched Cross-Chain Bridges for Algorand.
 - [Asalytic](https://www.asalytic.app/) - Analyze the Algorand NFT space.
 - [Musa](https://www.musanft.io/) - Music, Art & Fashion NFT gallery and marketplace.
+- [vote-coin-demo](https://github.com/scholtz/vote-coin-demo) - Decentralized message standard for on-chain voting on Algorand developed by @scholtz.
