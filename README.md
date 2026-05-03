@@ -60,6 +60,7 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
   - [DeFi Platforms](#defi-platforms)
   - [NFT Marketplaces](#nft-marketplaces)
   - [Prediction Markets](#prediction-markets)
+  - [Payment Gateways](#payment-gateways)
   - [Subscription Management](#subscription-management)
   - [Decentralized voting](#decentralized-voting)
 - [Standards](#standards)
@@ -346,6 +347,7 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
 - [A-Wallet](https://a-wallet.net/) - AWallet is an open source, HTML only, corporate friendly, and secure Algorand wallet.
 - [Liquid Auth](https://github.com/algorandfoundation/liquid-auth) - Self-hosted service to bind passkeys to crypto keypairs plus P2P signaling for secure peer connections.
 - [Kibisis](https://github.com/kibis-is/web-extension) - Open source Algorand wallet web extension built in React and TypeScript.
+- [AlgoVoi Wallet](https://chromewebstore.google.com/detail/algovoi/ofmgegnkjdmbeakjbmfaagigmhagdcbl) - Chrome extension wallet supporting Algorand, VOI and additional chains, with built-in WalletConnect, ASA support and dApp connection prompts.
 
 
 ### Wallet Development
@@ -489,11 +491,19 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
 
 - [Alpha Arcade](https://www.alphaarcade.com/) - Prediction market platform on Algorand.
 
+### Payment Gateways
+
+> Hosted checkout and merchant payment gateways accepting Algorand and ASAs. Please note that this list is not aimed to promote any specific project, but rather to provide a comprehensive overview of the ecosystem. Do your own research before using any of the projects listed here.
+
+- [AlgoVoi](https://algovoi.co.uk/) - UK-registered multi-chain crypto payment gateway accepting Algorand, ASAs and stablecoins via hosted checkout, with on-chain memo binding for verification, open-source eCommerce adapters (WooCommerce, Magento, Shopware, OpenCart, PrestaShop, Drupal Commerce and others) and conversational bot checkout (Telegram, Discord, X, Viber).
+
+
 ### Subscription Management
 
 > Awesome subscription management platforms on Algorand. Please note that this list is not aimed to promote any specific project, but rather to provide a comprehensive overview of the ecosystem. Do your own research before investing or using any of the projects listed here.
 
 - [Subtopia](https://subtopia.io/) - Decentralized subscription management platform for dApp creators and platform on Algorand. Manage and own your subscription infrastructure, setup flexible plans, discounts and get paid in Algo or any ASA token. Created by @aorumbayev.
+- [Recurr by AlgoVoi](https://recurr.algovoi.co.uk/) - Recurring payments and subscription portal supporting Algorand and ASAs alongside other chains, with WalletConnect (Pera, Defly, Lute) for shopper checkout.
 
 
 ### Decentralized voting
