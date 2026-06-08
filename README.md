@@ -443,6 +443,7 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
 
 > A list of AI, ML and Data Science projects that leverage Algorand.
 
+- [TWZRD Agent Intel](https://intel.twzrd.xyz) - On-chain trust scoring MCP server for AI agent wallets on Solana. Verify agent identity before x402 micropayments — cross-chain trust primitive for multi-chain AI payment flows.
 - [Algorand-GPT](https://chatgpt.com/g/g-izA6hnC93-algorand-gpt) - An Algorand Assistant Expert with access to all Algorand documentation and chain data built on OpenAI's ChatGPT platform by GoPlausible.
 - [DID-GPT](https://chatgpt.com/g/g-rOCQculZQ-did-gpt) - A W3C DID resolver assistant built on OpenAI's ChatGPT platform by GoPlausible.
 - [algorand-mcp](https://github.com/GoPlausible/algorand-mcp) - Algorand Model Context Protocol (Server & Client) by GoPlausible.
