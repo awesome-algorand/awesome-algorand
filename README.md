@@ -23,6 +23,7 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
 </p>
 
 ## Contents
+- [RustChain](https://github.com/Scottcjn/Rustchain) - Proof-of-Antiquity blockchain. Old computers earn more than new ones.
 
 - [Core Resources](#core-resources)
   - [Official Resources](#official-resources)
