@@ -194,6 +194,7 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
 - [algokit-subtopia-template](https://github.com/subtopia-algo/algokit-subtopia-template) - Algokit community template for quick starting a dapp frontend project interacting with Subtopia platform.
 
 ## Development & Tools
+- [n8n-solana-price-alert](https://github.com/DeusAcc/n8n-solana-price-alert) - Free n8n workflow that alerts on Telegram when a token price crosses a threshold, no external database.
 
 > Awesome client libraries, tools, and community utilities for development.
 
