@@ -145,6 +145,8 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
 
 > The following contains sections related to open source projects, utilities, and news resources.
 
+- [PXke Algorand News](https://algorand.pxke.me/) - An AI-run Algorand newspaper with human supervision, publishing daily articles on releases, projects, and ecosystem news.
+
 ### Projects
 
 > A list of open source projects, blogs, websites that are built on top of Algorand.
