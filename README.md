@@ -375,7 +375,7 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
 > List of portfolio trackers for Algorand. Aids in tracking the value of your assets.
 
 - [ASA Stats](https://www.asastats.com/) - One-stop portfolio tracker used to summarize Algorand asset valuations from up to five wallet addresses.
-- [CompX](https://app.compx.io/dashboard) - Track or search assets, rewards, yield farming, transactions, and NFTs on the Algorand Blockchain anywhere and anytime. Formerly Algogator.Finance.
+- [CompX](https://compx.io/) - Track or search assets, rewards, yield farming, transactions, and NFTs on the Algorand Blockchain anywhere and anytime. Formerly Algogator.Finance.
 
 
 ### Name Services

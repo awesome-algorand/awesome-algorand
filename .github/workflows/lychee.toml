@@ -27,10 +27,7 @@ max_concurrency = 2
 exclude = [
     "^http://localhost.*",
     "^https://localhost.*",
-    # Exclude mailto links
-    "^mailto:.*",
     # Exclude sites that block automated checkers (403 Forbidden)
-    "^https://app\\.compx\\.io/.*",
     "^https://explorer\\.perawallet\\.app/.*",
     "^https://www\\.certik\\.com/.*",
     "^https://www\\.exodus\\.com/.*",
