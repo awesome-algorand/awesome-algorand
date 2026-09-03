@@ -31,6 +31,8 @@ The following markdown is the place for archived, old, deleted or unmaintained p
 - [Tenset Security](https://x.com/tenset_security) - Web3 Security Researchers team with a proven track record in discovering vulnerabilities within Algorand projects.
 - [AB2](https://ab2.gallery/) - Decentralized marketplace for crypto art assets secured on the Algorand blockchain created by @ab2_gallery.
 - [AlgoWorldExplorer](https://algoworldexplorer.io/) - NFT marketplace, explorer and gallery for AlgoWorld NFTs developed by @aorumbayev.
+- [AlgoWorld-Contracts](https://github.com/algoworldNFT/algoworld-contracts) - Collection of all smart contracts used by AlgoWorld, written in PyTeal.
+- [AlgoWorld-Swapper](https://github.com/algoworldNFT/algoworld-swapper) - Free and trustless ASA swapper, powered by Algorand Smart Signatures.
 - [ASA cafe](https://asa.cafe/) - Algorand Standard Asset platform and decentralized marketplace built by @CryptoRUSHGav.
 - [Grid](https://grid.zestbloom.com/) - The Grid is a lightweight, static site that executes in the clients frontend to retrieve an arbitrary list of live contracts for users to browse and interact with.
 - [Otherverse](https://otherverse.io/) - NFT collections marketplace.
@@ -44,3 +46,7 @@ The following markdown is the place for archived, old, deleted or unmaintained p
 - [Asalytic](https://www.asalytic.app/) - Analyze the Algorand NFT space.
 - [Musa](https://www.musanft.io/) - Music, Art & Fashion NFT gallery and marketplace.
 - [vote-coin-demo](https://github.com/scholtz/vote-coin-demo) - Decentralized message standard for on-chain voting on Algorand developed by @scholtz.
+- [algoAMM.com](https://algoamm.com/) - Hosted automated prediction market maker. Origin down (Cloudflare 522); backend repo remains at [dspytdao/Algo_AMM](https://github.com/dspytdao/Algo_AMM).
+- [Method Wallet](https://methodwallet.app/) - Algorand Wallet you'll love. Vercel deployment gone.
+- [AlgoGems](https://algogems.io/) - Algorand Standard Asset (ASA) marketplace and trading platform for NFT collectors. Domain no longer resolves.
+- [Rand Gallery](https://www.randgallery.com/) - Algorand Standard Asset (ASA) explorer and marketplace developed by [Chris Antaki](https://github.com/ChrisAntaki).

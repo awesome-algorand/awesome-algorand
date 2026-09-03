@@ -1,0 +1,24 @@
+name: Check Links
+
+on:
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: "0 0 */2 * *"
+  workflow_dispatch:
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v5.0.0
+
+    - name: Check links with Lychee
+      uses: lycheeverse/lychee-action@v2.5.0
+      with:
+        args: --config .github/workflows/lychee.toml --verbose --no-progress README.md CONTRIBUTING.md
+        fail: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
