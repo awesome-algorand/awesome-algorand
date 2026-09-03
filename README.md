@@ -433,6 +433,7 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
 - [Algorand MainNet metrics](https://metrics.algorand.org/) - Dashboard that measures the current scale, security, decentralization, and adoption of the open-source Algorand protocol.
 - [Allo Metrics](https://allo.info/metrics) - Algorand MainNet in numbers.
 - [Metrika](https://app.metrika.co/dashboard/algorand/) - Algorand network performance and account monitor.
+- [OnchainPulse ASA Safety Scanner](https://onchainpulse.theaslangroupllc.com) - Automated ASA token-safety check: clawback/freeze/manager authorities, default-frozen flag, holder concentration and Tinyman liquidity fused into a deterministic CLEAR/CAUTION/AVOID verdict, per-call via x402 (settles in Algorand USDC).
 
 ## SSI, DID and Verifiable Credentials
 
