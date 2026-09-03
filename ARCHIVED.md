@@ -44,3 +44,7 @@ The following markdown is the place for archived, old, deleted or unmaintained p
 - [Asalytic](https://www.asalytic.app/) - Analyze the Algorand NFT space.
 - [Musa](https://www.musanft.io/) - Music, Art & Fashion NFT gallery and marketplace.
 - [vote-coin-demo](https://github.com/scholtz/vote-coin-demo) - Decentralized message standard for on-chain voting on Algorand developed by @scholtz.
+- [algoAMM.com](https://algoamm.com/) - Hosted automated prediction market maker. Origin down (Cloudflare 522); backend repo remains at [dspytdao/Algo_AMM](https://github.com/dspytdao/Algo_AMM).
+- [Method Wallet](https://methodwallet.app/) - Algorand Wallet you'll love. Vercel deployment gone.
+- [AlgoGems](https://algogems.io/) - Algorand Standard Asset (ASA) marketplace and trading platform for NFT collectors. Domain no longer resolves.
+- [Rand Gallery](https://www.randgallery.com/) - Algorand Standard Asset (ASA) explorer and marketplace developed by [Chris Antaki](https://github.com/ChrisAntaki).

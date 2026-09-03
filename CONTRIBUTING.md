@@ -11,12 +11,26 @@ Please ensure your pull request adheres to the following guidelines:
 -   Search previous suggestions before making a new one, as yours may be a duplicate.
 -   Suggested packages should be tested and documented.
 -   Make an individual pull request for each suggestion. This can be ignored if packages share common theme or functionality, in that case can be in bulk.
--   Use the following format: [PACKAGE](LINK) - DESCRIPTION.
+-   Use the following format: `[PACKAGE](LINK) - DESCRIPTION.`
 -   New categories, or improvements to the existing categorization are welcome.
 -   Keep descriptions short and simple, but descriptive.
 -   End all descriptions with a full stop/period.
+-   Keep resource lists alphabetical by listing name within each section.
 -   Check your spelling and grammar.
 -   Make sure your text editor is set to remove trailing whitespace.
+
+## Local Validation
+
+```bash
+pip install pre-commit && pre-commit install
+npx awesome-lint README.md
+npx remark --frail --quiet --no-stdout README.md CONTRIBUTING.md
+typos
+python3 scripts/check-list-order.py README.md
+python3 scripts/check-list-order.py --fix README.md  # sort section lists
+```
+
+This matches CI: awesome-lint, markdown formatting, spell check, list order, and link checks.
 
 Thank you for your suggestions!
 

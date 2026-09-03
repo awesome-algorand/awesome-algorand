@@ -1,37 +1,69 @@
+# Same validation tools as CI.
+# Install: pip install pre-commit && pre-commit install
+# Run: pre-commit run --all-files
+
 repos:
-    - repo: https://github.com/pre-commit/pre-commit-hooks
-      rev: v4.4.0
-      hooks:
-          - id: check-yaml
-            stages: [commit]
-            exclude: ^indexed_docs/
-          - id: end-of-file-fixer
-            stages: [commit]
-            types: [python]
-            exclude: ^indexed_docs/
-          - id: trailing-whitespace
-            stages: [commit]
-            exclude: ^indexed_docs/
+  - repo: local
+    hooks:
+      - id: awesome-lint
+        name: Awesome List Lint
+        entry: npx awesome-lint
+        language: system
+        files: README\.md$
+        pass_filenames: false
+        require_serial: true
+      - id: list-order
+        name: README list order
+        entry: python3 scripts/check-list-order.py README.md
+        language: system
+        files: README\.md$
+        pass_filenames: false
+        require_serial: true
 
-    - repo: https://github.com/psf/black
-      rev: 23.1.0
-      hooks:
-          - id: black
-            stages: [commit]
-            exclude: ^indexed_docs/
+  - repo: local
+    hooks:
+      - id: remark-lint
+        name: Markdown Lint (remark)
+        entry: bash -c 'npx remark --frail --quiet --no-stdout README.md CONTRIBUTING.md'
+        language: system
+        files: \.(md|markdown)$
+        pass_filenames: false
+        require_serial: true
 
-    - repo: https://github.com/charliermarsh/ruff-pre-commit
-      # Ruff version.
-      rev: "v0.0.243"
-      hooks:
-          - id: ruff
-            args: ["--fix"]
-            stages: [commit]
-            exclude: ^indexed_docs/
+  - repo: https://github.com/crate-ci/typos
+    rev: v1.35.4
+    hooks:
+      - id: typos
+        name: Spell Check (typos)
+        files: \.(md|markdown)$
 
-    - repo: https://github.com/PyCQA/bandit
-      rev: "1.7.5"
-      hooks:
-          - id: bandit
-            args: ["-x", "tests/*"]
-            exclude: ^indexed_docs/
+  - repo: local
+    hooks:
+      - id: lychee-links
+        name: Link Check (lychee)
+        entry: lychee
+        language: system
+        files: README\.md$|CONTRIBUTING\.md$
+        args: ['--config', '.github/workflows/lychee.toml', '--verbose', '--no-progress']
+        pass_filenames: true
+        stages: [manual]
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: ^indexed_docs/
+      - id: end-of-file-fixer
+        exclude: ^indexed_docs/
+      - id: check-yaml
+        exclude: ^indexed_docs/
+      - id: check-toml
+      - id: check-merge-conflict
+      - id: mixed-line-ending
+
+default_language_version:
+  node: '22'
+
+default_stages: [pre-commit, pre-push]
+fail_fast: true
+minimum_pre_commit_version: '3.0.0'

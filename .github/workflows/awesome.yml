@@ -1,0 +1,65 @@
+name: Awesome List CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  awesome-lint:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v5.0.0
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4.4.0
+      with:
+        node-version: '22'
+
+    - name: Run official awesome-lint
+      run: npx awesome-lint README.md
+
+  format-check:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v5.0.0
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4.4.0
+      with:
+        node-version: '22'
+
+    - name: Install dependencies
+      run: |
+        npm install -g remark-cli remark-preset-lint-recommended remark-preset-lint-consistent
+
+    - name: Lint markdown
+      run: |
+        remark --frail --quiet --no-stdout README.md CONTRIBUTING.md
+
+  spell-check:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v5.0.0
+
+    - name: Check spelling
+      uses: crate-ci/typos@v1.35.4
+      with:
+        files: '*.md'
+
+  list-order:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v5.0.0
+
+    - name: Check README list order
+      run: python3 scripts/check-list-order.py README.md

@@ -27,16 +27,14 @@ max_concurrency = 2
 exclude = [
     "^http://localhost.*",
     "^https://localhost.*",
-    "^https://algorandtechnologies\\.com/.*",
-    # Exclude mailto links
-    "^mailto:.*",
     # Exclude sites that block automated checkers (403 Forbidden)
-    "^https://app\\.compx\\.io/.*",
     "^https://explorer\\.perawallet\\.app/.*",
     "^https://www\\.certik\\.com/.*",
     "^https://www\\.exodus\\.com/.*",
     "^https://www\\.immunebytes\\.com/.*",
     "^https://www\\.alphaarcade\\.com/.*",
     "^https://app\\.metrika\\.co/.*",
-    "^https://medium\\.com/.*"
+    "^https://medium\\.com/.*",
+    # Cloudflare challenge (403) — site is live in a browser
+    "^https://([a-z0-9-]+\\.)?allo\\.info(/.*)?$"
 ]
