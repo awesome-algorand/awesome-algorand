@@ -31,6 +31,8 @@ The following markdown is the place for archived, old, deleted or unmaintained p
 - [Tenset Security](https://x.com/tenset_security) - Web3 Security Researchers team with a proven track record in discovering vulnerabilities within Algorand projects.
 - [AB2](https://ab2.gallery/) - Decentralized marketplace for crypto art assets secured on the Algorand blockchain created by @ab2_gallery.
 - [AlgoWorldExplorer](https://algoworldexplorer.io/) - NFT marketplace, explorer and gallery for AlgoWorld NFTs developed by @aorumbayev.
+- [AlgoWorld-Contracts](https://github.com/algoworldNFT/algoworld-contracts) - Collection of all smart contracts used by AlgoWorld, written in PyTeal.
+- [AlgoWorld-Swapper](https://github.com/algoworldNFT/algoworld-swapper) - Free and trustless ASA swapper, powered by Algorand Smart Signatures.
 - [ASA cafe](https://asa.cafe/) - Algorand Standard Asset platform and decentralized marketplace built by @CryptoRUSHGav.
 - [Grid](https://grid.zestbloom.com/) - The Grid is a lightweight, static site that executes in the clients frontend to retrieve an arbitrary list of live contracts for users to browse and interact with.
 - [Otherverse](https://otherverse.io/) - NFT collections marketplace.
