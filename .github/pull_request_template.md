@@ -1,18 +1,29 @@
-<div align="center">
-<a href="https://github.com/awesome-algorand/awesome-algorand"><img src="https://ipfs.algonode.xyz/ipfs/bafybeidwt23qadzoz77kxdvzj4pkmernr5e7pjzzge3rffn56ugibb2ojq"></a>
-</div>
-<br/>
+## Description
+Brief description of what you're adding/changing.
 
-# Pull Request Summary
-_Briefly describe the resource you're suggesting:_
+## Type of Contribution
+- [ ] New resource
+- [ ] Update existing entry
+- [ ] Fix broken link
+- [ ] Improve documentation
+- [ ] Other (please specify)
 
-# Checklist
-_Review and comply with each requirement:_
+## Resource Details
+<!-- Fill out if adding a new resource -->
+- **Resource Name**:
+- **Category**:
+- **Link**:
+- **Description**:
 
-## For AwesomeAlgo Resources:
-- [ ] Follows [contribution guidelines](../contributing.md)
-- [ ] PR title format: `{Resource Name} - brief description`
-- [ ] Aware that PR title will be used in automated tweet
+## Checklist
+- [ ] I have read the [Contributing Guidelines](CONTRIBUTING.md)
+- [ ] I have tested all links and they work
+- [ ] The resource is relevant to Algorand
+- [ ] The description is clear and concise
+- [ ] I have followed the formatting guidelines
+- [ ] I have added the resource to the appropriate section
+- [ ] I have maintained alphabetical order within the section
+- [ ] The resource meets the quality standards outlined in CONTRIBUTING.md
 
-### Optional: AwesomeAlgo Podcast
-Interested in discussing your contribution? [Sign up here](https://2c5n1ed3kz6.typeform.com/to/pAP5oPFx)
+## Additional Notes
+<!-- Any additional information or context about this contribution -->
