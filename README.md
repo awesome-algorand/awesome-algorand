@@ -455,6 +455,7 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
 - [arcontextify](https://github.com/aorumbayev/arcontextify) - Algorand ARC-56 to MCP server converter.
 - [corvid-agent](https://github.com/corvid-agent/corvid-agent) - An autonomous AI agent platform built on Algorand with encrypted on-chain messaging.
 - [DID-GPT](https://chatgpt.com/g/g-rOCQculZQ-did-gpt) - A W3C DID resolver assistant built on OpenAI's ChatGPT platform by GoPlausible.
+- [Play Clock](https://github.com/rbannon32/playclock-x402) - Pay-per-answer NFL fantasy analysis that AI agents buy with USDC on Algorand via x402, with an MCP server.
 - [VibeKit](https://github.com/gabrielkuettel/vibekit) - CLI + MCP server that gives AI coding assistants the skills and tools to build on Algorand.
 
 
