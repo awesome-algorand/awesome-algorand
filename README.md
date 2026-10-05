@@ -410,7 +410,7 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
 
 > A list of oracle solutions that allow for smart contracts to interact with the real world.
 
-- [Gora](https://www.gora.io/) - Decentralized oracle networks that connect the Algorand Blockchain with the real world.
+- [Gora](https://goranetwork.github.io/doc/) - Decentralized oracle networks that connect the Algorand Blockchain with the real world.
 
 
 ### Security Auditing Services
