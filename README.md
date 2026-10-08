@@ -456,7 +456,9 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
 - [corvid-agent](https://github.com/corvid-agent/corvid-agent) - An autonomous AI agent platform built on Algorand with encrypted on-chain messaging.
 - [DID-GPT](https://chatgpt.com/g/g-rOCQculZQ-did-gpt) - A W3C DID resolver assistant built on OpenAI's ChatGPT platform by GoPlausible.
 - [Predge](https://api.predge.io/.well-known/x402) - Polymarket whale trades, wallet scores and smart-money signals for AI agents, paid per call over x402 with USDC on Algorand via the GoPlausible facilitator.
+- [presign-guard-wallet](https://www.npmjs.com/package/presign-guard-wallet) - A wallet for AI agents with spending limits that pays x402 APIs in USDC on Algorand, checking every payment before it's signed.
 - [VibeKit](https://github.com/gabrielkuettel/vibekit) - CLI + MCP server that gives AI coding assistants the skills and tools to build on Algorand.
+- [x402 on Algorand](https://x402-doctor.fizzl.eu/algorand) - Every x402 endpoint that accepts USDC on Algorand, checked daily the way a paying agent would, with seller and price per endpoint.
 
 
 ## Application Platforms & Examples
