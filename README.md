@@ -49,6 +49,7 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
   - [Portfolio Trackers](#portfolio-trackers)
   - [Name Services](#name-services)
 - [Infrastructure & Ecosystem Services](#infrastructure--ecosystem-services)
+  - [Infrastructure Directories](#infrastructure-directories)
   - [Nodes & Consensus Participation](#nodes--consensus-participation)
   - [Blockchain Bridges](#blockchain-bridges)
   - [Oracles](#oracles)
@@ -386,6 +387,10 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
 
 
 ## Infrastructure & Ecosystem Services
+
+### Infrastructure Directories
+
+- [Chain.Love](https://algorand.chain.love) - Directory for discovering and comparing Algorand APIs, wallets, explorers, and other infrastructure providers.
 
 ### Nodes & Consensus Participation
 
