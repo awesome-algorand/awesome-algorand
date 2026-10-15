@@ -389,6 +389,7 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
 
 ### Nodes & Consensus Participation
 
+- [Chain.Love](https://algorand.chain.love/) - Open-source directory for discovering and comparing Algorand APIs, wallets, explorers, and other infrastructure providers.
 - [Algorand - The Undocumented Docs](https://github.com/AlgoChads/algorand-undoc-docs) - Dev Notes for Archival Node, Indexer Setup (and more).
 - [Algorand Node UI](https://github.com/algorand/node-ui) - Terminal UI for remote Algorand node management.
 - [AlloCTRL](https://github.com/AlgoNode/alloctrl) - A simple, open source, dashboard to help managing your node and participation keys safely, from your local machine.
