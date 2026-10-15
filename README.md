@@ -175,7 +175,7 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
 - [lazylora](https://github.com/aorumbayev/lazylora) - Terminal UI for exploring Algorand blockchain.
 - [minter](https://github.com/algofishexe/minter) - Bulk mint Algorand NFTs following the ARC-69 community standard. Written in Node.js by [@fish.exe](https://twitter.com/AlgofishExe).
 - [Pipeline-UI](https://github.com/headline-design/pipeline-ui) - A React.js based component library for rapid deployment of Algorand Dapps.
-- [QRCode Generator](https://github.com/emg110/algorand-qrcode) - Uinversal QRCode generator module for Algorand ARC-26 URIs.
+- [QRCode Generator](https://github.com/emg110/algorand-qrcode) - Universal QRCode generator module for Algorand ARC-26 URIs.
 - [Sign Zero](https://sign-zero.vercel.app/) - Lightweight demo app exploring authentication and signing flows.
 - [staketaxcsv](https://github.com/hodgerpodger/staketaxcsv) - Python backend for [stake.tax](https://stake.tax) that generates taxable transactions CSVs for Algorand and other Blockchains.
 - [STOI](https://stoi.org/) - Song ownership gone decentralized via microDAOs.
