@@ -346,6 +346,7 @@ Algorand is an open-source, proof of stake Blockchain and smart contract computi
 - [A-Wallet](https://a-wallet.net/) - AWallet is an open source, HTML only, corporate friendly, and secure Algorand wallet.
 - [Defly Wallet](https://defly.app/) - Defly is an Algorand wallet with great suit of integrated DeFi features.
 - [Exodus](https://www.exodus.com/) - Multi-cryptocurrency wallet with Algorand support.
+- [Gem Wallet](https://gemwallet.com/) - Open-source, self-custodial multi-chain mobile wallet with Algorand support.
 - [Kibisis](https://github.com/kibis-is/web-extension) - Open source Algorand wallet web extension built in React and TypeScript.
 - [Liquid Auth](https://github.com/algorandfoundation/liquid-auth) - Self-hosted service to bind passkeys to crypto keypairs plus P2P signaling for secure peer connections.
 - [Pera Wallet](https://github.com/perawallet) - Secure, open source and community driven wallet for both mobile and desktop devices. Maintained by the team behind official Algorand Wallet.
